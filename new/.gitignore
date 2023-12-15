@@ -1,0 +1,11 @@
+# 忽略 temp 目录
+temp/
+
+# 忽略所有 .log 文件
+*.log
+
+# 但不忽略 important.log 文件
+!important.log
+
+# 忽略所有 .tmp 文件
+*.tmp
