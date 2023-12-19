@@ -1,0 +1,10 @@
+/home/ywen/new/build/csm/CMakeFiles/uninstall.dir
+/home/ywen/new/build/csm/CMakeFiles/csm_uninstall.dir
+/home/ywen/new/build/csm/CMakeFiles/csm.dir
+/home/ywen/new/build/csm/CMakeFiles/test.dir
+/home/ywen/new/build/csm/CMakeFiles/edit_cache.dir
+/home/ywen/new/build/csm/CMakeFiles/rebuild_cache.dir
+/home/ywen/new/build/csm/CMakeFiles/list_install_components.dir
+/home/ywen/new/build/csm/CMakeFiles/install.dir
+/home/ywen/new/build/csm/CMakeFiles/install/local.dir
+/home/ywen/new/build/csm/CMakeFiles/install/strip.dir

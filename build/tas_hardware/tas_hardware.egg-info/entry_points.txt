@@ -1,0 +1,4 @@
+[console_scripts]
+tas_hardware = tas_hardware.tas_hardware:main
+tas_simulation = tas_hardware.tas_simulation:main
+

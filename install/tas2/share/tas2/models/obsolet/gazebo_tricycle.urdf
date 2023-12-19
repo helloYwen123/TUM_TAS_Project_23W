@@ -1,0 +1,256 @@
+<?xml version="1.0" ?>
+<robot name="tas_car"
+    xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <!-- Wheel Joints  -->
+    <joint name="l_f_wheel_joint" type="continuous">
+        <axis rpy="0 0 0" xyz="0 0 1"/>
+        <origin rpy="1.570796325 0 3.14159265" xyz="0 0 0"/>
+        <parent link="l_ack_link"/>
+        <child link="l_f_wheel"/>
+        <limit effort="1e+16" velocity="20"/>
+    </joint>
+
+    <joint name="r_f_wheel_joint" type="continuous">
+        <axis rpy="0 0 0" xyz="0 0 1"/>
+        <origin rpy="1.570796325 0 3.14159265" xyz="0 0 0"/>
+        <parent link="r_ack_link"/>
+        <child link="r_f_wheel"/>
+        <limit effort="1e+16" velocity="20"/>
+        <mimic joint="l_f_wheel_joint" multiplier="1" offset="0" />
+    </joint>
+
+    <joint name="base_l_b_wheel_joint" type="continuous">
+        <axis rpy="0 0 0" xyz="0 0 1"/>
+        <origin rpy="1.570796325 0 3.14159265" xyz="-0.1795 0.19189 0.0435"/>
+        <parent link="base"/>
+        <child link="l_b_wheel"/>
+        <limit effort="0.5" velocity="20"/>
+    </joint>
+
+
+    <joint name="base_r_b_wheel_joint" type="continuous">
+        <axis rpy="0 0 0" xyz="0 0 1"/>
+        <origin rpy="1.570796325 0 3.14159265" xyz="-0.1795 -0.19189 0.0435"/>
+        <parent link="base"/>
+        <child link="r_b_wheel"/>
+        <!-- effort: Torque in Nm, velocity: Angula velocity in rad/s -->
+        <!-- Wheel radius 0.14m, Max Speed 10km/h = 2.7778 m/s  =>  max Velocity 20rad/s -->
+        <!-- Nema 17 maximal 50 Ncm -->
+        <limit effort="0.5" velocity="20"/>
+    </joint>
+
+    <!--  Ackermann steering related joints. Not particularly used in case of differential drive steering  -->
+    <joint name="l_ack_link_l_f_wheel_joint" type="revolute">
+        <origin rpy="0 0 0" xyz="0.1794 0.19189 0.0435"/>
+        <axis rpy="0 0 0" xyz="0 0 1"/>
+        <parent link="base"/>
+        <child link="l_ack_link"/>
+        <limit effort="1000000" lower="-0.4" upper="0.4" velocity="20"/>
+    </joint>
+
+    <joint name="r_ack_link_r_f_wheel_joint" type="revolute">
+        <origin rpy="0 0 0" xyz="0.1794 -0.19189 0.0435"/>
+        <axis rpy="0 0 0" xyz="0 0 1"/>
+        <parent link="base"/>
+        <child link="r_ack_link"/>
+        <limit effort="1000000" lower="-0.4" upper="0.4" velocity="20"/>
+        <mimic joint="l_ack_link_l_f_wheel_joint" multiplier="1" offset="0" />
+    </joint>
+
+     <!-- ************ Wheels related links and joints ************ -->
+    <!--  Front rigt wheel  -->
+
+    <gazebo reference="r_f_wheel">
+        <fdir1>1 0 0</fdir1>
+        <maxContacts>1</maxContacts>
+        <minDepth>0.005</minDepth>
+        <collision>
+            <surface>
+                <friction>
+                    <ode>
+                        <mu>100000.0</mu>
+                        <mu2>100000.0</mu2>
+                        <slip1>0.0</slip1>
+                        <slip2>0.0</slip2>
+                    </ode>
+                    <torsional>
+                        <coefficient>10.0</coefficient>
+                        <surface_radius>1.0</surface_radius>
+                        <use_patch_radius>true</use_patch_radius>
+                    </torsional>
+                </friction>
+            </surface>
+        </collision>
+    </gazebo>
+
+    <!--  Front left wheel  -->
+
+    <gazebo reference="l_f_wheel">
+        <fdir1>1 0 0</fdir1>
+        <maxContacts>1</maxContacts>
+        <minDepth>0.005</minDepth>
+        <collision>
+            <surface>
+                <friction>
+                    <ode>
+                        <mu>100000.0</mu>
+                        <mu2>100000.0</mu2>
+                        <slip1>0.0</slip1>
+                        <slip2>0.0</slip2>
+                    </ode>
+                    <torsional>
+                        <coefficient>10.0</coefficient>
+                        <surface_radius>1.0</surface_radius>
+                        <use_patch_radius>true</use_patch_radius>
+                    </torsional>
+                </friction>
+            </surface>
+        </collision>
+    </gazebo>
+
+    <!--  Back left wheel  -->
+    <gazebo reference="l_b_wheel">
+        <fdir1>1 0 0</fdir1>
+        <maxContacts>1</maxContacts>
+        <minDepth>0.005</minDepth>
+        <collision>
+            <surface>
+                <friction>
+                    <ode>
+                        <mu>100000.0</mu>
+                        <mu2>100000.0</mu2>
+                        <slip1>0.0</slip1>
+                        <slip2>0.0</slip2>
+                    </ode>
+                    <torsional>
+                        <coefficient>10.0</coefficient>
+                        <surface_radius>1.0</surface_radius>
+                        <use_patch_radius>true</use_patch_radius>
+                    </torsional>
+                </friction>
+            </surface>
+        </collision>
+    </gazebo>
+
+    <!--  Back right wheel  -->
+    <gazebo reference="r_b_wheel">
+        <fdir1>1 0 0</fdir1>
+        <maxContacts>1</maxContacts>
+        <minDepth>0.005</minDepth>
+        <collision>
+            <surface>
+                <friction>
+                    <ode>
+                        <mu>100000.0</mu>
+                        <mu2>100000.0</mu2>
+                        <slip1>0.0</slip1>
+                        <slip2>0.0</slip2>
+                    </ode>
+                    <torsional>
+                        <coefficient>10.0</coefficient>
+                        <surface_radius>1.0</surface_radius>
+                        <use_patch_radius>true</use_patch_radius>
+                    </torsional>
+                </friction>
+            </surface>
+        </collision>
+    </gazebo>
+
+    <!-- Dive Plugin -->
+
+    <gazebo>
+        <plugin name='tricycle_drive' filename='libgazebo_ros_tricycle_drive.so'>
+
+            <ros>
+                <namespace></namespace>
+                <remapping>cmd_vel:=cmd_vel</remapping>
+                <remapping>odom:=odom</remapping>
+            </ros>
+
+            <!-- wheels -->
+            <steering_joint>l_ack_link_l_f_wheel_joint</steering_joint>
+            <actuated_wheel_joint>l_f_wheel_joint</actuated_wheel_joint>
+            <encoder_wheel_left_joint>base_l_b_wheel_joint</encoder_wheel_left_joint>
+            <encoder_wheel_right_joint>base_r_b_wheel_joint</encoder_wheel_right_joint>
+
+            <!-- kinematics -->
+            <wheel_separation>0.38</wheel_separation>
+            <encoder_wheel_diameter>0.14</encoder_wheel_diameter>
+            <actuated_wheel_diameter>0.14</actuated_wheel_diameter>
+
+            <!-- limits -->
+            <max_wheel_torque>20</max_wheel_torque>
+            <max_wheel_acceleration>5.0</max_wheel_acceleration>
+            <max_steering_speed>1.0</max_steering_speed>
+
+            <!-- output -->
+            <publish_odom>true</publish_odom>
+            <publish_wheel_tf>true</publish_wheel_tf>
+            <publish_wheel_joint_state>true</publish_wheel_joint_state>
+
+            <odometry_frame>odom</odometry_frame>
+            <robot_base_frame>base_footprint</robot_base_frame>
+
+        </plugin>
+
+    </gazebo>
+
+    <!-- 
+    <gazebo>
+        <plugin name="tricycle_drive_controller" filename="libgazebo_ros_tricycle_drive.so">
+            <rosDebugLevel>Debug</rosDebugLevel>
+            <robotNamespace></robotNamespace>
+            <publishWheelTF>true</publishWheelTF>
+            <publishWheelJointState>true</publishWheelJointState>
+            <alwaysOn>true</alwaysOn>
+            <steeringJoint>l_ack_link_l_f_wheel_joint</steeringJoint>
+            <actuatedWheelJoint>l_f_wheel_joint</actuatedWheelJoint>
+            <encoderWheelLeftJoint>base_l_b_wheel_joint</encoderWheelLeftJoint>
+            <encoderWheelRightJoint>base_r_b_wheel_joint</encoderWheelRightJoint>
+            <actuatedWheelDiameter>0.14</actuatedWheelDiameter>
+            <encoderWheelDiameter>0.14</encoderWheelDiameter>
+            <encoderWheelSeparation>0.38</encoderWheelSeparation>
+            <commandTopic>cmd_vel</commandTopic>
+            <odometryTopic>odom</odometryTopic>
+            <odometryFrame>odom</odometryFrame>
+            <odometrySource>encoder</odometrySource>
+            <robotBaseFrame>base_footprint</robotBaseFrame>
+            <updateRate>10.0</updateRate>
+            <wheelAcceleration>1.8</wheelAcceleration>
+            <wheelDeceleration>5.0</wheelDeceleration>
+            <wheelSpeedTolerance>0.05</wheelSpeedTolerance>
+            <wheelTorque>20</wheelTorque>
+            <steeringSpeed>0.4</steeringSpeed>
+            <steeringAngleTolerance>0.02</steeringAngleTolerance>
+        </plugin>
+    </gazebo> -->
+
+    <!-- <gazebo>
+        <plugin name="wheel_drive_controller" filename="libgazebo_ros_tricycle_drive.so">
+
+             Standard values of trycycle drive  
+            <actuatedWheelDiameter>0.15</actuatedWheelDiameter>
+            <encoderWheelDiameter>0.15</encoderWheelDiameter>
+            <wheelTorque>5.0</wheelTorque>
+            <commandTopic>cmd_vel</commandTopic>
+            <odometryTopic>odom</odometryTopic>
+            <odometryFrame>odom</odometryFrame>
+            <robotBaseFrame>base_link</robotBaseFrame>
+            <updateRate>100.0</updateRate>
+            <wheelAcceleration>0</wheelAcceleration>
+            <wheelDeceleration>0</wheelDeceleration>
+            <wheelSpeedTolerance>0.01</wheelSpeedTolerance>
+            <steeringSpeed>0</steeringSpeed>
+            <steeringAngleTolerance>0.01</steeringAngleTolerance>
+            <encoderWheelSeparation>0.5</encoderWheelSeparation>
+            <publishWheelTF>false</publishWheelTF>
+            <publishWheelJointState>false</publishWheelJointState>
+            <steeringJoint>front_steering_joint</steeringJoint>
+            <actuatedWheelJoint>front_wheel_joint</actuatedWheelJoint>
+            <encoderWheelLeftJoint>left_wheel_joint</encoderWheelLeftJoint>
+            <encoderWheelRightJoint>right_wheel_joint</encoderWheelRightJoint>
+        </plugin> -->
+    <!-- </gazebo> -->
+
+</robot>

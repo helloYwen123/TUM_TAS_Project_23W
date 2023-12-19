@@ -1,0 +1,138 @@
+<?xml version="1.0" ?>
+<robot name="tas_car"
+    xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <!-- Wheel Joints  -->
+    <joint name="l_f_wheel_joint" type="continuous">
+        <axis rpy="0 0 0" xyz="0 0 1"/>
+        <origin rpy="1.570796325 0 3.14159265" xyz="0 0 0"/>
+        <parent link="l_ack_link"/>
+        <child link="l_f_wheel"/>
+        <limit effort="1.0" velocity="30.0"/>
+    </joint>
+
+    <joint name="r_f_wheel_joint" type="continuous">
+        <axis rpy="0 0 0" xyz="0 0 1"/>
+        <origin rpy="1.570796325 0 3.14159265" xyz="0 0 0"/>
+        <parent link="r_ack_link"/>
+        <child link="r_f_wheel"/>
+        <limit effort="1.0" velocity="30.0"/>
+    </joint>
+
+    <joint name="base_l_b_wheel_joint" type="continuous">
+        <axis rpy="0 0 0" xyz="0 0 1"/>
+        <origin rpy="1.570796325 0 3.14159265" xyz="-0.1795 0.19189 0.0435"/>
+        <parent link="base"/>
+        <child link="l_b_wheel"/>
+        <limit effort="1.0" velocity="30.0"/>
+    </joint>
+
+    <joint name="base_r_b_wheel_joint" type="continuous">
+        <axis rpy="0 0 0" xyz="0 0 1"/>
+        <origin rpy="1.570796325 0 3.14159265" xyz="-0.1795 -0.19189 0.0435"/>
+        <parent link="base"/>
+        <child link="r_b_wheel"/>
+        <!-- effort: Torque in Nm, velocity: Angula velocity in rad/s -->
+        <!-- Wheel radius 0.14m, Max Speed 10km/h = 2.7778 m/s  =>  max Velocity 20rad/s -->
+        <!-- Nema 17 maximal 50 Ncm -->
+        <limit effort="1.0" velocity="30.0"/>
+    </joint>
+
+    <!--  Ackermann steering related joints. Not particularly used in case of differential drive steering  -->
+    <joint name="l_ack_link_l_f_wheel_joint" type="revolute">
+        <origin rpy="0 0 0" xyz="0.1794 0.19189 0.0435"/>
+        <axis rpy="0 0 0" xyz="0 0 1"/>
+        <parent link="base"/>
+        <child link="l_ack_link"/>
+        <limit effort="1.0" lower="-0.87" upper="0.87" velocity="30"/>
+    </joint>
+
+    <joint name="r_ack_link_r_f_wheel_joint" type="revolute">
+        <origin rpy="0 0 0" xyz="0.1794 -0.19189 0.0435"/>
+        <axis rpy="0 0 0" xyz="0 0 1"/>
+        <parent link="base"/>
+        <child link="r_ack_link"/>
+        <limit effort="1.0" lower="-0.87" upper="0.87" velocity="30"/>
+    </joint>
+
+    <!-- ************ Wheels friction ************ -->
+    <!--  Front rigt wheel  -->
+    <gazebo reference="r_f_wheel">
+        <mu>10.0</mu>
+        <mu2>10.0</mu2>
+    </gazebo>
+
+    <!--  Front left wheel  -->
+    <gazebo reference="l_f_wheel">
+        <mu>10.0</mu>
+        <mu2>10.0</mu2>
+    </gazebo>
+
+    <!--  Back left wheel  -->
+    <gazebo reference="l_b_wheel">
+        <mu>10000.0</mu>
+        <mu2>10000.0</mu2>
+    </gazebo>
+
+    <!--  Back right wheel  -->
+    <gazebo reference="r_b_wheel">
+        <mu>10000.0</mu>
+        <mu2>10000.0</mu2>
+    </gazebo>
+
+    <!-- *********************** joint states publisher plugin *********************   -->
+    <!-- Publishing Wheel joiunt values from gazebo simulation -->
+    <gazebo>
+        <plugin name="joint_state_publisher" filename="libgazebo_ros_joint_state_publisher.so">
+            <ros>
+                <remapping>~/out:=joint_states</remapping>
+            </ros>
+            <update_rate>100</update_rate>
+            <joint_name>l_f_wheel_joint</joint_name>
+            <joint_name>r_f_wheel_joint</joint_name>
+        </plugin>
+    </gazebo>
+
+    <ros2_control name="GazeboSystem" type="system">
+        <hardware>
+            <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+        </hardware>
+        <joint name="base_l_b_wheel_joint">
+            <command_interface name="velocity">
+                <param name="min">-30</param>
+                <param name="max">30</param>
+            </command_interface>
+            <state_interface name="position" />
+            <state_interface name="velocity" />
+        </joint>
+        <joint name="base_r_b_wheel_joint">
+            <command_interface name="velocity">
+                <param name="min">-30</param>
+                <param name="max">30</param>
+            </command_interface>
+            <state_interface name="velocity" />
+            <state_interface name="position" />
+        </joint>
+        <joint name="l_ack_link_l_f_wheel_joint">
+            <command_interface name="position">
+                <param name="min">-0.87</param>
+                <param name="max">0.87</param>
+            </command_interface>
+            <state_interface name="position" />
+        </joint>
+        <joint name="r_ack_link_r_f_wheel_joint">
+            <command_interface name="position">
+                <param name="min">-0.87</param>
+                <param name="max">0.87</param>
+            </command_interface>
+            <state_interface name="position" />
+        </joint>
+    </ros2_control>
+
+    <gazebo>
+    <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
+            <parameters>$(find tas2)/config/gazebo_ros2.yaml</parameters>
+        </plugin>
+    </gazebo>
+
+</robot>

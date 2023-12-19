@@ -1,0 +1,3 @@
+[console_scripts]
+object_tracker = object_tracker.object_tracker:main
+

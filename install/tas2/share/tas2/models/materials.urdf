@@ -1,0 +1,67 @@
+<?xml version="1.0" ?>
+<robot name="tas_car"  xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <!-- ************ visual materials ************ -->
+  <material name="Grey">
+    <color rgba="0.7 0.7 0.7 1.0"/>
+  </material>
+  <material name="Green">
+    <color rgba="0.0 1.0 0.0 1.0"/>
+  </material>
+  <material name="Red">
+    <color rgba="1.0 0.0 0.0 1.0"/>
+  </material>
+  <material name="tas_blue">
+    <color rgba="0.01 0.552 1.0 1.0"/>
+  </material>
+  <material name="Black">
+    <color rgba="0 0 0 1.0"/>
+  </material>
+
+  <!-- ************ Colors in Gazebo************ -->
+    <gazebo reference="nuc_base">
+        <material>tas_blue</material>
+    </gazebo>
+
+    <gazebo reference="nuc">
+        <material>Gazebo/Black</material>
+    </gazebo>
+
+    <gazebo reference="battery_holder">
+        <material>tas_blue</material>
+    </gazebo>
+
+    <gazebo reference="battery">
+        <material>Gazebo/Black</material>
+    </gazebo>
+
+    <gazebo reference="r_ack_link">
+        <material>tas_blue</material>
+    </gazebo>
+
+    <gazebo reference="l_ack_link">
+        <material>tas_blue</material>
+    </gazebo>
+
+  <!-- ************ Weights of the components ************ -->
+  <xacro:property name="mass_base" value="3" />
+  <xacro:property name="mass_nuc_base" value="0.5" />
+  <xacro:property name="mass_nuc" value="0.5" />
+  <xacro:property name="mass_battery_holder" value="0.5" />
+  <xacro:property name="mass_battery" value="0.5" />
+  <xacro:property name="mass_wheel" value="0.5" />
+  <xacro:property name="mass_ack_link" value="0.1" />
+  <xacro:property name="mass_laser_sup_front" value="0.1" />
+  <xacro:property name="mass_laser_front_link" value="0.1" />
+  <xacro:property name="mass_laser_sup_back" value="0.1" />
+  <xacro:property name="mass_laser_back_link" value="0.1" />
+  <xacro:property name="mass_imu_link" value="0.1" />
+  <xacro:property name="mass_camera" value="0.1" />
+  <xacro:property name="mass_camera_sup" value="0.1" />
+
+
+  <!-- ************ macro for computing the inertia tensor  ************ -->
+  <xacro:macro name="inertia_box" params="mass x y z">
+    <inertia ixx="${(1/12) * mass * (y*y+z*z)}" ixy="0.0" ixz="0.0" iyy="${(1/12) * mass * (x*x+z*z)}" iyz="0.0" izz="${(1/12) * mass * (x*x+y*y)}" />
+  </xacro:macro>
+
+</robot>

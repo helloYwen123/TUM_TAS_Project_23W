@@ -1,0 +1,285 @@
+<?xml version="1.0" ?>
+<robot name="tas_car"
+  xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <!-- =================================================================================== 
+     Description: TAS2 urdf file.
+                  This file is made to test the ackermann steering (in progress).
+     Author: Salman Bari
+     Date: Oct 29, 2022                             
+     =================================================================================== -->
+
+  <!-- ************ TAS2 basefootprint and base ************ -->
+  <link name="base_footprint"/>
+
+  <link name="base">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://models/meshes/model_base_reduced.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://models/meshes/model_base_reduced.dae"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-0.00841144 -0.00190093 0.04980077"/>
+      <mass value="${mass_base}"/>
+      <inertia ixx="${mass_base*0.01157276}" ixy="${mass_base*0.00003574}" ixz="${mass_base*-0.00001208}" iyy="${mass_base*0.02636172}" iyz="${mass_base*-0.00000158}" izz="${mass_base*0.03563196}"/>
+    </inertial>
+  </link>
+
+  <joint name="base_footprint_base_joint" type="fixed">
+    <axis rpy="0 0 0" xyz="0 0 1"/>
+    <origin rpy="0 0 0" xyz="0.1795 0 0"/>
+    <parent link="base_footprint"/>
+    <child link="base"/>
+  </joint>
+
+  <!-- ************ NUC PC related links and joints ************ -->
+  <link name="nuc_base">
+    <visual>
+      <geometry>
+        <box size="0.12 0.12 0.095"/>
+      </geometry>
+      <material name="tas_blue"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.12 0.12 0.095"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="${mass_nuc_base}"/>
+      <xacro:inertia_box mass="${mass_nuc_base}" x="0.12" y="0.12" z="0.095" />
+    </inertial>
+  </link>
+
+  <joint name="base_nuc_base_joint" type="fixed">
+    <axis rpy="0 0 0" xyz="0 0 1"/>
+    <origin rpy="0 0 0" xyz="-0.04 0.096 0.065"/>
+    <parent link="base"/>
+    <child link="nuc_base"/>
+  </joint>
+
+  <link name="nuc">
+    <visual>
+      <geometry>
+        <box size="0.11 0.11 0.035"/>
+      </geometry>
+      <material name="Black"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.11 0.11 0.035"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="${mass_nuc}"/>
+      <xacro:inertia_box mass="${mass_nuc}" x="0.11" y="0.11" z="0.035" />
+    </inertial>
+  </link>
+
+  <joint name="nuc_base_nuc_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0.065"/>
+    <axis rpy="0 0 0" xyz="0 0 1"/>
+    <parent link="nuc_base"/>
+    <child link="nuc"/>
+  </joint>
+
+  <!-- ************ Battery holder and battery related links and joints ************ -->
+  <link name="battery_holder">
+    <visual>
+      <geometry>
+        <box size="0.04 0.145 0.09"/>
+      </geometry>
+      <material name="tas_blue"/>
+    </visual>
+    <visual>
+      <origin rpy="0 0 0" xyz="0.06 0.0225 -0.025"/>
+      <geometry>
+        <box size="0.08 0.1 0.04"/>
+      </geometry>
+      <material name="tas_blue"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.04 0.145 0.09"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.06 0.0225 -0.025"/>
+      <geometry>
+        <box size="0.08 0.1 0.04"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="${mass_battery_holder/2}"/>
+      <xacro:inertia_box mass="${mass_battery_holder/2}" x="0.04" y="0.145" z="0.09" />
+    </inertial>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.06 0.0225 -0.025"/>
+      <mass value="${mass_battery_holder/2}"/>
+      <xacro:inertia_box mass="${mass_battery_holder/2}" x="0.08" y="0.1" z="0.04" />
+    </inertial>
+  </link>
+
+  <joint name="base_battery_holder_joint" type="fixed">
+    <axis rpy="0 0 0" xyz="0 0 1"/>
+    <origin rpy="0 0 0" xyz="-0.025 -0.1235 0.065"/>
+    <parent link="base"/>
+    <child link="battery_holder"/>
+  </joint>
+
+  <link name="battery">
+    <visual>
+      <geometry>
+        <box size="0.075 0.11 0.05"/>
+      </geometry>
+      <material name="Black"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.075 0.11 0.05"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="${mass_battery}"/>
+      <xacro:inertia_box mass="${mass_battery}" x="0.075" y="0.11" z="0.05" />
+    </inertial>
+  </link>
+
+  <joint name="battery_holder_battery_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0.06 0.01 0.02"/>
+    <axis rpy="0 0 0" xyz="0 0 1"/>
+    <parent link="battery_holder"/>
+    <child link="battery"/>
+  </joint>
+
+  <!-- ************ Wheels related links  ************ -->
+  <!--  Front right wheel  -->
+  <link name="r_ack_link">
+    <visual>
+      <geometry>
+        <box size="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="tas_blue"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="${mass_ack_link}"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <xacro:inertia_box mass="${mass_ack_link}" x="0.03" y="0.03" z="0.03" />
+    </inertial>
+  </link>
+
+  <!--  Front left wheel  -->
+  <link name="r_f_wheel">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://models/meshes/model_wheel_right.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <!-- <mesh filename="package://models/meshes/model_wheel_right_collision.dae"/> -->
+        <sphere radius="0.07"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="${mass_wheel}"/>
+      <origin xyz="0 0 0"/>
+      <inertia ixx="${mass_wheel*0.00151717}" ixy="0.0" ixz="0.0" iyy="${mass_wheel*0.00151716}" iyz="0.0" izz="${mass_wheel*0.00244375}"/>
+    </inertial>
+  </link>
+
+  <!--  Back left wheel  -->
+  <link name="l_b_wheel">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://models/meshes/model_wheel_left.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <!-- <mesh filename="package://models/meshes/model_wheel_left_collision.dae"/> -->
+        <sphere radius="0.07"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="${mass_wheel}"/>
+      <origin xyz="0 0 0"/>
+      <inertia ixx="${mass_wheel*0.00151717}" ixy="0.0" ixz="0.0" iyy="${mass_wheel*0.00151716}" iyz="0.0" izz="${mass_wheel*0.00244375}"/>
+    </inertial>
+  </link>
+
+  <!--  Back right wheel  -->
+  <link name="r_b_wheel">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://models/meshes/model_wheel_right.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <!-- <mesh filename="package://models/meshes/model_wheel_right_collision.dae"/> -->
+        <sphere radius="0.07"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="${mass_wheel}"/>
+      <origin xyz="0 0 0"/>
+      <inertia ixx="${mass_wheel*0.00151717}" ixy="0.0" ixz="0.0" iyy="${mass_wheel*0.00151716}" iyz="0.0" izz="${mass_wheel*0.00244375}"/>
+    </inertial>
+  </link>
+
+  <!--  Links for ackermann steering (fixed joints for diff drive)  -->
+  <link name="l_ack_link">
+    <visual>
+      <geometry>
+        <box size="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="tas_blue"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="${mass_ack_link}"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <xacro:inertia_box mass="${mass_ack_link}" x="0.03" y="0.03" z="0.03" />
+    </inertial>
+  </link>
+
+  <link name="l_f_wheel">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://models/meshes/model_wheel_left.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <!-- <mesh filename="package://models/meshes/model_wheel_left_collision.dae"/> -->
+        <sphere radius="0.07"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="${mass_wheel}"/>
+      <origin xyz="0 0 0"/>
+      <inertia ixx="${mass_wheel*0.00151717}" ixy="0.0" ixz="0.0" iyy="${mass_wheel*0.00151716}" iyz="0.0" izz="${mass_wheel*0.00244375}"/>
+    </inertial>
+  </link>
+
+</robot>
