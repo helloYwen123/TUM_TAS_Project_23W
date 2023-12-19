@@ -1,0 +1,98 @@
+<?xml version="1.0" ?>
+<robot name="tas_car"
+    xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <!-- ************  back lasers related links and joints ************ -->
+
+    <!--  back laser support structures, links, joints  -->
+    <link name="laser_sup_back">
+        <visual>
+            <geometry>
+                <box size="0.053 0.053 0.06"/>
+            </geometry>
+            <material name="tas_blue"/>
+        </visual>
+        <collision>
+            <geometry>
+                <box size="0.053 0.053 0.06"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <mass value="${mass_laser_sup_back}"/>
+            <xacro:inertia_box mass="${mass_laser_sup_back}" x="0.053" y="0.053" z="0.06" />
+        </inertial>
+    </link>
+
+    <joint name="base_laser_sup_back_joint" type="fixed">
+        <origin rpy="0 0 0" xyz="-0.28 0 0.05"/>
+        <axis rpy="0 0 0" xyz="0 0 1"/>
+        <parent link="base"/>
+        <child link="laser_sup_back"/>
+    </joint>
+
+    <link name="laser_back_link">
+        <visual>
+            <origin xyz="0 0 -0.025"/>
+            <geometry>
+                <mesh filename="file://$(find tas2)/models/meshes/hokuyo.dae"/>
+            </geometry>
+            <material name="Green"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 -0.025"/>
+            <geometry>
+                <box size="0.05 0.05 0.07"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz="-0.00354172 0.00014525 0.01561464"/>
+            <mass value="${mass_laser_back_link}"/>
+            <inertia ixx="${mass_laser_back_link*0.00054915}" ixy="0.0" ixz="0.0" iyy="${mass_laser_back_link*0.00055101}" iyz="0.0" izz="${mass_laser_back_link*0.00035751}"/>
+        </inertial>
+    </link>
+
+    <joint name="laser_back_joint" type="fixed">
+        <origin rpy="0 0 ${pi}" xyz="-0.28 0.0 0.14"/>
+        <axis rpy="0 0 0" xyz="0 0 1"/>
+        <parent link="base"/>
+        <child link="laser_back_link"/>
+    </joint>
+
+    <!-- Gazebo: back lidar -->
+    <gazebo reference="laser_back_link">
+        <sensor name='head_hokuyo_sensor' type='ray'>
+            <pose>0 0 0 0 -0 0</pose>
+            <visualize>true</visualize>
+            <always_on>true</always_on>
+            <update_rate>10</update_rate>
+            <ray>
+                <scan>
+                    <horizontal>
+                        <samples>680</samples>
+                        <resolution>1.0</resolution>
+                        <min_angle>-2.1</min_angle>
+                        <max_angle>2.1</max_angle>
+                    </horizontal>
+                </scan>
+                <range>
+                    <min>0.04</min>
+                    <max>5.6</max>
+                    <resolution>0.03</resolution>
+                </range>
+                <noise>
+                    <type>gaussian</type>
+                    <mean>0</mean>
+                    <stddev>0.01</stddev>
+                </noise>
+            </ray>
+            <plugin name='gazebo_ros_back_hokuyo_laser' filename='libgazebo_ros_ray_sensor.so'>
+                <output_type>sensor_msgs/LaserScan</output_type>
+                <frame_name>laser_back_link</frame_name>
+                <ros>
+                    <remapping>~/out:=scan_back</remapping>
+                </ros>
+            </plugin>
+        </sensor>
+    </gazebo>
+
+
+</robot>
