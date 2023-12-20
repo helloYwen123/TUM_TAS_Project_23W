@@ -1,0 +1,35 @@
+[1.795s] Invoking command in '/home/group_c/tas2-software/src/tas_hardware': PYTHONPATH=/home/group_c/tas2-software/build/tas_hardware/prefix_override:/home/group_c/tas2-software/install/tas_hardware/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tas_hardware build --build-base /home/group_c/tas2-software/build/tas_hardware/build install --record /home/group_c/tas2-software/build/tas_hardware/install.log --single-version-externally-managed
+[2.316s] running egg_info
+[2.361s] writing ../../build/tas_hardware/tas_hardware.egg-info/PKG-INFO
+[2.362s] writing dependency_links to ../../build/tas_hardware/tas_hardware.egg-info/dependency_links.txt
+[2.363s] writing entry points to ../../build/tas_hardware/tas_hardware.egg-info/entry_points.txt
+[2.364s] writing requirements to ../../build/tas_hardware/tas_hardware.egg-info/requires.txt
+[2.364s] writing top-level names to ../../build/tas_hardware/tas_hardware.egg-info/top_level.txt
+[2.430s] reading manifest file '../../build/tas_hardware/tas_hardware.egg-info/SOURCES.txt'
+[2.431s] writing manifest file '../../build/tas_hardware/tas_hardware.egg-info/SOURCES.txt'
+[2.431s] running build
+[2.431s] running build_py
+[2.433s] running install
+[2.433s] /home/group_c/.local/lib/python3.10/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+[2.433s] !!
+[2.433s] 
+[2.433s]         ********************************************************************************
+[2.433s]         Please avoid running ``setup.py`` directly.
+[2.434s]         Instead, use pypa/build, pypa/installer or other
+[2.434s]         standards-based tools.
+[2.434s] 
+[2.434s]         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+[2.434s]         ********************************************************************************
+[2.434s] 
+[2.434s] !!
+[2.434s]   self.initialize_options()
+[2.443s] running install_lib
+[2.476s] running install_data
+[2.505s] running install_egg_info
+[2.539s] removing '/home/group_c/tas2-software/install/tas_hardware/lib/python3.10/site-packages/tas_hardware-0.0.0-py3.10.egg-info' (and everything under it)
+[2.539s] Copying ../../build/tas_hardware/tas_hardware.egg-info to /home/group_c/tas2-software/install/tas_hardware/lib/python3.10/site-packages/tas_hardware-0.0.0-py3.10.egg-info
+[2.540s] running install_scripts
+[2.862s] Installing tas_hardware script to /home/group_c/tas2-software/install/tas_hardware/lib/tas_hardware
+[2.863s] Installing tas_simulation script to /home/group_c/tas2-software/install/tas_hardware/lib/tas_hardware
+[2.863s] writing list of installed files to '/home/group_c/tas2-software/build/tas_hardware/install.log'
+[2.926s] Invoked command in '/home/group_c/tas2-software/src/tas_hardware' returned '0': PYTHONPATH=/home/group_c/tas2-software/build/tas_hardware/prefix_override:/home/group_c/tas2-software/install/tas_hardware/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tas_hardware build --build-base /home/group_c/tas2-software/build/tas_hardware/build install --record /home/group_c/tas2-software/build/tas_hardware/install.log --single-version-externally-managed

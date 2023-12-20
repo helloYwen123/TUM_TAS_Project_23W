@@ -1,0 +1,521 @@
+[1.041s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[1.041s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7ff8ba9364d0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7ff8bade3df0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7ff8bade3df0>>)
+[1.099s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.099s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.099s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.099s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.099s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.099s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.099s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/group_c/tas2-software'
+[1.099s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.100s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.100s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.100s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.100s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.100s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.100s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.100s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.100s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.114s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.114s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.114s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.114s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.114s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.114s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.114s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.114s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.114s] Level 1:colcon.colcon_core.package_identification:_identify(hardware) by extensions ['ignore', 'ignore_ament_install']
+[1.114s] Level 1:colcon.colcon_core.package_identification:_identify(hardware) by extension 'ignore'
+[1.114s] Level 1:colcon.colcon_core.package_identification:_identify(hardware) by extension 'ignore_ament_install'
+[1.114s] Level 1:colcon.colcon_core.package_identification:_identify(hardware) by extensions ['colcon_pkg']
+[1.114s] Level 1:colcon.colcon_core.package_identification:_identify(hardware) by extension 'colcon_pkg'
+[1.115s] Level 1:colcon.colcon_core.package_identification:_identify(hardware) by extensions ['colcon_meta']
+[1.115s] Level 1:colcon.colcon_core.package_identification:_identify(hardware) by extension 'colcon_meta'
+[1.115s] Level 1:colcon.colcon_core.package_identification:_identify(hardware) by extensions ['ros']
+[1.115s] Level 1:colcon.colcon_core.package_identification:_identify(hardware) by extension 'ros'
+[1.115s] Level 1:colcon.colcon_core.package_identification:_identify(hardware) by extensions ['cmake', 'python']
+[1.115s] Level 1:colcon.colcon_core.package_identification:_identify(hardware) by extension 'cmake'
+[1.115s] Level 1:colcon.colcon_core.package_identification:_identify(hardware) by extension 'python'
+[1.115s] Level 1:colcon.colcon_core.package_identification:_identify(hardware) by extensions ['python_setup_py']
+[1.115s] Level 1:colcon.colcon_core.package_identification:_identify(hardware) by extension 'python_setup_py'
+[1.115s] Level 1:colcon.colcon_core.package_identification:_identify(hardware/Aruino_TestHardware) by extensions ['ignore', 'ignore_ament_install']
+[1.115s] Level 1:colcon.colcon_core.package_identification:_identify(hardware/Aruino_TestHardware) by extension 'ignore'
+[1.115s] Level 1:colcon.colcon_core.package_identification:_identify(hardware/Aruino_TestHardware) by extension 'ignore_ament_install'
+[1.115s] Level 1:colcon.colcon_core.package_identification:_identify(hardware/Aruino_TestHardware) by extensions ['colcon_pkg']
+[1.115s] Level 1:colcon.colcon_core.package_identification:_identify(hardware/Aruino_TestHardware) by extension 'colcon_pkg'
+[1.115s] Level 1:colcon.colcon_core.package_identification:_identify(hardware/Aruino_TestHardware) by extensions ['colcon_meta']
+[1.115s] Level 1:colcon.colcon_core.package_identification:_identify(hardware/Aruino_TestHardware) by extension 'colcon_meta'
+[1.115s] Level 1:colcon.colcon_core.package_identification:_identify(hardware/Aruino_TestHardware) by extensions ['ros']
+[1.115s] Level 1:colcon.colcon_core.package_identification:_identify(hardware/Aruino_TestHardware) by extension 'ros'
+[1.115s] Level 1:colcon.colcon_core.package_identification:_identify(hardware/Aruino_TestHardware) by extensions ['cmake', 'python']
+[1.115s] Level 1:colcon.colcon_core.package_identification:_identify(hardware/Aruino_TestHardware) by extension 'cmake'
+[1.115s] Level 1:colcon.colcon_core.package_identification:_identify(hardware/Aruino_TestHardware) by extension 'python'
+[1.115s] Level 1:colcon.colcon_core.package_identification:_identify(hardware/Aruino_TestHardware) by extensions ['python_setup_py']
+[1.115s] Level 1:colcon.colcon_core.package_identification:_identify(hardware/Aruino_TestHardware) by extension 'python_setup_py'
+[1.116s] Level 1:colcon.colcon_core.package_identification:_identify(hardware/ESP_TASCar) by extensions ['ignore', 'ignore_ament_install']
+[1.116s] Level 1:colcon.colcon_core.package_identification:_identify(hardware/ESP_TASCar) by extension 'ignore'
+[1.116s] Level 1:colcon.colcon_core.package_identification:_identify(hardware/ESP_TASCar) by extension 'ignore_ament_install'
+[1.116s] Level 1:colcon.colcon_core.package_identification:_identify(hardware/ESP_TASCar) by extensions ['colcon_pkg']
+[1.116s] Level 1:colcon.colcon_core.package_identification:_identify(hardware/ESP_TASCar) by extension 'colcon_pkg'
+[1.116s] Level 1:colcon.colcon_core.package_identification:_identify(hardware/ESP_TASCar) by extensions ['colcon_meta']
+[1.116s] Level 1:colcon.colcon_core.package_identification:_identify(hardware/ESP_TASCar) by extension 'colcon_meta'
+[1.116s] Level 1:colcon.colcon_core.package_identification:_identify(hardware/ESP_TASCar) by extensions ['ros']
+[1.116s] Level 1:colcon.colcon_core.package_identification:_identify(hardware/ESP_TASCar) by extension 'ros'
+[1.116s] Level 1:colcon.colcon_core.package_identification:_identify(hardware/ESP_TASCar) by extensions ['cmake', 'python']
+[1.116s] Level 1:colcon.colcon_core.package_identification:_identify(hardware/ESP_TASCar) by extension 'cmake'
+[1.116s] Level 1:colcon.colcon_core.package_identification:_identify(hardware/ESP_TASCar) by extension 'python'
+[1.116s] Level 1:colcon.colcon_core.package_identification:_identify(hardware/ESP_TASCar) by extensions ['python_setup_py']
+[1.116s] Level 1:colcon.colcon_core.package_identification:_identify(hardware/ESP_TASCar) by extension 'python_setup_py'
+[1.116s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extensions ['ignore', 'ignore_ament_install']
+[1.116s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extension 'ignore'
+[1.116s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extension 'ignore_ament_install'
+[1.117s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extensions ['colcon_pkg']
+[1.117s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extension 'colcon_pkg'
+[1.117s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extensions ['colcon_meta']
+[1.117s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extension 'colcon_meta'
+[1.117s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extensions ['ros']
+[1.117s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extension 'ros'
+[1.117s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extensions ['cmake', 'python']
+[1.117s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extension 'cmake'
+[1.117s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extension 'python'
+[1.117s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extensions ['python_setup_py']
+[1.117s] Level 1:colcon.colcon_core.package_identification:_identify(img) by extension 'python_setup_py'
+[1.118s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.118s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.118s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.118s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.118s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.118s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.118s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.118s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.118s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.119s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.119s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.119s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.119s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.119s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.119s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.119s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.119s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.119s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.119s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.119s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.120s] Level 1:colcon.colcon_core.package_identification:_identify(src/csm) by extensions ['ignore', 'ignore_ament_install']
+[1.120s] Level 1:colcon.colcon_core.package_identification:_identify(src/csm) by extension 'ignore'
+[1.120s] Level 1:colcon.colcon_core.package_identification:_identify(src/csm) by extension 'ignore_ament_install'
+[1.120s] Level 1:colcon.colcon_core.package_identification:_identify(src/csm) by extensions ['colcon_pkg']
+[1.120s] Level 1:colcon.colcon_core.package_identification:_identify(src/csm) by extension 'colcon_pkg'
+[1.120s] Level 1:colcon.colcon_core.package_identification:_identify(src/csm) by extensions ['colcon_meta']
+[1.120s] Level 1:colcon.colcon_core.package_identification:_identify(src/csm) by extension 'colcon_meta'
+[1.120s] Level 1:colcon.colcon_core.package_identification:_identify(src/csm) by extensions ['ros']
+[1.120s] Level 1:colcon.colcon_core.package_identification:_identify(src/csm) by extension 'ros'
+[1.124s] DEBUG:colcon.colcon_core.package_identification:Package 'src/csm' with type 'ros.ament_cmake' and name 'csm'
+[1.124s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_tracker) by extensions ['ignore', 'ignore_ament_install']
+[1.124s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_tracker) by extension 'ignore'
+[1.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_tracker) by extension 'ignore_ament_install'
+[1.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_tracker) by extensions ['colcon_pkg']
+[1.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_tracker) by extension 'colcon_pkg'
+[1.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_tracker) by extensions ['colcon_meta']
+[1.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_tracker) by extension 'colcon_meta'
+[1.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_tracker) by extensions ['ros']
+[1.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_tracker) by extension 'ros'
+[1.126s] DEBUG:colcon.colcon_core.package_identification:Package 'src/object_tracker' with type 'ros.ament_python' and name 'object_tracker'
+[1.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_laser_scan_matcher) by extensions ['ignore', 'ignore_ament_install']
+[1.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_laser_scan_matcher) by extension 'ignore'
+[1.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_laser_scan_matcher) by extension 'ignore_ament_install'
+[1.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_laser_scan_matcher) by extensions ['colcon_pkg']
+[1.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_laser_scan_matcher) by extension 'colcon_pkg'
+[1.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_laser_scan_matcher) by extensions ['colcon_meta']
+[1.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_laser_scan_matcher) by extension 'colcon_meta'
+[1.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_laser_scan_matcher) by extensions ['ros']
+[1.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_laser_scan_matcher) by extension 'ros'
+[1.128s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_laser_scan_matcher' with type 'ros.ament_cmake' and name 'ros2_laser_scan_matcher'
+[1.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/tas2) by extensions ['ignore', 'ignore_ament_install']
+[1.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/tas2) by extension 'ignore'
+[1.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/tas2) by extension 'ignore_ament_install'
+[1.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/tas2) by extensions ['colcon_pkg']
+[1.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/tas2) by extension 'colcon_pkg'
+[1.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/tas2) by extensions ['colcon_meta']
+[1.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/tas2) by extension 'colcon_meta'
+[1.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/tas2) by extensions ['ros']
+[1.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/tas2) by extension 'ros'
+[1.130s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tas2' with type 'ros.ament_cmake' and name 'tas2'
+[1.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/tas_hardware) by extensions ['ignore', 'ignore_ament_install']
+[1.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/tas_hardware) by extension 'ignore'
+[1.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/tas_hardware) by extension 'ignore_ament_install'
+[1.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/tas_hardware) by extensions ['colcon_pkg']
+[1.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/tas_hardware) by extension 'colcon_pkg'
+[1.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/tas_hardware) by extensions ['colcon_meta']
+[1.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/tas_hardware) by extension 'colcon_meta'
+[1.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/tas_hardware) by extensions ['ros']
+[1.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/tas_hardware) by extension 'ros'
+[1.132s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tas_hardware' with type 'ros.ament_python' and name 'tas_hardware'
+[1.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/urg_node2) by extensions ['ignore', 'ignore_ament_install']
+[1.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/urg_node2) by extension 'ignore'
+[1.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/urg_node2) by extension 'ignore_ament_install'
+[1.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/urg_node2) by extensions ['colcon_pkg']
+[1.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/urg_node2) by extension 'colcon_pkg'
+[1.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/urg_node2) by extensions ['colcon_meta']
+[1.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/urg_node2) by extension 'colcon_meta'
+[1.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/urg_node2) by extensions ['ros']
+[1.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/urg_node2) by extension 'ros'
+[1.135s] DEBUG:colcon.colcon_core.package_identification:Package 'src/urg_node2' with type 'ros.ament_cmake' and name 'urg_node2'
+[1.135s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.135s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.135s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.135s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.135s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.240s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.240s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.256s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/group_c/tas2-software/install/urg_node2' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[1.256s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/group_c/tas2-software/install/tas_hardware' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[1.256s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/group_c/tas2-software/install/tas2' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[1.256s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/group_c/tas2-software/install/ros2_laser_scan_matcher' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[1.257s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/group_c/tas2-software/install/object_tracker' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[1.257s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/group_c/tas2-software/install/csm' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[1.257s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/group_c/tas2-software/install/urg_node2' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[1.257s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/group_c/tas2-software/install/tas2' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[1.257s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/group_c/tas2-software/install/ros2_laser_scan_matcher' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[1.257s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/group_c/tas2-software/install/csm' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[1.276s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/group_c/tas2-software/install
+[1.293s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 379 installed packages in /opt/ros/humble
+[1.295s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.393s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'cmake_args' from command line to 'None'
+[1.393s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'cmake_target' from command line to 'None'
+[1.393s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.393s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'cmake_clean_cache' from command line to 'False'
+[1.393s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'cmake_clean_first' from command line to 'False'
+[1.393s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'cmake_force_configure' from command line to 'False'
+[1.393s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'ament_cmake_args' from command line to 'None'
+[1.393s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'catkin_cmake_args' from command line to 'None'
+[1.393s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.393s] DEBUG:colcon.colcon_core.verb:Building package 'csm' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/group_c/tas2-software/build/csm', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/group_c/tas2-software/install/csm', 'merge_install': False, 'path': '/home/group_c/tas2-software/src/csm', 'symlink_install': False, 'test_result_base': None}
+[1.410s] Level 5:colcon.colcon_core.verb:set package 'object_tracker' build argument 'cmake_args' from command line to 'None'
+[1.410s] Level 5:colcon.colcon_core.verb:set package 'object_tracker' build argument 'cmake_target' from command line to 'None'
+[1.410s] Level 5:colcon.colcon_core.verb:set package 'object_tracker' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.410s] Level 5:colcon.colcon_core.verb:set package 'object_tracker' build argument 'cmake_clean_cache' from command line to 'False'
+[1.410s] Level 5:colcon.colcon_core.verb:set package 'object_tracker' build argument 'cmake_clean_first' from command line to 'False'
+[1.410s] Level 5:colcon.colcon_core.verb:set package 'object_tracker' build argument 'cmake_force_configure' from command line to 'False'
+[1.410s] Level 5:colcon.colcon_core.verb:set package 'object_tracker' build argument 'ament_cmake_args' from command line to 'None'
+[1.410s] Level 5:colcon.colcon_core.verb:set package 'object_tracker' build argument 'catkin_cmake_args' from command line to 'None'
+[1.410s] Level 5:colcon.colcon_core.verb:set package 'object_tracker' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.410s] DEBUG:colcon.colcon_core.verb:Building package 'object_tracker' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/group_c/tas2-software/build/object_tracker', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/group_c/tas2-software/install/object_tracker', 'merge_install': False, 'path': '/home/group_c/tas2-software/src/object_tracker', 'symlink_install': False, 'test_result_base': None}
+[1.426s] Level 5:colcon.colcon_core.verb:set package 'tas2' build argument 'cmake_args' from command line to 'None'
+[1.426s] Level 5:colcon.colcon_core.verb:set package 'tas2' build argument 'cmake_target' from command line to 'None'
+[1.426s] Level 5:colcon.colcon_core.verb:set package 'tas2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.426s] Level 5:colcon.colcon_core.verb:set package 'tas2' build argument 'cmake_clean_cache' from command line to 'False'
+[1.426s] Level 5:colcon.colcon_core.verb:set package 'tas2' build argument 'cmake_clean_first' from command line to 'False'
+[1.426s] Level 5:colcon.colcon_core.verb:set package 'tas2' build argument 'cmake_force_configure' from command line to 'False'
+[1.426s] Level 5:colcon.colcon_core.verb:set package 'tas2' build argument 'ament_cmake_args' from command line to 'None'
+[1.426s] Level 5:colcon.colcon_core.verb:set package 'tas2' build argument 'catkin_cmake_args' from command line to 'None'
+[1.426s] Level 5:colcon.colcon_core.verb:set package 'tas2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.426s] DEBUG:colcon.colcon_core.verb:Building package 'tas2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/group_c/tas2-software/build/tas2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/group_c/tas2-software/install/tas2', 'merge_install': False, 'path': '/home/group_c/tas2-software/src/tas2', 'symlink_install': False, 'test_result_base': None}
+[1.442s] Level 5:colcon.colcon_core.verb:set package 'tas_hardware' build argument 'cmake_args' from command line to 'None'
+[1.442s] Level 5:colcon.colcon_core.verb:set package 'tas_hardware' build argument 'cmake_target' from command line to 'None'
+[1.442s] Level 5:colcon.colcon_core.verb:set package 'tas_hardware' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.442s] Level 5:colcon.colcon_core.verb:set package 'tas_hardware' build argument 'cmake_clean_cache' from command line to 'False'
+[1.442s] Level 5:colcon.colcon_core.verb:set package 'tas_hardware' build argument 'cmake_clean_first' from command line to 'False'
+[1.442s] Level 5:colcon.colcon_core.verb:set package 'tas_hardware' build argument 'cmake_force_configure' from command line to 'False'
+[1.442s] Level 5:colcon.colcon_core.verb:set package 'tas_hardware' build argument 'ament_cmake_args' from command line to 'None'
+[1.442s] Level 5:colcon.colcon_core.verb:set package 'tas_hardware' build argument 'catkin_cmake_args' from command line to 'None'
+[1.442s] Level 5:colcon.colcon_core.verb:set package 'tas_hardware' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.442s] DEBUG:colcon.colcon_core.verb:Building package 'tas_hardware' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/group_c/tas2-software/build/tas_hardware', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/group_c/tas2-software/install/tas_hardware', 'merge_install': False, 'path': '/home/group_c/tas2-software/src/tas_hardware', 'symlink_install': False, 'test_result_base': None}
+[1.459s] Level 5:colcon.colcon_core.verb:set package 'urg_node2' build argument 'cmake_args' from command line to 'None'
+[1.459s] Level 5:colcon.colcon_core.verb:set package 'urg_node2' build argument 'cmake_target' from command line to 'None'
+[1.459s] Level 5:colcon.colcon_core.verb:set package 'urg_node2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.459s] Level 5:colcon.colcon_core.verb:set package 'urg_node2' build argument 'cmake_clean_cache' from command line to 'False'
+[1.459s] Level 5:colcon.colcon_core.verb:set package 'urg_node2' build argument 'cmake_clean_first' from command line to 'False'
+[1.459s] Level 5:colcon.colcon_core.verb:set package 'urg_node2' build argument 'cmake_force_configure' from command line to 'False'
+[1.459s] Level 5:colcon.colcon_core.verb:set package 'urg_node2' build argument 'ament_cmake_args' from command line to 'None'
+[1.459s] Level 5:colcon.colcon_core.verb:set package 'urg_node2' build argument 'catkin_cmake_args' from command line to 'None'
+[1.459s] Level 5:colcon.colcon_core.verb:set package 'urg_node2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.459s] DEBUG:colcon.colcon_core.verb:Building package 'urg_node2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/group_c/tas2-software/build/urg_node2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/group_c/tas2-software/install/urg_node2', 'merge_install': False, 'path': '/home/group_c/tas2-software/src/urg_node2', 'symlink_install': False, 'test_result_base': None}
+[1.474s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'cmake_args' from command line to 'None'
+[1.475s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'cmake_target' from command line to 'None'
+[1.475s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.475s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'cmake_clean_cache' from command line to 'False'
+[1.475s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'cmake_clean_first' from command line to 'False'
+[1.475s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'cmake_force_configure' from command line to 'False'
+[1.475s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'ament_cmake_args' from command line to 'None'
+[1.475s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'catkin_cmake_args' from command line to 'None'
+[1.475s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.475s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_laser_scan_matcher' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/group_c/tas2-software/build/ros2_laser_scan_matcher', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/group_c/tas2-software/install/ros2_laser_scan_matcher', 'merge_install': False, 'path': '/home/group_c/tas2-software/src/ros2_laser_scan_matcher', 'symlink_install': False, 'test_result_base': None}
+[1.490s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.506s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.506s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/group_c/tas2-software/src/csm' with build type 'ament_cmake'
+[1.506s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/group_c/tas2-software/src/csm'
+[1.527s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.528s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.528s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.577s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/group_c/tas2-software/src/object_tracker' with build type 'ament_python'
+[1.577s] Level 1:colcon.colcon_core.shell:create_environment_hook('object_tracker', 'ament_prefix_path')
+[1.596s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/group_c/tas2-software/install/object_tracker/share/object_tracker/hook/ament_prefix_path.ps1'
+[1.597s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/group_c/tas2-software/install/object_tracker/share/object_tracker/hook/ament_prefix_path.dsv'
+[1.597s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/group_c/tas2-software/install/object_tracker/share/object_tracker/hook/ament_prefix_path.sh'
+[1.615s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.615s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.677s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/group_c/tas2-software/src/tas2' with build type 'ament_cmake'
+[1.677s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/group_c/tas2-software/src/tas2'
+[1.698s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.698s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.755s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/group_c/tas2-software/src/tas_hardware' with build type 'ament_python'
+[1.755s] Level 1:colcon.colcon_core.shell:create_environment_hook('tas_hardware', 'ament_prefix_path')
+[1.772s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/group_c/tas2-software/install/tas_hardware/share/tas_hardware/hook/ament_prefix_path.ps1'
+[1.772s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/group_c/tas2-software/install/tas_hardware/share/tas_hardware/hook/ament_prefix_path.dsv'
+[1.772s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/group_c/tas2-software/install/tas_hardware/share/tas_hardware/hook/ament_prefix_path.sh'
+[1.791s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.791s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.848s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/group_c/tas2-software/build/csm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble /usr/bin/cmake /home/group_c/tas2-software/src/csm -DCMAKE_INSTALL_PREFIX=/home/group_c/tas2-software/install/csm
+[2.072s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/group_c/tas2-software/src/object_tracker'
+[2.099s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.099s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.161s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/group_c/tas2-software/build/tas2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble /usr/bin/cmake /home/group_c/tas2-software/src/tas2 -DCMAKE_INSTALL_PREFIX=/home/group_c/tas2-software/install/tas2
+[2.508s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/group_c/tas2-software/src/tas_hardware'
+[2.533s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.533s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.666s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/group_c/tas2-software/src/object_tracker': PYTHONPATH=/home/group_c/tas2-software/build/object_tracker/prefix_override:/home/group_c/tas2-software/install/object_tracker/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/object_tracker build --build-base /home/group_c/tas2-software/build/object_tracker/build install --record /home/group_c/tas2-software/build/object_tracker/install.log --single-version-externally-managed
+[3.871s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/group_c/tas2-software/src/tas_hardware': PYTHONPATH=/home/group_c/tas2-software/build/tas_hardware/prefix_override:/home/group_c/tas2-software/install/tas_hardware/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tas_hardware build --build-base /home/group_c/tas2-software/build/tas_hardware/build install --record /home/group_c/tas2-software/build/tas_hardware/install.log --single-version-externally-managed
+[4.013s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/group_c/tas2-software/build/tas2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble /usr/bin/cmake /home/group_c/tas2-software/src/tas2 -DCMAKE_INSTALL_PREFIX=/home/group_c/tas2-software/install/tas2
+[4.014s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/group_c/tas2-software/build/tas2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble /usr/bin/cmake --build /home/group_c/tas2-software/build/tas2 -- -j4 -l4
+[4.088s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/group_c/tas2-software/build/tas2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble /usr/bin/cmake --build /home/group_c/tas2-software/build/tas2 -- -j4 -l4
+[4.180s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/group_c/tas2-software/build/tas2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble /usr/bin/cmake --install /home/group_c/tas2-software/build/tas2
+[4.603s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tas2)
+[4.607s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/group_c/tas2-software/build/tas2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble /usr/bin/cmake --install /home/group_c/tas2-software/build/tas2
+[4.675s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/tas2' for CMake module files
+[4.683s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/tas2' for CMake config files
+[4.683s] Level 1:colcon.colcon_core.shell:create_environment_hook('tas2', 'cmake_prefix_path')
+[4.734s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/group_c/tas2-software/install/tas2/share/tas2/hook/cmake_prefix_path.ps1'
+[4.734s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/group_c/tas2-software/install/tas2/share/tas2/hook/cmake_prefix_path.dsv'
+[4.735s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/group_c/tas2-software/install/tas2/share/tas2/hook/cmake_prefix_path.sh'
+[4.736s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/tas2/bin'
+[4.736s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/tas2/lib/pkgconfig/tas2.pc'
+[4.736s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/tas2/lib/python3.10/site-packages'
+[4.737s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/tas2/bin'
+[4.774s] INFO:colcon.colcon_core.shell:Creating package script '/home/group_c/tas2-software/install/tas2/share/tas2/package.ps1'
+[4.775s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/group_c/tas2-software/install/tas2/share/tas2/package.dsv'
+[4.776s] INFO:colcon.colcon_core.shell:Creating package script '/home/group_c/tas2-software/install/tas2/share/tas2/package.sh'
+[4.778s] INFO:colcon.colcon_core.shell:Creating package script '/home/group_c/tas2-software/install/tas2/share/tas2/package.bash'
+[4.779s] INFO:colcon.colcon_core.shell:Creating package script '/home/group_c/tas2-software/install/tas2/share/tas2/package.zsh'
+[4.780s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/group_c/tas2-software/install/tas2/share/colcon-core/packages/tas2)
+[4.936s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tas2)
+[4.972s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/tas2' for CMake module files
+[4.973s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/tas2' for CMake config files
+[4.973s] Level 1:colcon.colcon_core.shell:create_environment_hook('tas2', 'cmake_prefix_path')
+[5.037s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/group_c/tas2-software/install/tas2/share/tas2/hook/cmake_prefix_path.ps1'
+[5.038s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/group_c/tas2-software/install/tas2/share/tas2/hook/cmake_prefix_path.dsv'
+[5.039s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/group_c/tas2-software/install/tas2/share/tas2/hook/cmake_prefix_path.sh'
+[5.044s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/tas2/bin'
+[5.044s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/tas2/lib/pkgconfig/tas2.pc'
+[5.045s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/tas2/lib/python3.10/site-packages'
+[5.045s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/tas2/bin'
+[5.121s] INFO:colcon.colcon_core.shell:Creating package script '/home/group_c/tas2-software/install/tas2/share/tas2/package.ps1'
+[5.122s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/group_c/tas2-software/install/tas2/share/tas2/package.dsv'
+[5.122s] INFO:colcon.colcon_core.shell:Creating package script '/home/group_c/tas2-software/install/tas2/share/tas2/package.sh'
+[5.123s] INFO:colcon.colcon_core.shell:Creating package script '/home/group_c/tas2-software/install/tas2/share/tas2/package.bash'
+[5.132s] INFO:colcon.colcon_core.shell:Creating package script '/home/group_c/tas2-software/install/tas2/share/tas2/package.zsh'
+[5.133s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/group_c/tas2-software/install/tas2/share/colcon-core/packages/tas2)
+[5.134s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/group_c/tas2-software/src/urg_node2' with build type 'ament_cmake'
+[5.134s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/group_c/tas2-software/src/urg_node2'
+[5.179s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.180s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.290s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/group_c/tas2-software/src/object_tracker' returned '0': PYTHONPATH=/home/group_c/tas2-software/build/object_tracker/prefix_override:/home/group_c/tas2-software/install/object_tracker/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/object_tracker build --build-base /home/group_c/tas2-software/build/object_tracker/build install --record /home/group_c/tas2-software/build/object_tracker/install.log --single-version-externally-managed
+[5.323s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/object_tracker' for CMake module files
+[5.323s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/object_tracker' for CMake config files
+[5.324s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/object_tracker/lib'
+[5.324s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/object_tracker/bin'
+[5.325s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/object_tracker/lib/pkgconfig/object_tracker.pc'
+[5.325s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/object_tracker/lib/python3.10/site-packages'
+[5.325s] Level 1:colcon.colcon_core.shell:create_environment_hook('object_tracker', 'pythonpath')
+[5.355s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/group_c/tas2-software/install/object_tracker/share/object_tracker/hook/pythonpath.ps1'
+[5.356s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/group_c/tas2-software/install/object_tracker/share/object_tracker/hook/pythonpath.dsv'
+[5.356s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/group_c/tas2-software/install/object_tracker/share/object_tracker/hook/pythonpath.sh'
+[5.357s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/object_tracker/bin'
+[5.357s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(object_tracker)
+[5.391s] INFO:colcon.colcon_core.shell:Creating package script '/home/group_c/tas2-software/install/object_tracker/share/object_tracker/package.ps1'
+[5.392s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/group_c/tas2-software/install/object_tracker/share/object_tracker/package.dsv'
+[5.393s] INFO:colcon.colcon_core.shell:Creating package script '/home/group_c/tas2-software/install/object_tracker/share/object_tracker/package.sh'
+[5.394s] INFO:colcon.colcon_core.shell:Creating package script '/home/group_c/tas2-software/install/object_tracker/share/object_tracker/package.bash'
+[5.394s] INFO:colcon.colcon_core.shell:Creating package script '/home/group_c/tas2-software/install/object_tracker/share/object_tracker/package.zsh'
+[5.395s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/group_c/tas2-software/install/object_tracker/share/colcon-core/packages/object_tracker)
+[5.397s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/group_c/tas2-software/src/tas_hardware' returned '0': PYTHONPATH=/home/group_c/tas2-software/build/tas_hardware/prefix_override:/home/group_c/tas2-software/install/tas_hardware/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tas_hardware build --build-base /home/group_c/tas2-software/build/tas_hardware/build install --record /home/group_c/tas2-software/build/tas_hardware/install.log --single-version-externally-managed
+[5.426s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/tas_hardware' for CMake module files
+[5.426s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/tas_hardware' for CMake config files
+[5.427s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/tas_hardware/lib'
+[5.427s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/tas_hardware/bin'
+[5.428s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/tas_hardware/lib/pkgconfig/tas_hardware.pc'
+[5.428s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/tas_hardware/lib/python3.10/site-packages'
+[5.428s] Level 1:colcon.colcon_core.shell:create_environment_hook('tas_hardware', 'pythonpath')
+[5.454s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/group_c/tas2-software/install/tas_hardware/share/tas_hardware/hook/pythonpath.ps1'
+[5.454s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/group_c/tas2-software/install/tas_hardware/share/tas_hardware/hook/pythonpath.dsv'
+[5.455s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/group_c/tas2-software/install/tas_hardware/share/tas_hardware/hook/pythonpath.sh'
+[5.456s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/tas_hardware/bin'
+[5.456s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tas_hardware)
+[5.485s] INFO:colcon.colcon_core.shell:Creating package script '/home/group_c/tas2-software/install/tas_hardware/share/tas_hardware/package.ps1'
+[5.486s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/group_c/tas2-software/install/tas_hardware/share/tas_hardware/package.dsv'
+[5.487s] INFO:colcon.colcon_core.shell:Creating package script '/home/group_c/tas2-software/install/tas_hardware/share/tas_hardware/package.sh'
+[5.488s] INFO:colcon.colcon_core.shell:Creating package script '/home/group_c/tas2-software/install/tas_hardware/share/tas_hardware/package.bash'
+[5.488s] INFO:colcon.colcon_core.shell:Creating package script '/home/group_c/tas2-software/install/tas_hardware/share/tas_hardware/package.zsh'
+[5.489s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/group_c/tas2-software/install/tas_hardware/share/colcon-core/packages/tas_hardware)
+[5.493s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/group_c/tas2-software/build/urg_node2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble /usr/bin/cmake /home/group_c/tas2-software/src/urg_node2 -DCMAKE_INSTALL_PREFIX=/home/group_c/tas2-software/install/urg_node2
+[5.813s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/group_c/tas2-software/build/csm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble /usr/bin/cmake /home/group_c/tas2-software/src/csm -DCMAKE_INSTALL_PREFIX=/home/group_c/tas2-software/install/csm
+[5.815s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/group_c/tas2-software/build/csm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble /usr/bin/cmake --build /home/group_c/tas2-software/build/csm -- -j4 -l4
+[10.602s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/group_c/tas2-software/build/urg_node2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble /usr/bin/cmake /home/group_c/tas2-software/src/urg_node2 -DCMAKE_INSTALL_PREFIX=/home/group_c/tas2-software/install/urg_node2
+[10.612s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/group_c/tas2-software/build/urg_node2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble /usr/bin/cmake --build /home/group_c/tas2-software/build/urg_node2 -- -j4 -l4
+[39.388s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/group_c/tas2-software/build/csm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble /usr/bin/cmake --build /home/group_c/tas2-software/build/csm -- -j4 -l4
+[39.497s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/group_c/tas2-software/build/csm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble /usr/bin/cmake --install /home/group_c/tas2-software/build/csm
+[39.526s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(csm)
+[39.527s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/group_c/tas2-software/build/csm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble /usr/bin/cmake --install /home/group_c/tas2-software/build/csm
+[39.550s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/csm' for CMake module files
+[39.551s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/csm' for CMake config files
+[39.551s] Level 1:colcon.colcon_core.shell:create_environment_hook('csm', 'cmake_prefix_path')
+[39.566s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/group_c/tas2-software/install/csm/share/csm/hook/cmake_prefix_path.ps1'
+[39.567s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/group_c/tas2-software/install/csm/share/csm/hook/cmake_prefix_path.dsv'
+[39.567s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/group_c/tas2-software/install/csm/share/csm/hook/cmake_prefix_path.sh'
+[39.568s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/csm/lib'
+[39.568s] Level 1:colcon.colcon_core.shell:create_environment_hook('csm', 'ld_library_path_lib')
+[39.583s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/group_c/tas2-software/install/csm/share/csm/hook/ld_library_path_lib.ps1'
+[39.584s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/group_c/tas2-software/install/csm/share/csm/hook/ld_library_path_lib.dsv'
+[39.584s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/group_c/tas2-software/install/csm/share/csm/hook/ld_library_path_lib.sh'
+[39.584s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/csm/bin'
+[39.584s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/csm/lib/pkgconfig/csm.pc'
+[39.585s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/csm/lib/python3.10/site-packages'
+[39.585s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/csm/bin'
+[39.601s] INFO:colcon.colcon_core.shell:Creating package script '/home/group_c/tas2-software/install/csm/share/csm/package.ps1'
+[39.601s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/group_c/tas2-software/install/csm/share/csm/package.dsv'
+[39.601s] INFO:colcon.colcon_core.shell:Creating package script '/home/group_c/tas2-software/install/csm/share/csm/package.sh'
+[39.602s] INFO:colcon.colcon_core.shell:Creating package script '/home/group_c/tas2-software/install/csm/share/csm/package.bash'
+[39.602s] INFO:colcon.colcon_core.shell:Creating package script '/home/group_c/tas2-software/install/csm/share/csm/package.zsh'
+[39.602s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/group_c/tas2-software/install/csm/share/colcon-core/packages/csm)
+[39.605s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/group_c/tas2-software/build/urg_node2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble /usr/bin/cmake --build /home/group_c/tas2-software/build/urg_node2 -- -j4 -l4
+[39.664s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/group_c/tas2-software/build/urg_node2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble /usr/bin/cmake --install /home/group_c/tas2-software/build/urg_node2
+[39.684s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(urg_node2)
+[39.685s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/group_c/tas2-software/build/urg_node2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble /usr/bin/cmake --install /home/group_c/tas2-software/build/urg_node2
+[39.703s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/urg_node2' for CMake module files
+[39.703s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/urg_node2' for CMake config files
+[39.704s] Level 1:colcon.colcon_core.shell:create_environment_hook('urg_node2', 'cmake_prefix_path')
+[39.719s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/group_c/tas2-software/install/urg_node2/share/urg_node2/hook/cmake_prefix_path.ps1'
+[39.719s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/group_c/tas2-software/install/urg_node2/share/urg_node2/hook/cmake_prefix_path.dsv'
+[39.720s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/group_c/tas2-software/install/urg_node2/share/urg_node2/hook/cmake_prefix_path.sh'
+[39.720s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/urg_node2/lib'
+[39.720s] Level 1:colcon.colcon_core.shell:create_environment_hook('urg_node2', 'ld_library_path_lib')
+[39.737s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/group_c/tas2-software/install/urg_node2/share/urg_node2/hook/ld_library_path_lib.ps1'
+[39.737s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/group_c/tas2-software/install/urg_node2/share/urg_node2/hook/ld_library_path_lib.dsv'
+[39.737s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/group_c/tas2-software/install/urg_node2/share/urg_node2/hook/ld_library_path_lib.sh'
+[39.738s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/urg_node2/bin'
+[39.738s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/urg_node2/lib/pkgconfig/urg_node2.pc'
+[39.738s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/urg_node2/lib/python3.10/site-packages'
+[39.738s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/urg_node2/bin'
+[39.754s] INFO:colcon.colcon_core.shell:Creating package script '/home/group_c/tas2-software/install/urg_node2/share/urg_node2/package.ps1'
+[39.754s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/group_c/tas2-software/install/urg_node2/share/urg_node2/package.dsv'
+[39.754s] INFO:colcon.colcon_core.shell:Creating package script '/home/group_c/tas2-software/install/urg_node2/share/urg_node2/package.sh'
+[39.755s] INFO:colcon.colcon_core.shell:Creating package script '/home/group_c/tas2-software/install/urg_node2/share/urg_node2/package.bash'
+[39.755s] INFO:colcon.colcon_core.shell:Creating package script '/home/group_c/tas2-software/install/urg_node2/share/urg_node2/package.zsh'
+[39.755s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/group_c/tas2-software/install/urg_node2/share/colcon-core/packages/urg_node2)
+[39.772s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(csm)
+[39.791s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/csm' for CMake module files
+[39.791s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/csm' for CMake config files
+[39.792s] Level 1:colcon.colcon_core.shell:create_environment_hook('csm', 'cmake_prefix_path')
+[39.811s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/group_c/tas2-software/install/csm/share/csm/hook/cmake_prefix_path.ps1'
+[39.811s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/group_c/tas2-software/install/csm/share/csm/hook/cmake_prefix_path.dsv'
+[39.812s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/group_c/tas2-software/install/csm/share/csm/hook/cmake_prefix_path.sh'
+[39.813s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/csm/lib'
+[39.813s] Level 1:colcon.colcon_core.shell:create_environment_hook('csm', 'ld_library_path_lib')
+[39.828s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/group_c/tas2-software/install/csm/share/csm/hook/ld_library_path_lib.ps1'
+[39.829s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/group_c/tas2-software/install/csm/share/csm/hook/ld_library_path_lib.dsv'
+[39.829s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/group_c/tas2-software/install/csm/share/csm/hook/ld_library_path_lib.sh'
+[39.829s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/csm/bin'
+[39.829s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/csm/lib/pkgconfig/csm.pc'
+[39.829s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/csm/lib/python3.10/site-packages'
+[39.830s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/csm/bin'
+[39.845s] INFO:colcon.colcon_core.shell:Creating package script '/home/group_c/tas2-software/install/csm/share/csm/package.ps1'
+[39.846s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/group_c/tas2-software/install/csm/share/csm/package.dsv'
+[39.846s] INFO:colcon.colcon_core.shell:Creating package script '/home/group_c/tas2-software/install/csm/share/csm/package.sh'
+[39.846s] INFO:colcon.colcon_core.shell:Creating package script '/home/group_c/tas2-software/install/csm/share/csm/package.bash'
+[39.847s] INFO:colcon.colcon_core.shell:Creating package script '/home/group_c/tas2-software/install/csm/share/csm/package.zsh'
+[39.847s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/group_c/tas2-software/install/csm/share/colcon-core/packages/csm)
+[39.848s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/group_c/tas2-software/src/ros2_laser_scan_matcher' with build type 'ament_cmake'
+[39.848s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/group_c/tas2-software/src/ros2_laser_scan_matcher'
+[39.866s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[39.866s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[39.943s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(urg_node2)
+[39.958s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/urg_node2' for CMake module files
+[39.959s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/urg_node2' for CMake config files
+[39.959s] Level 1:colcon.colcon_core.shell:create_environment_hook('urg_node2', 'cmake_prefix_path')
+[39.975s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/group_c/tas2-software/install/urg_node2/share/urg_node2/hook/cmake_prefix_path.ps1'
+[39.976s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/group_c/tas2-software/install/urg_node2/share/urg_node2/hook/cmake_prefix_path.dsv'
+[39.976s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/group_c/tas2-software/install/urg_node2/share/urg_node2/hook/cmake_prefix_path.sh'
+[39.976s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/urg_node2/lib'
+[39.977s] Level 1:colcon.colcon_core.shell:create_environment_hook('urg_node2', 'ld_library_path_lib')
+[39.992s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/group_c/tas2-software/install/urg_node2/share/urg_node2/hook/ld_library_path_lib.ps1'
+[39.992s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/group_c/tas2-software/install/urg_node2/share/urg_node2/hook/ld_library_path_lib.dsv'
+[39.993s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/group_c/tas2-software/install/urg_node2/share/urg_node2/hook/ld_library_path_lib.sh'
+[39.993s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/urg_node2/bin'
+[39.993s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/urg_node2/lib/pkgconfig/urg_node2.pc'
+[39.993s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/urg_node2/lib/python3.10/site-packages'
+[39.993s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/urg_node2/bin'
+[40.009s] INFO:colcon.colcon_core.shell:Creating package script '/home/group_c/tas2-software/install/urg_node2/share/urg_node2/package.ps1'
+[40.010s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/group_c/tas2-software/install/urg_node2/share/urg_node2/package.dsv'
+[40.010s] INFO:colcon.colcon_core.shell:Creating package script '/home/group_c/tas2-software/install/urg_node2/share/urg_node2/package.sh'
+[40.010s] INFO:colcon.colcon_core.shell:Creating package script '/home/group_c/tas2-software/install/urg_node2/share/urg_node2/package.bash'
+[40.011s] INFO:colcon.colcon_core.shell:Creating package script '/home/group_c/tas2-software/install/urg_node2/share/urg_node2/package.zsh'
+[40.011s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/group_c/tas2-software/install/urg_node2/share/colcon-core/packages/urg_node2)
+[40.015s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/group_c/tas2-software/build/ros2_laser_scan_matcher': CMAKE_PREFIX_PATH=/home/group_c/tas2-software/install/csm:/home/group_c/tas2-software/install/urg_node2:/home/group_c/tas2-software/install/tas2:/home/group_c/tas2-software/install/ros2_laser_scan_matcher:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble LD_LIBRARY_PATH=/home/group_c/tas2-software/install/csm/lib:/home/group_c/tas2-software/install/urg_node2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake /home/group_c/tas2-software/src/ros2_laser_scan_matcher -DCMAKE_INSTALL_PREFIX=/home/group_c/tas2-software/install/ros2_laser_scan_matcher
+[42.261s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/group_c/tas2-software/build/ros2_laser_scan_matcher' returned '0': CMAKE_PREFIX_PATH=/home/group_c/tas2-software/install/csm:/home/group_c/tas2-software/install/urg_node2:/home/group_c/tas2-software/install/tas2:/home/group_c/tas2-software/install/ros2_laser_scan_matcher:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble LD_LIBRARY_PATH=/home/group_c/tas2-software/install/csm/lib:/home/group_c/tas2-software/install/urg_node2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake /home/group_c/tas2-software/src/ros2_laser_scan_matcher -DCMAKE_INSTALL_PREFIX=/home/group_c/tas2-software/install/ros2_laser_scan_matcher
+[42.263s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/group_c/tas2-software/build/ros2_laser_scan_matcher': CMAKE_PREFIX_PATH=/home/group_c/tas2-software/install/csm:/home/group_c/tas2-software/install/urg_node2:/home/group_c/tas2-software/install/tas2:/home/group_c/tas2-software/install/ros2_laser_scan_matcher:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble LD_LIBRARY_PATH=/home/group_c/tas2-software/install/csm/lib:/home/group_c/tas2-software/install/urg_node2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/group_c/tas2-software/build/ros2_laser_scan_matcher -- -j4 -l4
+[54.708s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/group_c/tas2-software/build/ros2_laser_scan_matcher' returned '0': CMAKE_PREFIX_PATH=/home/group_c/tas2-software/install/csm:/home/group_c/tas2-software/install/urg_node2:/home/group_c/tas2-software/install/tas2:/home/group_c/tas2-software/install/ros2_laser_scan_matcher:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble LD_LIBRARY_PATH=/home/group_c/tas2-software/install/csm/lib:/home/group_c/tas2-software/install/urg_node2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/group_c/tas2-software/build/ros2_laser_scan_matcher -- -j4 -l4
+[54.735s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/group_c/tas2-software/build/ros2_laser_scan_matcher': CMAKE_PREFIX_PATH=/home/group_c/tas2-software/install/csm:/home/group_c/tas2-software/install/urg_node2:/home/group_c/tas2-software/install/tas2:/home/group_c/tas2-software/install/ros2_laser_scan_matcher:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble LD_LIBRARY_PATH=/home/group_c/tas2-software/install/csm/lib:/home/group_c/tas2-software/install/urg_node2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --install /home/group_c/tas2-software/build/ros2_laser_scan_matcher
+[54.752s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_laser_scan_matcher)
+[54.752s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/group_c/tas2-software/build/ros2_laser_scan_matcher' returned '0': CMAKE_PREFIX_PATH=/home/group_c/tas2-software/install/csm:/home/group_c/tas2-software/install/urg_node2:/home/group_c/tas2-software/install/tas2:/home/group_c/tas2-software/install/ros2_laser_scan_matcher:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble LD_LIBRARY_PATH=/home/group_c/tas2-software/install/csm/lib:/home/group_c/tas2-software/install/urg_node2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --install /home/group_c/tas2-software/build/ros2_laser_scan_matcher
+[54.769s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/ros2_laser_scan_matcher' for CMake module files
+[54.769s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/ros2_laser_scan_matcher' for CMake config files
+[54.770s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_laser_scan_matcher', 'cmake_prefix_path')
+[54.785s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/group_c/tas2-software/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/hook/cmake_prefix_path.ps1'
+[54.786s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/group_c/tas2-software/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/hook/cmake_prefix_path.dsv'
+[54.786s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/group_c/tas2-software/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/hook/cmake_prefix_path.sh'
+[54.787s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/ros2_laser_scan_matcher/lib'
+[54.787s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/ros2_laser_scan_matcher/bin'
+[54.787s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/ros2_laser_scan_matcher/lib/pkgconfig/ros2_laser_scan_matcher.pc'
+[54.787s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/ros2_laser_scan_matcher/lib/python3.10/site-packages'
+[54.787s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/ros2_laser_scan_matcher/bin'
+[54.803s] INFO:colcon.colcon_core.shell:Creating package script '/home/group_c/tas2-software/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.ps1'
+[54.804s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/group_c/tas2-software/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.dsv'
+[54.804s] INFO:colcon.colcon_core.shell:Creating package script '/home/group_c/tas2-software/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.sh'
+[54.804s] INFO:colcon.colcon_core.shell:Creating package script '/home/group_c/tas2-software/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.bash'
+[54.805s] INFO:colcon.colcon_core.shell:Creating package script '/home/group_c/tas2-software/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.zsh'
+[54.805s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/group_c/tas2-software/install/ros2_laser_scan_matcher/share/colcon-core/packages/ros2_laser_scan_matcher)
+[54.847s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_laser_scan_matcher)
+[54.863s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/ros2_laser_scan_matcher' for CMake module files
+[54.863s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/ros2_laser_scan_matcher' for CMake config files
+[54.864s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_laser_scan_matcher', 'cmake_prefix_path')
+[54.879s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/group_c/tas2-software/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/hook/cmake_prefix_path.ps1'
+[54.880s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/group_c/tas2-software/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/hook/cmake_prefix_path.dsv'
+[54.880s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/group_c/tas2-software/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/hook/cmake_prefix_path.sh'
+[54.881s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/ros2_laser_scan_matcher/lib'
+[54.881s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/ros2_laser_scan_matcher/bin'
+[54.881s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/ros2_laser_scan_matcher/lib/pkgconfig/ros2_laser_scan_matcher.pc'
+[54.881s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/ros2_laser_scan_matcher/lib/python3.10/site-packages'
+[54.881s] Level 1:colcon.colcon_core.environment:checking '/home/group_c/tas2-software/install/ros2_laser_scan_matcher/bin'
+[54.897s] INFO:colcon.colcon_core.shell:Creating package script '/home/group_c/tas2-software/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.ps1'
+[54.898s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/group_c/tas2-software/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.dsv'
+[54.898s] INFO:colcon.colcon_core.shell:Creating package script '/home/group_c/tas2-software/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.sh'
+[54.898s] INFO:colcon.colcon_core.shell:Creating package script '/home/group_c/tas2-software/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.bash'
+[54.899s] INFO:colcon.colcon_core.shell:Creating package script '/home/group_c/tas2-software/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.zsh'
+[54.899s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/group_c/tas2-software/install/ros2_laser_scan_matcher/share/colcon-core/packages/ros2_laser_scan_matcher)
+[54.899s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[54.900s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[54.900s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[54.900s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[54.923s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[54.923s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[54.923s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[54.938s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[54.956s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/group_c/tas2-software/install/local_setup.ps1'
+[54.957s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/group_c/tas2-software/install/_local_setup_util_ps1.py'
+[54.958s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/group_c/tas2-software/install/setup.ps1'
+[54.975s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/group_c/tas2-software/install/local_setup.sh'
+[54.975s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/group_c/tas2-software/install/_local_setup_util_sh.py'
+[54.976s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/group_c/tas2-software/install/setup.sh'
+[54.992s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/group_c/tas2-software/install/local_setup.bash'
+[54.993s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/group_c/tas2-software/install/setup.bash'
+[55.015s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/group_c/tas2-software/install/local_setup.zsh'
+[55.016s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/group_c/tas2-software/install/setup.zsh'

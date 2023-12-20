@@ -1,0 +1,6 @@
+source;share/tas_hardware/hook/pythonpath.ps1
+source;share/tas_hardware/hook/pythonpath.dsv
+source;share/tas_hardware/hook/pythonpath.sh
+source;share/tas_hardware/hook/ament_prefix_path.ps1
+source;share/tas_hardware/hook/ament_prefix_path.dsv
+source;share/tas_hardware/hook/ament_prefix_path.sh

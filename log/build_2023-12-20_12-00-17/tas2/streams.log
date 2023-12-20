@@ -1,0 +1,197 @@
+[0.484s] Invoking command in '/home/group_c/tas2-software/build/tas2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble /usr/bin/cmake /home/group_c/tas2-software/src/tas2 -DCMAKE_INSTALL_PREFIX=/home/group_c/tas2-software/install/tas2
+[0.575s] -- The C compiler identification is GNU 11.4.0
+[0.664s] -- The CXX compiler identification is GNU 11.4.0
+[0.676s] -- Detecting C compiler ABI info
+[0.782s] -- Detecting C compiler ABI info - done
+[0.792s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.792s] -- Detecting C compile features
+[0.792s] -- Detecting C compile features - done
+[0.796s] -- Detecting CXX compiler ABI info
+[0.920s] -- Detecting CXX compiler ABI info - done
+[0.933s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.933s] -- Detecting CXX compile features
+[0.935s] -- Detecting CXX compile features - done
+[0.938s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.666s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[1.989s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.279s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.287s] -- Added test 'lint_cmake' to check CMake code style
+[2.291s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.305s] -- Added test 'xmllint' to check XML markup files
+[2.316s] -- Configuring done
+[2.331s] -- Generating done
+[2.331s] -- Build files have been written to: /home/group_c/tas2-software/build/tas2
+[2.336s] Invoked command in '/home/group_c/tas2-software/build/tas2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble /usr/bin/cmake /home/group_c/tas2-software/src/tas2 -DCMAKE_INSTALL_PREFIX=/home/group_c/tas2-software/install/tas2
+[2.337s] Invoking command in '/home/group_c/tas2-software/build/tas2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble /usr/bin/cmake --build /home/group_c/tas2-software/build/tas2 -- -j4 -l4
+[2.410s] Invoked command in '/home/group_c/tas2-software/build/tas2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble /usr/bin/cmake --build /home/group_c/tas2-software/build/tas2 -- -j4 -l4
+[2.503s] Invoking command in '/home/group_c/tas2-software/build/tas2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble /usr/bin/cmake --install /home/group_c/tas2-software/build/tas2
+[2.514s] -- Install configuration: ""
+[2.514s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/launch
+[2.518s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/launch/hardware_computer.launch.py
+[2.518s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/launch/slam.launch.py
+[2.518s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/launch/obsolet
+[2.519s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/launch/obsolet/obs_slam.launch.py
+[2.519s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/launch/obsolet/obs_display.launch.py
+[2.519s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/launch/obsolet/obs_navigation.launch.py
+[2.519s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/launch/obsolet/obs_simulation.launch.py
+[2.519s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/launch/obsolet/obs_robot_state_publisher.launch.py
+[2.520s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/launch/hardware_nuc.launch.py
+[2.520s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/launch/simulation.launch.py
+[2.520s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/launch/navigation.launch.py
+[2.520s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/launch/hardware_navigation.launch.py
+[2.520s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/rviz
+[2.520s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/rviz/display.rviz
+[2.520s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/rviz/hardware.rviz
+[2.521s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/rviz/navigation.rviz
+[2.521s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/rviz/simulation.rviz
+[2.521s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/config
+[2.521s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/config/my_nav_to_pose_bt.xml
+[2.521s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/config/slam.yaml
+[2.521s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/config/my_nav_through_poses_bt.xml
+[2.521s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/config/gazebo_ros2.yaml
+[2.521s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/config/ekf.yaml
+[2.522s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/config/navigation.yaml
+[2.522s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/config/navigation_hardware.yaml
+[2.522s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/maps
+[2.522s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/maps/LSR_N5_TASlab.yaml
+[2.522s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/maps/LSR_N5_basement.yaml
+[2.522s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/maps/LSR_N5_TASlab.pgm
+[2.569s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/maps/LSR_N5_basement.pgm
+[2.570s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models
+[2.571s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/tas_car.urdf.xacro
+[2.571s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/sensor_camera.urdf
+[2.577s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/sensor_imu.urdf
+[2.581s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/sensor_lidar_front.urdf
+[2.581s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/sensor_lidar_back.urdf
+[2.582s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/meshes
+[2.582s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/meshes/model_wheel_right_collision.dae
+[2.583s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/meshes/d435.dae
+[2.627s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/meshes/model_base_reduced.dae
+[2.666s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/meshes/hokuyo.dae
+[2.666s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/meshes/model_wheel_left.dae
+[2.673s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/meshes/model_wheel_left_collision.dae
+[2.673s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/meshes/model_wheel_right.dae
+[2.678s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/tas_car copy.urdf
+[2.678s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/obsolet
+[2.679s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/obsolet/gazebo_ackermann.urdf
+[2.679s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/obsolet/gazebo_diff_drive_2wd.urdf
+[2.679s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/obsolet/gazebo_diff_drive.urdf
+[2.680s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/obsolet/gazebo_tricycle.urdf
+[2.680s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/obsolet/tas_car.sdf
+[2.681s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/materials.urdf
+[2.681s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/wheels.urdf
+[2.682s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/tas_car.urdf
+[2.682s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world
+[2.683s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/basement_ext.world
+[2.684s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels
+[2.684s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/chair
+[2.687s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/chair/meshes
+[2.687s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/chair/meshes/M_Office_Chair_baseColor.png
+[2.694s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/chair/meshes/chair.dae
+[2.694s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/chair/model.config
+[2.695s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/chair/model.sdf
+[2.695s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/monitor
+[2.696s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/monitor/meshes
+[2.696s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/monitor/meshes/Monitor_01_Complete_Monitor_01_BaseColor.jpg
+[2.697s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/monitor/meshes/monitor.dae
+[2.697s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/monitor/meshes/Monitor_01_Complete_Monitor_01_Decals_Base.jpg
+[2.698s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/monitor/meshes/Monitor_01_Complete_Monitor_01_BaseColor.jpg.001.jpg
+[2.699s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/monitor/meshes/Monitor_01_Complete_Monitor_01_Decals_Base.jpg.001.jpg
+[2.699s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/monitor/model.config
+[2.700s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/monitor/model.sdf
+[2.700s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/doorxl
+[2.701s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/doorxl/meshes
+[2.701s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/doorxl/meshes/doorxl.dae
+[2.704s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/doorxl/model.config
+[2.704s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/doorxl/model.sdf
+[2.704s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/keyboard
+[2.705s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/keyboard/meshes
+[2.705s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/keyboard/meshes/keyboard.dae
+[2.706s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/keyboard/meshes/Keyboard_1001_AlbedoTransparency.png
+[2.707s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/keyboard/model.config
+[2.707s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/keyboard/model.sdf
+[2.708s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/office_table
+[2.708s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/office_table/meshes
+[2.708s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/office_table/meshes/office_table.dae
+[2.709s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/office_table/meshes/Untitled.png
+[2.710s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/office_table/model.config
+[2.711s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/office_table/model.sdf
+[2.711s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/basement
+[2.712s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/basement/model.config
+[2.712s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/basement/model.sdf
+[2.713s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/stairs
+[2.713s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/stairs/meshes
+[2.713s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/stairs/meshes/stairs.dae
+[2.715s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/stairs/model.config
+[2.715s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/stairs/model.sdf
+[2.716s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/my_ground_plane
+[2.716s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/my_ground_plane/model.config
+[2.717s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/my_ground_plane/model.sdf
+[2.717s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/my_ground_plane/materials
+[2.717s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/my_ground_plane/materials/textures
+[2.718s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/my_ground_plane/materials/textures/floor.jpg
+[2.759s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/my_ground_plane/materials/scripts
+[2.759s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/my_ground_plane/materials/scripts/my_ground_plane.material
+[2.759s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/workbench
+[2.760s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/workbench/meshes
+[2.760s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/workbench/meshes/WorkBench_PBR_SG_baseColor.png.001.png
+[2.789s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/workbench/meshes/workbench.dae
+[2.794s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/workbench/model.config
+[2.795s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/workbench/model.sdf
+[2.795s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/person_walking
+[2.796s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/person_walking/meshes
+[2.796s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/person_walking/meshes/walking.dae
+[2.810s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/person_walking/model.config
+[2.811s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/person_walking/model.sdf
+[2.812s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/person_walking/materials
+[2.812s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/person_walking/materials/textures
+[2.813s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/person_walking/materials/textures/tshirt02_texture.png
+[2.814s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/person_walking/materials/textures/tshirt02_normals.png
+[2.815s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/person_walking/materials/textures/male02_diffuse_black-unmodified.png
+[2.830s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/person_walking/materials/textures/young_lightskinned_male_diffuse.png
+[2.845s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/person_walking/materials/textures/teeth.png
+[2.849s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/person_walking/materials/textures/eyebrow001-unmodified.png
+[2.851s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/person_walking/materials/textures/jeans01_normals.png
+[2.865s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/person_walking/materials/textures/green_eye.png
+[2.876s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/person_walking/materials/textures/male02_diffuse_black.png
+[2.882s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/person_walking/materials/textures/jeans_basic_diffuse.png
+[2.889s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/person_walking/materials/textures/eyebrow001.png
+[2.899s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/box
+[2.899s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/box/meshes
+[2.899s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/box/meshes/crate01.jpg
+[2.900s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/box/meshes/box.dae
+[2.900s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/box/model.config
+[2.900s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/box/model.sdf
+[2.900s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/door
+[2.900s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/door/meshes
+[2.901s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/door/meshes/door.dae
+[2.911s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/door/model.config
+[2.911s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/door/model.sdf
+[2.912s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/cabinet
+[2.912s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/cabinet/meshes
+[2.912s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/cabinet/meshes/cabinet.dae
+[2.912s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/cabinet/model.config
+[2.912s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/cabinet/model.sdf
+[2.912s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/pc
+[2.913s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/pc/meshes
+[2.913s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/pc/meshes/Material.001_baseColor.png
+[2.914s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/pc/meshes/pc.dae
+[2.914s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/pc/model.config
+[2.914s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/pc/model.sdf
+[2.914s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/basement.world
+[2.915s] -- Installing: /home/group_c/tas2-software/install/tas2/share/ament_index/resource_index/package_run_dependencies/tas2
+[2.916s] -- Installing: /home/group_c/tas2-software/install/tas2/share/ament_index/resource_index/parent_prefix_path/tas2
+[2.916s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/environment/ament_prefix_path.sh
+[2.916s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/environment/ament_prefix_path.dsv
+[2.916s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/environment/path.sh
+[2.917s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/environment/path.dsv
+[2.917s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/local_setup.bash
+[2.917s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/local_setup.sh
+[2.917s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/local_setup.zsh
+[2.917s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/local_setup.dsv
+[2.918s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/package.dsv
+[2.919s] -- Installing: /home/group_c/tas2-software/install/tas2/share/ament_index/resource_index/packages/tas2
+[2.919s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/cmake/tas2Config.cmake
+[2.919s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/cmake/tas2Config-version.cmake
+[2.919s] -- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/package.xml
+[2.930s] Invoked command in '/home/group_c/tas2-software/build/tas2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble /usr/bin/cmake --install /home/group_c/tas2-software/build/tas2

@@ -1,0 +1,37 @@
+[2.874s] Invoking command in '/home/group_c/tas2-software/src/object_tracker': PYTHONPATH=/home/group_c/tas2-software/build/object_tracker/prefix_override:/home/group_c/tas2-software/install/object_tracker/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/object_tracker build --build-base /home/group_c/tas2-software/build/object_tracker/build install --record /home/group_c/tas2-software/build/object_tracker/install.log --single-version-externally-managed
+[3.958s] running egg_info
+[4.001s] writing ../../build/object_tracker/object_tracker.egg-info/PKG-INFO
+[4.001s] writing dependency_links to ../../build/object_tracker/object_tracker.egg-info/dependency_links.txt
+[4.001s] writing entry points to ../../build/object_tracker/object_tracker.egg-info/entry_points.txt
+[4.002s] writing requirements to ../../build/object_tracker/object_tracker.egg-info/requires.txt
+[4.002s] writing top-level names to ../../build/object_tracker/object_tracker.egg-info/top_level.txt
+[4.087s] reading manifest file '../../build/object_tracker/object_tracker.egg-info/SOURCES.txt'
+[4.089s] writing manifest file '../../build/object_tracker/object_tracker.egg-info/SOURCES.txt'
+[4.094s] running build
+[4.094s] running build_py
+[4.094s] copying object_tracker/object_tracker.py -> /home/group_c/tas2-software/build/object_tracker/build/lib/object_tracker
+[4.095s] running install
+[4.101s] /home/group_c/.local/lib/python3.10/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+[4.101s] !!
+[4.101s] 
+[4.102s]         ********************************************************************************
+[4.102s]         Please avoid running ``setup.py`` directly.
+[4.102s]         Instead, use pypa/build, pypa/installer or other
+[4.102s]         standards-based tools.
+[4.102s] 
+[4.103s]         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+[4.103s]         ********************************************************************************
+[4.103s] 
+[4.103s] !!
+[4.103s]   self.initialize_options()
+[4.113s] running install_lib
+[4.165s] copying /home/group_c/tas2-software/build/object_tracker/build/lib/object_tracker/object_tracker.py -> /home/group_c/tas2-software/install/object_tracker/lib/python3.10/site-packages/object_tracker
+[4.167s] byte-compiling /home/group_c/tas2-software/install/object_tracker/lib/python3.10/site-packages/object_tracker/object_tracker.py to object_tracker.cpython-310.pyc
+[4.167s] running install_data
+[4.216s] running install_egg_info
+[4.275s] removing '/home/group_c/tas2-software/install/object_tracker/lib/python3.10/site-packages/object_tracker-0.0.0-py3.10.egg-info' (and everything under it)
+[4.278s] Copying ../../build/object_tracker/object_tracker.egg-info to /home/group_c/tas2-software/install/object_tracker/lib/python3.10/site-packages/object_tracker-0.0.0-py3.10.egg-info
+[4.278s] running install_scripts
+[4.700s] Installing object_tracker script to /home/group_c/tas2-software/install/object_tracker/lib/object_tracker
+[4.700s] writing list of installed files to '/home/group_c/tas2-software/build/object_tracker/install.log'
+[4.806s] Invoked command in '/home/group_c/tas2-software/src/object_tracker' returned '0': PYTHONPATH=/home/group_c/tas2-software/build/object_tracker/prefix_override:/home/group_c/tas2-software/install/object_tracker/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/object_tracker build --build-base /home/group_c/tas2-software/build/object_tracker/build install --record /home/group_c/tas2-software/build/object_tracker/install.log --single-version-externally-managed

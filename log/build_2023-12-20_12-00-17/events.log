@@ -1,0 +1,1150 @@
+[0.000000] (-) TimerEvent: {}
+[0.000120] (csm) JobQueued: {'identifier': 'csm', 'dependencies': OrderedDict()}
+[0.000195] (object_tracker) JobQueued: {'identifier': 'object_tracker', 'dependencies': OrderedDict()}
+[0.000257] (tas2) JobQueued: {'identifier': 'tas2', 'dependencies': OrderedDict()}
+[0.000303] (tas_hardware) JobQueued: {'identifier': 'tas_hardware', 'dependencies': OrderedDict()}
+[0.000483] (urg_node2) JobQueued: {'identifier': 'urg_node2', 'dependencies': OrderedDict()}
+[0.000504] (ros2_laser_scan_matcher) JobQueued: {'identifier': 'ros2_laser_scan_matcher', 'dependencies': OrderedDict([('csm', '/home/group_c/tas2-software/install/csm')])}
+[0.000532] (csm) JobStarted: {'identifier': 'csm'}
+[0.070393] (object_tracker) JobStarted: {'identifier': 'object_tracker'}
+[0.099275] (-) TimerEvent: {}
+[0.170388] (tas2) JobStarted: {'identifier': 'tas2'}
+[0.199593] (-) TimerEvent: {}
+[0.248758] (tas_hardware) JobStarted: {'identifier': 'tas_hardware'}
+[0.299716] (-) TimerEvent: {}
+[0.338905] (csm) JobProgress: {'identifier': 'csm', 'progress': 'cmake'}
+[0.339128] (csm) Command: {'cmd': ['/usr/bin/cmake', '/home/group_c/tas2-software/src/csm', '-DCMAKE_INSTALL_PREFIX=/home/group_c/tas2-software/install/csm'], 'cwd': '/home/group_c/tas2-software/build/csm', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'group_c'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/group_c/tas2-software/install/urg_node2/lib:/home/group_c/tas2-software/install/csm/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/group_c'), ('OLDPWD', '/home/group_c'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('MANAGERPID', '1337'), ('SYSTEMD_EXEC_PID', '1551'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1002/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2875'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/group_c/tas2-software/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'group_c'), ('JOURNAL_STREAM', '8:26213'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'group_c'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/home/group_c/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/amurpc:@/tmp/.ICE-unix/1502,unix/amurpc:/tmp/.ICE-unix/1502'), ('INVOCATION_ID', '02fb89ba4aa242b0b3c285a7129244da'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1002'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1002/.mutter-Xwaylandauth.EGVIG2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1002/keyring/ssh'), ('ROS_DOMAIN_ID', '3'), ('AMENT_PREFIX_PATH', '/home/group_c/tas2-software/install/urg_node2:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/tas2:/home/group_c/tas2-software/install/ros2_laser_scan_matcher:/home/group_c/tas2-software/install/object_tracker:/home/group_c/tas2-software/install/csm:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:b872306a-2b46-403b-a696-1eb72dc1cc49'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/group_c/tas2-software/build/csm'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/group_c/tas2-software/install/tas_hardware/lib/python3.10/site-packages:/home/group_c/tas2-software/install/object_tracker/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/group_c/tas2-software/install/urg_node2:/home/group_c/tas2-software/install/tas2:/home/group_c/tas2-software/install/ros2_laser_scan_matcher:/home/group_c/tas2-software/install/csm:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble')]), 'shell': False}
+[0.399835] (-) TimerEvent: {}
+[0.500144] (-) TimerEvent: {}
+[0.600683] (-) TimerEvent: {}
+[0.652212] (tas2) JobProgress: {'identifier': 'tas2', 'progress': 'cmake'}
+[0.652754] (tas2) Command: {'cmd': ['/usr/bin/cmake', '/home/group_c/tas2-software/src/tas2', '-DCMAKE_INSTALL_PREFIX=/home/group_c/tas2-software/install/tas2'], 'cwd': '/home/group_c/tas2-software/build/tas2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'group_c'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/group_c/tas2-software/install/urg_node2/lib:/home/group_c/tas2-software/install/csm/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/group_c'), ('OLDPWD', '/home/group_c'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('MANAGERPID', '1337'), ('SYSTEMD_EXEC_PID', '1551'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1002/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2875'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/group_c/tas2-software/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'group_c'), ('JOURNAL_STREAM', '8:26213'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'group_c'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/home/group_c/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/amurpc:@/tmp/.ICE-unix/1502,unix/amurpc:/tmp/.ICE-unix/1502'), ('INVOCATION_ID', '02fb89ba4aa242b0b3c285a7129244da'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1002'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1002/.mutter-Xwaylandauth.EGVIG2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1002/keyring/ssh'), ('ROS_DOMAIN_ID', '3'), ('AMENT_PREFIX_PATH', '/home/group_c/tas2-software/install/urg_node2:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/tas2:/home/group_c/tas2-software/install/ros2_laser_scan_matcher:/home/group_c/tas2-software/install/object_tracker:/home/group_c/tas2-software/install/csm:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:b872306a-2b46-403b-a696-1eb72dc1cc49'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/group_c/tas2-software/build/tas2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/group_c/tas2-software/install/tas_hardware/lib/python3.10/site-packages:/home/group_c/tas2-software/install/object_tracker/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/group_c/tas2-software/install/urg_node2:/home/group_c/tas2-software/install/tas2:/home/group_c/tas2-software/install/ros2_laser_scan_matcher:/home/group_c/tas2-software/install/csm:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble')]), 'shell': False}
+[0.656507] (csm) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.657100] (csm) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.657290] (csm) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.700784] (-) TimerEvent: {}
+[0.709289] (csm) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.721870] (csm) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.722977] (csm) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.723831] (csm) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.731067] (csm) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.745538] (tas2) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.800888] (-) TimerEvent: {}
+[0.834236] (tas2) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.846531] (tas2) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.847635] (csm) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.862218] (csm) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.862638] (csm) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.863415] (csm) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.870580] (csm) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.900991] (-) TimerEvent: {}
+[0.952971] (tas2) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.962359] (tas2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.962631] (tas2) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.962937] (tas2) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.966372] (tas2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.001880] (-) TimerEvent: {}
+[1.089964] (tas2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.102001] (-) TimerEvent: {}
+[1.103378] (tas2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.103824] (tas2) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.105750] (tas2) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.108921] (tas2) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.202116] (-) TimerEvent: {}
+[1.302454] (-) TimerEvent: {}
+[1.402770] (-) TimerEvent: {}
+[1.424593] (csm) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[1.502872] (-) TimerEvent: {}
+[1.603185] (-) TimerEvent: {}
+[1.685287] (csm) StdoutLine: {'line': b'-- Found rclcpp: 16.0.6 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.703286] (-) TimerEvent: {}
+[1.803768] (-) TimerEvent: {}
+[1.836919] (tas2) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[1.840661] (csm) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.860513] (csm) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.901943] (csm) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.903866] (-) TimerEvent: {}
+[2.004296] (-) TimerEvent: {}
+[2.017522] (csm) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.093387] (csm) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.104460] (-) TimerEvent: {}
+[2.158507] (object_tracker) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/object_tracker', 'build', '--build-base', '/home/group_c/tas2-software/build/object_tracker/build', 'install', '--record', '/home/group_c/tas2-software/build/object_tracker/install.log', '--single-version-externally-managed'], 'cwd': '/home/group_c/tas2-software/src/object_tracker', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'group_c', 'LC_TIME': 'de_DE.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/group_c/tas2-software/install/urg_node2/lib:/home/group_c/tas2-software/install/csm/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:', 'HOME': '/home/group_c', 'OLDPWD': '/home/group_c', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'GAZEBO_MASTER_URI': 'http://localhost:11345', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'de_DE.UTF-8', 'MANAGERPID': '1337', 'SYSTEMD_EXEC_PID': '1551', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '2875', '_colcon_cd_root': '/opt/ros/humble/', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/group_c/tas2-software/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'fcitx', 'LOGNAME': 'group_c', 'JOURNAL_STREAM': '8:26213', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'group_c', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/usr/share/gazebo-11/models:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'OGRE_RESOURCE_PATH': '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0', 'PATH': '/opt/ros/humble/bin:/home/group_c/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/amurpc:@/tmp/.ICE-unix/1502,unix/amurpc:/tmp/.ICE-unix/1502', 'INVOCATION_ID': '02fb89ba4aa242b0b3c285a7129244da', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'de_DE.UTF-8', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1002', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'de_DE.UTF-8', 'XMODIFIERS': '@im=fcitx', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1002/.mutter-Xwaylandauth.EGVIG2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1002/keyring/ssh', 'ROS_DOMAIN_ID': '3', 'AMENT_PREFIX_PATH': '/home/group_c/tas2-software/install/urg_node2:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/tas2:/home/group_c/tas2-software/install/ros2_laser_scan_matcher:/home/group_c/tas2-software/install/object_tracker:/home/group_c/tas2-software/install/csm:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'de_DE.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:b872306a-2b46-403b-a696-1eb72dc1cc49', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'de_DE.UTF-8', 'GAZEBO_RESOURCE_PATH': '/usr/share/gazebo-11:', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'de_DE.UTF-8', 'GAZEBO_MODEL_DATABASE_URI': 'http://models.gazebosim.org', 'QT_IM_MODULE': 'fcitx', 'PWD': '/home/group_c/tas2-software/build/object_tracker', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'GAZEBO_PLUGIN_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:', 'CLUTTER_IM_MODULE': 'fcitx', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/group_c/tas2-software/build/object_tracker/prefix_override:/home/group_c/tas2-software/install/object_tracker/lib/python3.10/site-packages:/home/group_c/tas2-software/install/tas_hardware/lib/python3.10/site-packages:/home/group_c/tas2-software/install/object_tracker/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'de_DE.UTF-8', 'LC_PAPER': 'de_DE.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/group_c/tas2-software/install/urg_node2:/home/group_c/tas2-software/install/tas2:/home/group_c/tas2-software/install/ros2_laser_scan_matcher:/home/group_c/tas2-software/install/csm'}, 'shell': False}
+[2.159510] (tas2) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.209237] (-) TimerEvent: {}
+[2.313348] (-) TimerEvent: {}
+[2.363331] (tas_hardware) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/tas_hardware', 'build', '--build-base', '/home/group_c/tas2-software/build/tas_hardware/build', 'install', '--record', '/home/group_c/tas2-software/build/tas_hardware/install.log', '--single-version-externally-managed'], 'cwd': '/home/group_c/tas2-software/src/tas_hardware', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'group_c', 'LC_TIME': 'de_DE.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/group_c/tas2-software/install/urg_node2/lib:/home/group_c/tas2-software/install/csm/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:', 'HOME': '/home/group_c', 'OLDPWD': '/home/group_c', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'GAZEBO_MASTER_URI': 'http://localhost:11345', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'de_DE.UTF-8', 'MANAGERPID': '1337', 'SYSTEMD_EXEC_PID': '1551', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '2875', '_colcon_cd_root': '/opt/ros/humble/', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/group_c/tas2-software/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'fcitx', 'LOGNAME': 'group_c', 'JOURNAL_STREAM': '8:26213', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'group_c', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/usr/share/gazebo-11/models:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'OGRE_RESOURCE_PATH': '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0', 'PATH': '/opt/ros/humble/bin:/home/group_c/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/amurpc:@/tmp/.ICE-unix/1502,unix/amurpc:/tmp/.ICE-unix/1502', 'INVOCATION_ID': '02fb89ba4aa242b0b3c285a7129244da', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'de_DE.UTF-8', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1002', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'de_DE.UTF-8', 'XMODIFIERS': '@im=fcitx', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1002/.mutter-Xwaylandauth.EGVIG2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1002/keyring/ssh', 'ROS_DOMAIN_ID': '3', 'AMENT_PREFIX_PATH': '/home/group_c/tas2-software/install/urg_node2:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/tas2:/home/group_c/tas2-software/install/ros2_laser_scan_matcher:/home/group_c/tas2-software/install/object_tracker:/home/group_c/tas2-software/install/csm:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'de_DE.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:b872306a-2b46-403b-a696-1eb72dc1cc49', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'de_DE.UTF-8', 'GAZEBO_RESOURCE_PATH': '/usr/share/gazebo-11:', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'de_DE.UTF-8', 'GAZEBO_MODEL_DATABASE_URI': 'http://models.gazebosim.org', 'QT_IM_MODULE': 'fcitx', 'PWD': '/home/group_c/tas2-software/build/tas_hardware', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'GAZEBO_PLUGIN_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:', 'CLUTTER_IM_MODULE': 'fcitx', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/group_c/tas2-software/build/tas_hardware/prefix_override:/home/group_c/tas2-software/install/tas_hardware/lib/python3.10/site-packages:/home/group_c/tas2-software/install/tas_hardware/lib/python3.10/site-packages:/home/group_c/tas2-software/install/object_tracker/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'de_DE.UTF-8', 'LC_PAPER': 'de_DE.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/group_c/tas2-software/install/urg_node2:/home/group_c/tas2-software/install/tas2:/home/group_c/tas2-software/install/ros2_laser_scan_matcher:/home/group_c/tas2-software/install/csm'}, 'shell': False}
+[2.425225] (-) TimerEvent: {}
+[2.429403] (csm) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.437230] (csm) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.449065] (tas2) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.457439] (tas2) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.461313] (tas2) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.475578] (tas2) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.486539] (tas2) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.501295] (tas2) StdoutLine: {'line': b'-- Generating done\n'}
+[2.501500] (tas2) StdoutLine: {'line': b'-- Build files have been written to: /home/group_c/tas2-software/build/tas2\n'}
+[2.506053] (tas2) CommandEnded: {'returncode': 0}
+[2.506689] (tas2) JobProgress: {'identifier': 'tas2', 'progress': 'build'}
+[2.506743] (tas2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/group_c/tas2-software/build/tas2', '--', '-j4', '-l4'], 'cwd': '/home/group_c/tas2-software/build/tas2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'group_c'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/group_c/tas2-software/install/urg_node2/lib:/home/group_c/tas2-software/install/csm/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/group_c'), ('OLDPWD', '/home/group_c'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('MANAGERPID', '1337'), ('SYSTEMD_EXEC_PID', '1551'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1002/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2875'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/group_c/tas2-software/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'group_c'), ('JOURNAL_STREAM', '8:26213'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'group_c'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/home/group_c/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/amurpc:@/tmp/.ICE-unix/1502,unix/amurpc:/tmp/.ICE-unix/1502'), ('INVOCATION_ID', '02fb89ba4aa242b0b3c285a7129244da'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1002'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1002/.mutter-Xwaylandauth.EGVIG2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1002/keyring/ssh'), ('ROS_DOMAIN_ID', '3'), ('AMENT_PREFIX_PATH', '/home/group_c/tas2-software/install/urg_node2:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/tas2:/home/group_c/tas2-software/install/ros2_laser_scan_matcher:/home/group_c/tas2-software/install/object_tracker:/home/group_c/tas2-software/install/csm:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:b872306a-2b46-403b-a696-1eb72dc1cc49'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/group_c/tas2-software/build/tas2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/group_c/tas2-software/install/tas_hardware/lib/python3.10/site-packages:/home/group_c/tas2-software/install/object_tracker/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/group_c/tas2-software/install/urg_node2:/home/group_c/tas2-software/install/tas2:/home/group_c/tas2-software/install/ros2_laser_scan_matcher:/home/group_c/tas2-software/install/csm:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble')]), 'shell': False}
+[2.527250] (-) TimerEvent: {}
+[2.580720] (tas2) CommandEnded: {'returncode': 0}
+[2.634025] (-) TimerEvent: {}
+[2.645286] (tas2) JobProgress: {'identifier': 'tas2', 'progress': 'install'}
+[2.673328] (tas2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/group_c/tas2-software/build/tas2'], 'cwd': '/home/group_c/tas2-software/build/tas2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'group_c'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/group_c/tas2-software/install/urg_node2/lib:/home/group_c/tas2-software/install/csm/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/group_c'), ('OLDPWD', '/home/group_c'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('MANAGERPID', '1337'), ('SYSTEMD_EXEC_PID', '1551'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1002/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2875'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/group_c/tas2-software/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'group_c'), ('JOURNAL_STREAM', '8:26213'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'group_c'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/home/group_c/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/amurpc:@/tmp/.ICE-unix/1502,unix/amurpc:/tmp/.ICE-unix/1502'), ('INVOCATION_ID', '02fb89ba4aa242b0b3c285a7129244da'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1002'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1002/.mutter-Xwaylandauth.EGVIG2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1002/keyring/ssh'), ('ROS_DOMAIN_ID', '3'), ('AMENT_PREFIX_PATH', '/home/group_c/tas2-software/install/urg_node2:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/tas2:/home/group_c/tas2-software/install/ros2_laser_scan_matcher:/home/group_c/tas2-software/install/object_tracker:/home/group_c/tas2-software/install/csm:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:b872306a-2b46-403b-a696-1eb72dc1cc49'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/group_c/tas2-software/build/tas2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/group_c/tas2-software/install/tas_hardware/lib/python3.10/site-packages:/home/group_c/tas2-software/install/object_tracker/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/group_c/tas2-software/install/urg_node2:/home/group_c/tas2-software/install/tas2:/home/group_c/tas2-software/install/ros2_laser_scan_matcher:/home/group_c/tas2-software/install/csm:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble')]), 'shell': False}
+[2.684605] (tas2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.684886] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/launch\n'}
+[2.688565] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/launch/hardware_computer.launch.py\n'}
+[2.688848] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/launch/slam.launch.py\n'}
+[2.689016] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/launch/obsolet\n'}
+[2.689218] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/launch/obsolet/obs_slam.launch.py\n'}
+[2.689374] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/launch/obsolet/obs_display.launch.py\n'}
+[2.689575] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/launch/obsolet/obs_navigation.launch.py\n'}
+[2.689719] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/launch/obsolet/obs_simulation.launch.py\n'}
+[2.689855] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/launch/obsolet/obs_robot_state_publisher.launch.py\n'}
+[2.690041] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/launch/hardware_nuc.launch.py\n'}
+[2.690182] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/launch/simulation.launch.py\n'}
+[2.690337] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/launch/navigation.launch.py\n'}
+[2.690529] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/launch/hardware_navigation.launch.py\n'}
+[2.690664] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/rviz\n'}
+[2.690798] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/rviz/display.rviz\n'}
+[2.690914] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/rviz/hardware.rviz\n'}
+[2.691111] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/rviz/navigation.rviz\n'}
+[2.691251] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/rviz/simulation.rviz\n'}
+[2.691392] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/config\n'}
+[2.691513] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/config/my_nav_to_pose_bt.xml\n'}
+[2.691622] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/config/slam.yaml\n'}
+[2.691719] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/config/my_nav_through_poses_bt.xml\n'}
+[2.691824] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/config/gazebo_ros2.yaml\n'}
+[2.691968] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/config/ekf.yaml\n'}
+[2.692082] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/config/navigation.yaml\n'}
+[2.692232] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/config/navigation_hardware.yaml\n'}
+[2.692348] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/maps\n'}
+[2.692489] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/maps/LSR_N5_TASlab.yaml\n'}
+[2.692624] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/maps/LSR_N5_basement.yaml\n'}
+[2.692712] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/maps/LSR_N5_TASlab.pgm\n'}
+[2.734113] (-) TimerEvent: {}
+[2.739719] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/maps/LSR_N5_basement.pgm\n'}
+[2.740883] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models\n'}
+[2.741213] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/tas_car.urdf.xacro\n'}
+[2.741374] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/sensor_camera.urdf\n'}
+[2.747323] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/sensor_imu.urdf\n'}
+[2.750596] (object_tracker) StdoutLine: {'line': b'running egg_info\n'}
+[2.750829] (object_tracker) StdoutLine: {'line': b'creating ../../build/object_tracker/object_tracker.egg-info\n'}
+[2.751464] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/sensor_lidar_front.urdf\n'}
+[2.751932] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/sensor_lidar_back.urdf\n'}
+[2.752373] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/meshes\n'}
+[2.752821] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/meshes/model_wheel_right_collision.dae\n'}
+[2.753413] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/meshes/d435.dae\n'}
+[2.781140] (object_tracker) StdoutLine: {'line': b'writing ../../build/object_tracker/object_tracker.egg-info/PKG-INFO\n'}
+[2.781963] (object_tracker) StdoutLine: {'line': b'writing dependency_links to ../../build/object_tracker/object_tracker.egg-info/dependency_links.txt\n'}
+[2.782255] (object_tracker) StdoutLine: {'line': b'writing entry points to ../../build/object_tracker/object_tracker.egg-info/entry_points.txt\n'}
+[2.789346] (object_tracker) StdoutLine: {'line': b'writing requirements to ../../build/object_tracker/object_tracker.egg-info/requires.txt\n'}
+[2.789558] (object_tracker) StdoutLine: {'line': b'writing top-level names to ../../build/object_tracker/object_tracker.egg-info/top_level.txt\n'}
+[2.789686] (object_tracker) StdoutLine: {'line': b"writing manifest file '../../build/object_tracker/object_tracker.egg-info/SOURCES.txt'\n"}
+[2.797827] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/meshes/model_base_reduced.dae\n'}
+[2.834214] (-) TimerEvent: {}
+[2.836058] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/meshes/hokuyo.dae\n'}
+[2.836666] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/meshes/model_wheel_left.dae\n'}
+[2.843410] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/meshes/model_wheel_left_collision.dae\n'}
+[2.843975] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/meshes/model_wheel_right.dae\n'}
+[2.848122] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/tas_car copy.urdf\n'}
+[2.848636] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/obsolet\n'}
+[2.849034] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/obsolet/gazebo_ackermann.urdf\n'}
+[2.849495] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/obsolet/gazebo_diff_drive_2wd.urdf\n'}
+[2.849933] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/obsolet/gazebo_diff_drive.urdf\n'}
+[2.850379] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/obsolet/gazebo_tricycle.urdf\n'}
+[2.850833] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/obsolet/tas_car.sdf\n'}
+[2.851322] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/materials.urdf\n'}
+[2.851773] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/wheels.urdf\n'}
+[2.852277] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/models/tas_car.urdf\n'}
+[2.852744] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world\n'}
+[2.853147] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/basement_ext.world\n'}
+[2.854176] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels\n'}
+[2.854603] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/chair\n'}
+[2.857288] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/chair/meshes\n'}
+[2.857743] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/chair/meshes/M_Office_Chair_baseColor.png\n'}
+[2.864026] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/chair/meshes/chair.dae\n'}
+[2.864959] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/chair/model.config\n'}
+[2.865465] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/chair/model.sdf\n'}
+[2.865885] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/monitor\n'}
+[2.866283] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/monitor/meshes\n'}
+[2.866653] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/monitor/meshes/Monitor_01_Complete_Monitor_01_BaseColor.jpg\n'}
+[2.867203] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/monitor/meshes/monitor.dae\n'}
+[2.867692] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/monitor/meshes/Monitor_01_Complete_Monitor_01_Decals_Base.jpg\n'}
+[2.868426] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/monitor/meshes/Monitor_01_Complete_Monitor_01_BaseColor.jpg.001.jpg\n'}
+[2.869049] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/monitor/meshes/Monitor_01_Complete_Monitor_01_Decals_Base.jpg.001.jpg\n'}
+[2.869711] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/monitor/model.config\n'}
+[2.870228] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/monitor/model.sdf\n'}
+[2.870674] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/doorxl\n'}
+[2.871054] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/doorxl/meshes\n'}
+[2.871437] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/doorxl/meshes/doorxl.dae\n'}
+[2.874225] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/doorxl/model.config\n'}
+[2.874661] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/doorxl/model.sdf\n'}
+[2.875034] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/keyboard\n'}
+[2.875358] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/keyboard/meshes\n'}
+[2.875659] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/keyboard/meshes/keyboard.dae\n'}
+[2.876349] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/keyboard/meshes/Keyboard_1001_AlbedoTransparency.png\n'}
+[2.877239] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/keyboard/model.config\n'}
+[2.877707] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/keyboard/model.sdf\n'}
+[2.878121] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/office_table\n'}
+[2.878476] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/office_table/meshes\n'}
+[2.878851] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/office_table/meshes/office_table.dae\n'}
+[2.879804] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/office_table/meshes/Untitled.png\n'}
+[2.880466] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/office_table/model.config\n'}
+[2.881120] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/office_table/model.sdf\n'}
+[2.881662] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/basement\n'}
+[2.882055] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/basement/model.config\n'}
+[2.882496] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/basement/model.sdf\n'}
+[2.883179] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/stairs\n'}
+[2.883581] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/stairs/meshes\n'}
+[2.883928] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/stairs/meshes/stairs.dae\n'}
+[2.885152] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/stairs/model.config\n'}
+[2.885843] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/stairs/model.sdf\n'}
+[2.886291] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/my_ground_plane\n'}
+[2.886677] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/my_ground_plane/model.config\n'}
+[2.887122] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/my_ground_plane/model.sdf\n'}
+[2.887531] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/my_ground_plane/materials\n'}
+[2.887873] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/my_ground_plane/materials/textures\n'}
+[2.888219] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/my_ground_plane/materials/textures/floor.jpg\n'}
+[2.894756] (object_tracker) StdoutLine: {'line': b"reading manifest file '../../build/object_tracker/object_tracker.egg-info/SOURCES.txt'\n"}
+[2.897887] (object_tracker) StdoutLine: {'line': b"writing manifest file '../../build/object_tracker/object_tracker.egg-info/SOURCES.txt'\n"}
+[2.899772] (object_tracker) StdoutLine: {'line': b'running build\n'}
+[2.900016] (object_tracker) StdoutLine: {'line': b'running build_py\n'}
+[2.900200] (object_tracker) StdoutLine: {'line': b'creating /home/group_c/tas2-software/build/object_tracker/build\n'}
+[2.900393] (object_tracker) StdoutLine: {'line': b'creating /home/group_c/tas2-software/build/object_tracker/build/lib\n'}
+[2.900532] (object_tracker) StdoutLine: {'line': b'creating /home/group_c/tas2-software/build/object_tracker/build/lib/object_tracker\n'}
+[2.900685] (object_tracker) StdoutLine: {'line': b'copying object_tracker/object_tracker_ekf.py -> /home/group_c/tas2-software/build/object_tracker/build/lib/object_tracker\n'}
+[2.900856] (object_tracker) StdoutLine: {'line': b'copying object_tracker/__init__.py -> /home/group_c/tas2-software/build/object_tracker/build/lib/object_tracker\n'}
+[2.901029] (object_tracker) StdoutLine: {'line': b'copying object_tracker/object_tracker.py -> /home/group_c/tas2-software/build/object_tracker/build/lib/object_tracker\n'}
+[2.901385] (object_tracker) StdoutLine: {'line': b'running install\n'}
+[2.901840] (object_tracker) StderrLine: {'line': b'/home/group_c/.local/lib/python3.10/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.\n'}
+[2.902017] (object_tracker) StderrLine: {'line': b'!!\n'}
+[2.902139] (object_tracker) StderrLine: {'line': b'\n'}
+[2.902255] (object_tracker) StderrLine: {'line': b'        ********************************************************************************\n'}
+[2.902361] (object_tracker) StderrLine: {'line': b'        Please avoid running ``setup.py`` directly.\n'}
+[2.902466] (object_tracker) StderrLine: {'line': b'        Instead, use pypa/build, pypa/installer or other\n'}
+[2.902563] (object_tracker) StderrLine: {'line': b'        standards-based tools.\n'}
+[2.902657] (object_tracker) StderrLine: {'line': b'\n'}
+[2.902750] (object_tracker) StderrLine: {'line': b'        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.\n'}
+[2.902854] (object_tracker) StderrLine: {'line': b'        ********************************************************************************\n'}
+[2.902954] (object_tracker) StderrLine: {'line': b'\n'}
+[2.903057] (object_tracker) StderrLine: {'line': b'!!\n'}
+[2.903160] (object_tracker) StderrLine: {'line': b'  self.initialize_options()\n'}
+[2.912432] (object_tracker) StdoutLine: {'line': b'running install_lib\n'}
+[2.921220] (csm) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[2.929119] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/my_ground_plane/materials/scripts\n'}
+[2.929556] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/my_ground_plane/materials/scripts/my_ground_plane.material\n'}
+[2.929969] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/workbench\n'}
+[2.930313] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/workbench/meshes\n'}
+[2.930674] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/workbench/meshes/WorkBench_PBR_SG_baseColor.png.001.png\n'}
+[2.934313] (-) TimerEvent: {}
+[2.953319] (tas_hardware) StdoutLine: {'line': b'running egg_info\n'}
+[2.953539] (tas_hardware) StdoutLine: {'line': b'creating ../../build/tas_hardware/tas_hardware.egg-info\n'}
+[2.959223] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/workbench/meshes/workbench.dae\n'}
+[2.964834] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/workbench/model.config\n'}
+[2.965327] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/workbench/model.sdf\n'}
+[2.965759] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/person_walking\n'}
+[2.966115] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/person_walking/meshes\n'}
+[2.966465] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/person_walking/meshes/walking.dae\n'}
+[2.980546] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/person_walking/model.config\n'}
+[2.981160] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/person_walking/model.sdf\n'}
+[2.981418] (object_tracker) StdoutLine: {'line': b'creating /home/group_c/tas2-software/install/object_tracker/lib/python3.10/site-packages/object_tracker\n'}
+[2.981622] (object_tracker) StdoutLine: {'line': b'copying /home/group_c/tas2-software/build/object_tracker/build/lib/object_tracker/object_tracker_ekf.py -> /home/group_c/tas2-software/install/object_tracker/lib/python3.10/site-packages/object_tracker\n'}
+[2.981864] (object_tracker) StdoutLine: {'line': b'copying /home/group_c/tas2-software/build/object_tracker/build/lib/object_tracker/__init__.py -> /home/group_c/tas2-software/install/object_tracker/lib/python3.10/site-packages/object_tracker\n'}
+[2.982073] (object_tracker) StdoutLine: {'line': b'copying /home/group_c/tas2-software/build/object_tracker/build/lib/object_tracker/object_tracker.py -> /home/group_c/tas2-software/install/object_tracker/lib/python3.10/site-packages/object_tracker\n'}
+[2.982449] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/person_walking/materials\n'}
+[2.982839] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/person_walking/materials/textures\n'}
+[2.983070] (object_tracker) StdoutLine: {'line': b'byte-compiling /home/group_c/tas2-software/install/object_tracker/lib/python3.10/site-packages/object_tracker/object_tracker_ekf.py to object_tracker_ekf.cpython-310.pyc\n'}
+[2.983455] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/person_walking/materials/textures/tshirt02_texture.png\n'}
+[2.983698] (object_tracker) StdoutLine: {'line': b'byte-compiling /home/group_c/tas2-software/install/object_tracker/lib/python3.10/site-packages/object_tracker/__init__.py to __init__.cpython-310.pyc\n'}
+[2.983931] (object_tracker) StdoutLine: {'line': b'byte-compiling /home/group_c/tas2-software/install/object_tracker/lib/python3.10/site-packages/object_tracker/object_tracker.py to object_tracker.cpython-310.pyc\n'}
+[2.984445] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/person_walking/materials/textures/tshirt02_normals.png\n'}
+[2.985407] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/person_walking/materials/textures/male02_diffuse_black-unmodified.png\n'}
+[2.985660] (object_tracker) StdoutLine: {'line': b'running install_data\n'}
+[2.989017] (tas_hardware) StdoutLine: {'line': b'writing ../../build/tas_hardware/tas_hardware.egg-info/PKG-INFO\n'}
+[2.989853] (tas_hardware) StdoutLine: {'line': b'writing dependency_links to ../../build/tas_hardware/tas_hardware.egg-info/dependency_links.txt\n'}
+[2.990144] (tas_hardware) StdoutLine: {'line': b'writing entry points to ../../build/tas_hardware/tas_hardware.egg-info/entry_points.txt\n'}
+[2.990436] (tas_hardware) StdoutLine: {'line': b'writing requirements to ../../build/tas_hardware/tas_hardware.egg-info/requires.txt\n'}
+[2.990658] (tas_hardware) StdoutLine: {'line': b'writing top-level names to ../../build/tas_hardware/tas_hardware.egg-info/top_level.txt\n'}
+[2.990856] (tas_hardware) StdoutLine: {'line': b"writing manifest file '../../build/tas_hardware/tas_hardware.egg-info/SOURCES.txt'\n"}
+[3.000644] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/person_walking/materials/textures/young_lightskinned_male_diffuse.png\n'}
+[3.014859] (object_tracker) StdoutLine: {'line': b'creating /home/group_c/tas2-software/install/object_tracker/share/ament_index\n'}
+[3.015123] (object_tracker) StdoutLine: {'line': b'creating /home/group_c/tas2-software/install/object_tracker/share/ament_index/resource_index\n'}
+[3.015336] (object_tracker) StdoutLine: {'line': b'creating /home/group_c/tas2-software/install/object_tracker/share/ament_index/resource_index/packages\n'}
+[3.015482] (object_tracker) StdoutLine: {'line': b'copying resource/object_tracker -> /home/group_c/tas2-software/install/object_tracker/share/ament_index/resource_index/packages\n'}
+[3.015661] (object_tracker) StdoutLine: {'line': b'copying package.xml -> /home/group_c/tas2-software/install/object_tracker/share/object_tracker\n'}
+[3.015783] (object_tracker) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.015953] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/person_walking/materials/textures/teeth.png\n'}
+[3.019699] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/person_walking/materials/textures/eyebrow001-unmodified.png\n'}
+[3.020380] (csm) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[3.021284] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/person_walking/materials/textures/jeans01_normals.png\n'}
+[3.034880] (-) TimerEvent: {}
+[3.035290] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/person_walking/materials/textures/green_eye.png\n'}
+[3.046115] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/person_walking/materials/textures/male02_diffuse_black.png\n'}
+[3.052361] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/person_walking/materials/textures/jeans_basic_diffuse.png\n'}
+[3.053472] (object_tracker) StdoutLine: {'line': b'Copying ../../build/object_tracker/object_tracker.egg-info to /home/group_c/tas2-software/install/object_tracker/lib/python3.10/site-packages/object_tracker-0.0.0-py3.10.egg-info\n'}
+[3.055214] (object_tracker) StdoutLine: {'line': b'running install_scripts\n'}
+[3.056506] (tas_hardware) StdoutLine: {'line': b"reading manifest file '../../build/tas_hardware/tas_hardware.egg-info/SOURCES.txt'\n"}
+[3.058845] (tas_hardware) StdoutLine: {'line': b"writing manifest file '../../build/tas_hardware/tas_hardware.egg-info/SOURCES.txt'\n"}
+[3.059158] (tas_hardware) StdoutLine: {'line': b'running build\n'}
+[3.059337] (tas_hardware) StdoutLine: {'line': b'running build_py\n'}
+[3.059536] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/person_walking/materials/textures/eyebrow001.png\n'}
+[3.059752] (tas_hardware) StdoutLine: {'line': b'creating /home/group_c/tas2-software/build/tas_hardware/build\n'}
+[3.059981] (tas_hardware) StdoutLine: {'line': b'creating /home/group_c/tas2-software/build/tas_hardware/build/lib\n'}
+[3.060305] (tas_hardware) StdoutLine: {'line': b'creating /home/group_c/tas2-software/build/tas_hardware/build/lib/tas_hardware\n'}
+[3.060716] (tas_hardware) StdoutLine: {'line': b'copying tas_hardware/tas_simulation.py -> /home/group_c/tas2-software/build/tas_hardware/build/lib/tas_hardware\n'}
+[3.061563] (tas_hardware) StdoutLine: {'line': b'copying tas_hardware/__init__.py -> /home/group_c/tas2-software/build/tas_hardware/build/lib/tas_hardware\n'}
+[3.062344] (tas_hardware) StdoutLine: {'line': b'copying tas_hardware/tas_hardware.py -> /home/group_c/tas2-software/build/tas_hardware/build/lib/tas_hardware\n'}
+[3.063817] (tas_hardware) StdoutLine: {'line': b'running install\n'}
+[3.064217] (tas_hardware) StderrLine: {'line': b'/home/group_c/.local/lib/python3.10/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.\n'}
+[3.064480] (tas_hardware) StderrLine: {'line': b'!!\n'}
+[3.064606] (tas_hardware) StderrLine: {'line': b'\n'}
+[3.064698] (tas_hardware) StderrLine: {'line': b'        ********************************************************************************\n'}
+[3.064785] (tas_hardware) StderrLine: {'line': b'        Please avoid running ``setup.py`` directly.\n'}
+[3.064877] (tas_hardware) StderrLine: {'line': b'        Instead, use pypa/build, pypa/installer or other\n'}
+[3.064974] (tas_hardware) StderrLine: {'line': b'        standards-based tools.\n'}
+[3.065071] (tas_hardware) StderrLine: {'line': b'\n'}
+[3.065235] (tas_hardware) StderrLine: {'line': b'        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.\n'}
+[3.065338] (tas_hardware) StderrLine: {'line': b'        ********************************************************************************\n'}
+[3.065436] (tas_hardware) StderrLine: {'line': b'\n'}
+[3.065524] (tas_hardware) StderrLine: {'line': b'!!\n'}
+[3.065610] (tas_hardware) StderrLine: {'line': b'  self.initialize_options()\n'}
+[3.069298] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/box\n'}
+[3.069652] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/box/meshes\n'}
+[3.069778] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/box/meshes/crate01.jpg\n'}
+[3.070320] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/box/meshes/box.dae\n'}
+[3.070508] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/box/model.config\n'}
+[3.070672] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/box/model.sdf\n'}
+[3.070832] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/door\n'}
+[3.070950] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/door/meshes\n'}
+[3.071077] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/door/meshes/door.dae\n'}
+[3.079942] (tas_hardware) StdoutLine: {'line': b'running install_lib\n'}
+[3.081542] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/door/model.config\n'}
+[3.081804] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/door/model.sdf\n'}
+[3.082170] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/cabinet\n'}
+[3.082319] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/cabinet/meshes\n'}
+[3.082436] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/cabinet/meshes/cabinet.dae\n'}
+[3.082696] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/cabinet/model.config\n'}
+[3.082877] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/cabinet/model.sdf\n'}
+[3.083045] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/pc\n'}
+[3.083202] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/pc/meshes\n'}
+[3.083367] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/pc/meshes/Material.001_baseColor.png\n'}
+[3.084333] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/pc/meshes/pc.dae\n'}
+[3.084577] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/pc/model.config\n'}
+[3.084749] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/gazeboModels/pc/model.sdf\n'}
+[3.084904] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/world/basement.world\n'}
+[3.085836] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/ament_index/resource_index/package_run_dependencies/tas2\n'}
+[3.086130] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/ament_index/resource_index/parent_prefix_path/tas2\n'}
+[3.086404] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/environment/ament_prefix_path.sh\n'}
+[3.086617] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/environment/ament_prefix_path.dsv\n'}
+[3.086830] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/environment/path.sh\n'}
+[3.087038] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/environment/path.dsv\n'}
+[3.087298] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/local_setup.bash\n'}
+[3.087456] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/local_setup.sh\n'}
+[3.087675] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/local_setup.zsh\n'}
+[3.087882] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/local_setup.dsv\n'}
+[3.088085] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/package.dsv\n'}
+[3.089155] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/ament_index/resource_index/packages/tas2\n'}
+[3.089440] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/cmake/tas2Config.cmake\n'}
+[3.089620] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/cmake/tas2Config-version.cmake\n'}
+[3.089785] (tas2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/tas2/share/tas2/package.xml\n'}
+[3.100555] (tas2) CommandEnded: {'returncode': 0}
+[3.117383] (tas_hardware) StdoutLine: {'line': b'creating /home/group_c/tas2-software/install/tas_hardware/lib/python3.10/site-packages/tas_hardware\n'}
+[3.117592] (tas_hardware) StdoutLine: {'line': b'copying /home/group_c/tas2-software/build/tas_hardware/build/lib/tas_hardware/tas_simulation.py -> /home/group_c/tas2-software/install/tas_hardware/lib/python3.10/site-packages/tas_hardware\n'}
+[3.117714] (tas_hardware) StdoutLine: {'line': b'copying /home/group_c/tas2-software/build/tas_hardware/build/lib/tas_hardware/__init__.py -> /home/group_c/tas2-software/install/tas_hardware/lib/python3.10/site-packages/tas_hardware\n'}
+[3.117816] (tas_hardware) StdoutLine: {'line': b'copying /home/group_c/tas2-software/build/tas_hardware/build/lib/tas_hardware/tas_hardware.py -> /home/group_c/tas2-software/install/tas_hardware/lib/python3.10/site-packages/tas_hardware\n'}
+[3.117915] (tas_hardware) StdoutLine: {'line': b'byte-compiling /home/group_c/tas2-software/install/tas_hardware/lib/python3.10/site-packages/tas_hardware/tas_simulation.py to tas_simulation.cpython-310.pyc\n'}
+[3.118758] (tas_hardware) StdoutLine: {'line': b'byte-compiling /home/group_c/tas2-software/install/tas_hardware/lib/python3.10/site-packages/tas_hardware/__init__.py to __init__.cpython-310.pyc\n'}
+[3.119154] (tas_hardware) StdoutLine: {'line': b'byte-compiling /home/group_c/tas2-software/install/tas_hardware/lib/python3.10/site-packages/tas_hardware/tas_hardware.py to tas_hardware.cpython-310.pyc\n'}
+[3.128599] (tas_hardware) StdoutLine: {'line': b'running install_data\n'}
+[3.135353] (-) TimerEvent: {}
+[3.156850] (tas_hardware) StdoutLine: {'line': b'creating /home/group_c/tas2-software/install/tas_hardware/share/ament_index\n'}
+[3.157040] (tas_hardware) StdoutLine: {'line': b'creating /home/group_c/tas2-software/install/tas_hardware/share/ament_index/resource_index\n'}
+[3.157205] (tas_hardware) StdoutLine: {'line': b'creating /home/group_c/tas2-software/install/tas_hardware/share/ament_index/resource_index/packages\n'}
+[3.157339] (tas_hardware) StdoutLine: {'line': b'copying resource/tas_hardware -> /home/group_c/tas2-software/install/tas_hardware/share/ament_index/resource_index/packages\n'}
+[3.157460] (tas_hardware) StdoutLine: {'line': b'copying package.xml -> /home/group_c/tas2-software/install/tas_hardware/share/tas_hardware\n'}
+[3.157579] (tas_hardware) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.157696] (csm) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.188654] (tas_hardware) StdoutLine: {'line': b'Copying ../../build/tas_hardware/tas_hardware.egg-info to /home/group_c/tas2-software/install/tas_hardware/lib/python3.10/site-packages/tas_hardware-0.0.0-py3.10.egg-info\n'}
+[3.192802] (tas_hardware) StdoutLine: {'line': b'running install_scripts\n'}
+[3.208368] (csm) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[3.235613] (-) TimerEvent: {}
+[3.336120] (-) TimerEvent: {}
+[3.436660] (-) TimerEvent: {}
+[3.521106] (object_tracker) StdoutLine: {'line': b'Installing object_tracker script to /home/group_c/tas2-software/install/object_tracker/lib/object_tracker\n'}
+[3.522087] (object_tracker) StdoutLine: {'line': b"writing list of installed files to '/home/group_c/tas2-software/build/object_tracker/install.log'\n"}
+[3.530412] (csm) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[3.530591] (csm) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[3.536775] (-) TimerEvent: {}
+[3.607127] (tas_hardware) StdoutLine: {'line': b'Installing tas_hardware script to /home/group_c/tas2-software/install/tas_hardware/lib/tas_hardware\n'}
+[3.607771] (tas_hardware) StdoutLine: {'line': b'Installing tas_simulation script to /home/group_c/tas2-software/install/tas_hardware/lib/tas_hardware\n'}
+[3.608780] (tas_hardware) StdoutLine: {'line': b"writing list of installed files to '/home/group_c/tas2-software/build/tas_hardware/install.log'\n"}
+[3.626612] (tas2) JobEnded: {'identifier': 'tas2', 'rc': 0}
+[3.627517] (urg_node2) JobStarted: {'identifier': 'urg_node2'}
+[3.642224] (-) TimerEvent: {}
+[3.705700] (csm) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[3.707365] (csm) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[3.742340] (-) TimerEvent: {}
+[3.783606] (object_tracker) CommandEnded: {'returncode': 0}
+[3.842465] (-) TimerEvent: {}
+[3.888863] (object_tracker) JobEnded: {'identifier': 'object_tracker', 'rc': 0}
+[3.890281] (tas_hardware) CommandEnded: {'returncode': 0}
+[3.942547] (-) TimerEvent: {}
+[3.983419] (tas_hardware) JobEnded: {'identifier': 'tas_hardware', 'rc': 0}
+[3.985415] (urg_node2) JobProgress: {'identifier': 'urg_node2', 'progress': 'cmake'}
+[3.985757] (urg_node2) Command: {'cmd': ['/usr/bin/cmake', '/home/group_c/tas2-software/src/urg_node2', '-DCMAKE_INSTALL_PREFIX=/home/group_c/tas2-software/install/urg_node2'], 'cwd': '/home/group_c/tas2-software/build/urg_node2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'group_c'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/group_c/tas2-software/install/urg_node2/lib:/home/group_c/tas2-software/install/csm/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/group_c'), ('OLDPWD', '/home/group_c'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('MANAGERPID', '1337'), ('SYSTEMD_EXEC_PID', '1551'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1002/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2875'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/group_c/tas2-software/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'group_c'), ('JOURNAL_STREAM', '8:26213'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'group_c'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/home/group_c/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/amurpc:@/tmp/.ICE-unix/1502,unix/amurpc:/tmp/.ICE-unix/1502'), ('INVOCATION_ID', '02fb89ba4aa242b0b3c285a7129244da'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1002'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1002/.mutter-Xwaylandauth.EGVIG2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1002/keyring/ssh'), ('ROS_DOMAIN_ID', '3'), ('AMENT_PREFIX_PATH', '/home/group_c/tas2-software/install/urg_node2:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/tas2:/home/group_c/tas2-software/install/ros2_laser_scan_matcher:/home/group_c/tas2-software/install/object_tracker:/home/group_c/tas2-software/install/csm:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:b872306a-2b46-403b-a696-1eb72dc1cc49'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/group_c/tas2-software/build/urg_node2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/group_c/tas2-software/install/tas_hardware/lib/python3.10/site-packages:/home/group_c/tas2-software/install/object_tracker/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/group_c/tas2-software/install/urg_node2:/home/group_c/tas2-software/install/tas2:/home/group_c/tas2-software/install/ros2_laser_scan_matcher:/home/group_c/tas2-software/install/csm:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble')]), 'shell': False}
+[4.042669] (-) TimerEvent: {}
+[4.093620] (urg_node2) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[4.143005] (-) TimerEvent: {}
+[4.193452] (urg_node2) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[4.212871] (urg_node2) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[4.243106] (-) TimerEvent: {}
+[4.274320] (csm) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.287719] (csm) StdoutLine: {'line': b'-- Generating done\n'}
+[4.290814] (csm) StdoutLine: {'line': b'-- Build files have been written to: /home/group_c/tas2-software/build/csm\n'}
+[4.305856] (csm) CommandEnded: {'returncode': 0}
+[4.306749] (csm) JobProgress: {'identifier': 'csm', 'progress': 'build'}
+[4.307294] (csm) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/group_c/tas2-software/build/csm', '--', '-j4', '-l4'], 'cwd': '/home/group_c/tas2-software/build/csm', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'group_c'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/group_c/tas2-software/install/urg_node2/lib:/home/group_c/tas2-software/install/csm/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/group_c'), ('OLDPWD', '/home/group_c'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('MANAGERPID', '1337'), ('SYSTEMD_EXEC_PID', '1551'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1002/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2875'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/group_c/tas2-software/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'group_c'), ('JOURNAL_STREAM', '8:26213'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'group_c'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/home/group_c/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/amurpc:@/tmp/.ICE-unix/1502,unix/amurpc:/tmp/.ICE-unix/1502'), ('INVOCATION_ID', '02fb89ba4aa242b0b3c285a7129244da'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1002'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1002/.mutter-Xwaylandauth.EGVIG2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1002/keyring/ssh'), ('ROS_DOMAIN_ID', '3'), ('AMENT_PREFIX_PATH', '/home/group_c/tas2-software/install/urg_node2:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/tas2:/home/group_c/tas2-software/install/ros2_laser_scan_matcher:/home/group_c/tas2-software/install/object_tracker:/home/group_c/tas2-software/install/csm:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:b872306a-2b46-403b-a696-1eb72dc1cc49'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/group_c/tas2-software/build/csm'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/group_c/tas2-software/install/tas_hardware/lib/python3.10/site-packages:/home/group_c/tas2-software/install/object_tracker/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/group_c/tas2-software/install/urg_node2:/home/group_c/tas2-software/install/tas2:/home/group_c/tas2-software/install/ros2_laser_scan_matcher:/home/group_c/tas2-software/install/csm:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble')]), 'shell': False}
+[4.318656] (urg_node2) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[4.333357] (urg_node2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[4.333580] (urg_node2) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[4.334208] (urg_node2) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[4.341295] (urg_node2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[4.345235] (-) TimerEvent: {}
+[4.388362] (csm) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/csm/laser_data.cpp.o\x1b[0m\n'}
+[4.394524] (csm) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/csm/math_utils_gsl.cpp.o\x1b[0m\n'}
+[4.396407] (csm) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/csm/math_utils.cpp.o\x1b[0m\n'}
+[4.414965] (csm) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/csm/utils.cpp.o\x1b[0m\n'}
+[4.449245] (-) TimerEvent: {}
+[4.500294] (urg_node2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[4.543312] (urg_node2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[4.543682] (urg_node2) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[4.544408] (urg_node2) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[4.548328] (urg_node2) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[4.549322] (-) TimerEvent: {}
+[4.653496] (-) TimerEvent: {}
+[4.753808] (-) TimerEvent: {}
+[4.854267] (-) TimerEvent: {}
+[4.954711] (-) TimerEvent: {}
+[5.065237] (-) TimerEvent: {}
+[5.169229] (-) TimerEvent: {}
+[5.258390] (urg_node2) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[5.269964] (-) TimerEvent: {}
+[5.373238] (-) TimerEvent: {}
+[5.425102] (urg_node2) StdoutLine: {'line': b'-- Found rclcpp: 16.0.6 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[5.473340] (-) TimerEvent: {}
+[5.515761] (urg_node2) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[5.519681] (urg_node2) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[5.540152] (urg_node2) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[5.568364] (urg_node2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.573440] (-) TimerEvent: {}
+[5.613300] (urg_node2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.681240] (-) TimerEvent: {}
+[5.785784] (-) TimerEvent: {}
+[5.794651] (urg_node2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[5.799644] (urg_node2) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[5.885890] (-) TimerEvent: {}
+[5.986315] (-) TimerEvent: {}
+[5.990194] (urg_node2) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[6.033553] (urg_node2) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[6.105239] (-) TimerEvent: {}
+[6.110626] (urg_node2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[6.138584] (urg_node2) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[6.213247] (-) TimerEvent: {}
+[6.321442] (-) TimerEvent: {}
+[6.429188] (-) TimerEvent: {}
+[6.529632] (-) TimerEvent: {}
+[6.542515] (urg_node2) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[6.543261] (urg_node2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[6.629735] (-) TimerEvent: {}
+[6.730198] (-) TimerEvent: {}
+[6.775803] (urg_node2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[6.778693] (urg_node2) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[6.830292] (-) TimerEvent: {}
+[6.930743] (-) TimerEvent: {}
+[7.031184] (-) TimerEvent: {}
+[7.131619] (-) TimerEvent: {}
+[7.232055] (-) TimerEvent: {}
+[7.333245] (-) TimerEvent: {}
+[7.408780] (urg_node2) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.6 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[7.433360] (-) TimerEvent: {}
+[7.533791] (-) TimerEvent: {}
+[7.566574] (csm) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/csm/logging.cpp.o\x1b[0m\n'}
+[7.572689] (csm) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/csm/sm_options.cpp.o\x1b[0m\n'}
+[7.610053] (csm) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/csm/orientation.cpp.o\x1b[0m\n'}
+[7.634871] (-) TimerEvent: {}
+[7.642187] (urg_node2) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 16.0.6 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)\n'}
+[7.734975] (-) TimerEvent: {}
+[7.742322] (csm) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/csm/clustering.cpp.o\x1b[0m\n'}
+[7.829154] (urg_node2) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[7.835077] (-) TimerEvent: {}
+[7.935493] (-) TimerEvent: {}
+[8.035939] (-) TimerEvent: {}
+[8.136387] (-) TimerEvent: {}
+[8.236821] (-) TimerEvent: {}
+[8.269297] (urg_node2) StdoutLine: {'line': b'-- Found diagnostic_updater: 3.1.2 (/opt/ros/humble/share/diagnostic_updater/cmake)\n'}
+[8.336937] (-) TimerEvent: {}
+[8.437406] (-) TimerEvent: {}
+[8.537831] (-) TimerEvent: {}
+[8.547685] (urg_node2) StdoutLine: {'line': b'-- Found laser_proc: 1.0.2 (/opt/ros/humble/share/laser_proc/cmake)\n'}
+[8.637945] (-) TimerEvent: {}
+[8.649187] (urg_node2) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 1.3.5 (/opt/ros/humble/share/ament_cmake_gtest/cmake)\n'}
+[8.654670] (urg_node2) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[8.738048] (-) TimerEvent: {}
+[8.838394] (-) TimerEvent: {}
+[8.941441] (urg_node2) StdoutLine: {'line': b'-- Configuring done\n'}
+[8.941657] (-) TimerEvent: {}
+[9.043498] (-) TimerEvent: {}
+[9.055928] (urg_node2) StdoutLine: {'line': b'-- Generating done\n'}
+[9.056225] (urg_node2) StdoutLine: {'line': b'-- Build files have been written to: /home/group_c/tas2-software/build/urg_node2\n'}
+[9.094499] (urg_node2) CommandEnded: {'returncode': 0}
+[9.095769] (urg_node2) JobProgress: {'identifier': 'urg_node2', 'progress': 'build'}
+[9.096269] (urg_node2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/group_c/tas2-software/build/urg_node2', '--', '-j4', '-l4'], 'cwd': '/home/group_c/tas2-software/build/urg_node2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'group_c'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/group_c/tas2-software/install/urg_node2/lib:/home/group_c/tas2-software/install/csm/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/group_c'), ('OLDPWD', '/home/group_c'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('MANAGERPID', '1337'), ('SYSTEMD_EXEC_PID', '1551'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1002/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2875'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/group_c/tas2-software/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'group_c'), ('JOURNAL_STREAM', '8:26213'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'group_c'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/home/group_c/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/amurpc:@/tmp/.ICE-unix/1502,unix/amurpc:/tmp/.ICE-unix/1502'), ('INVOCATION_ID', '02fb89ba4aa242b0b3c285a7129244da'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1002'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1002/.mutter-Xwaylandauth.EGVIG2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1002/keyring/ssh'), ('ROS_DOMAIN_ID', '3'), ('AMENT_PREFIX_PATH', '/home/group_c/tas2-software/install/urg_node2:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/tas2:/home/group_c/tas2-software/install/ros2_laser_scan_matcher:/home/group_c/tas2-software/install/object_tracker:/home/group_c/tas2-software/install/csm:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:b872306a-2b46-403b-a696-1eb72dc1cc49'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/group_c/tas2-software/build/urg_node2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/group_c/tas2-software/install/tas_hardware/lib/python3.10/site-packages:/home/group_c/tas2-software/install/object_tracker/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/group_c/tas2-software/install/urg_node2:/home/group_c/tas2-software/install/tas2:/home/group_c/tas2-software/install/ros2_laser_scan_matcher:/home/group_c/tas2-software/install/csm:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble')]), 'shell': False}
+[9.143610] (-) TimerEvent: {}
+[9.244072] (-) TimerEvent: {}
+[9.327866] (urg_node2) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[9.344192] (-) TimerEvent: {}
+[9.345063] (csm) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl.cpp.o\x1b[0m\n'}
+[9.354201] (urg_node2) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/urg_c.dir/urg_library/current/src/urg_sensor.c.o\x1b[0m\n'}
+[9.378363] (urg_node2) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/urg_node2_node.dir/rclcpp_components/node_main_urg_node2_node.cpp.o\x1b[0m\n'}
+[9.447684] (-) TimerEvent: {}
+[9.453630] (urg_node2) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[9.488135] (urg_node2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/group_c/tas2-software/src/urg_node2/urg_library/current/src/urg_sensor.c:1349:8:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ktype qualifiers ignored on function return type [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers\x07-Wignored-qualifiers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[9.488457] (urg_node2) StderrLine: {'line': b' 1349 | static \x1b[01;35m\x1b[Kconst\x1b[m\x1b[K int receive_II_command_response(urg_t *urg,\n'}
+[9.488593] (urg_node2) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[9.547790] (-) TimerEvent: {}
+[9.648212] (-) TimerEvent: {}
+[9.748734] (-) TimerEvent: {}
+[9.848101] (urg_node2) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding C object CMakeFiles/urg_c.dir/urg_library/current/src/urg_utils.c.o\x1b[0m\n'}
+[9.848879] (-) TimerEvent: {}
+[9.879886] (csm) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl_conversions.cpp.o\x1b[0m\n'}
+[9.948992] (-) TimerEvent: {}
+[9.951405] (urg_node2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/group_c/tas2-software/src/urg_node2/urg_library/current/src/urg_utils.c:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kurg_delay\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[9.951859] (urg_node2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/group_c/tas2-software/src/urg_node2/urg_library/current/src/urg_utils.c:224:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kimplicit declaration of function \xe2\x80\x98\x1b[01m\x1b[Kusleep\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Kurg_sleep\x1b[m\x1b[K\xe2\x80\x99? [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-function-declaration\x07-Wimplicit-function-declaration\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[9.952116] (urg_node2) StderrLine: {'line': b'  224 |     \x1b[01;35m\x1b[Kusleep\x1b[m\x1b[K(1000 * delay_msec);\n'}
+[9.952320] (urg_node2) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[9.952514] (urg_node2) StderrLine: {'line': b'      |     \x1b[32m\x1b[Kurg_sleep\x1b[m\x1b[K\n'}
+[10.049148] (-) TimerEvent: {}
+[10.074221] (urg_node2) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding C object CMakeFiles/urg_c.dir/urg_library/current/src/urg_debug.c.o\x1b[0m\n'}
+[10.104548] (csm) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl_misc.cpp.o\x1b[0m\n'}
+[10.149241] (-) TimerEvent: {}
+[10.231957] (urg_node2) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding C object CMakeFiles/urg_c.dir/urg_library/current/src/urg_connection.c.o\x1b[0m\n'}
+[10.249340] (-) TimerEvent: {}
+[10.349662] (-) TimerEvent: {}
+[10.387993] (urg_node2) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding C object CMakeFiles/urg_c.dir/urg_library/current/src/urg_ring_buffer.c.o\x1b[0m\n'}
+[10.449772] (-) TimerEvent: {}
+[10.550117] (-) TimerEvent: {}
+[10.553815] (urg_node2) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding C object CMakeFiles/urg_c.dir/urg_library/current/src/urg_serial.c.o\x1b[0m\n'}
+[10.650229] (-) TimerEvent: {}
+[10.750561] (-) TimerEvent: {}
+[10.757576] (urg_node2) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding C object CMakeFiles/urg_c.dir/urg_library/current/src/urg_serial_utils.c.o\x1b[0m\n'}
+[10.829570] (csm) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl_ops.cpp.o\x1b[0m\n'}
+[10.850681] (-) TimerEvent: {}
+[10.932561] (urg_node2) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding C object CMakeFiles/urg_c.dir/urg_library/current/src/urg_tcpclient.c.o\x1b[0m\n'}
+[10.950786] (-) TimerEvent: {}
+[11.051236] (-) TimerEvent: {}
+[11.140622] (urg_node2) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking C shared library liburg_c.so\x1b[0m\n'}
+[11.151351] (-) TimerEvent: {}
+[11.251698] (-) TimerEvent: {}
+[11.340940] (urg_node2) StdoutLine: {'line': b'[ 60%] Built target urg_c\n'}
+[11.351805] (-) TimerEvent: {}
+[11.452245] (-) TimerEvent: {}
+[11.500772] (urg_node2) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/urg_node2.dir/src/urg_node2.cpp.o\x1b[0m\n'}
+[11.552353] (-) TimerEvent: {}
+[11.652799] (-) TimerEvent: {}
+[11.753244] (-) TimerEvent: {}
+[11.761435] (urg_node2) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[11.853351] (-) TimerEvent: {}
+[11.953816] (-) TimerEvent: {}
+[12.054160] (-) TimerEvent: {}
+[12.154495] (-) TimerEvent: {}
+[12.254833] (-) TimerEvent: {}
+[12.274255] (csm) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/gpc/gpc.cpp.o\x1b[0m\n'}
+[12.303308] (urg_node2) StdoutLine: {'line': b'[ 70%] Built target gtest_main\n'}
+[12.355025] (-) TimerEvent: {}
+[12.455382] (-) TimerEvent: {}
+[12.555832] (-) TimerEvent: {}
+[12.656262] (-) TimerEvent: {}
+[12.756729] (-) TimerEvent: {}
+[12.857152] (-) TimerEvent: {}
+[12.957585] (-) TimerEvent: {}
+[13.052092] (csm) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/gpc/gpc_utils.cpp.o\x1b[0m\n'}
+[13.057692] (-) TimerEvent: {}
+[13.158148] (-) TimerEvent: {}
+[13.258486] (-) TimerEvent: {}
+[13.358821] (-) TimerEvent: {}
+[13.459160] (-) TimerEvent: {}
+[13.559510] (-) TimerEvent: {}
+[13.659859] (-) TimerEvent: {}
+[13.760202] (-) TimerEvent: {}
+[13.860555] (-) TimerEvent: {}
+[13.871169] (csm) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp.cpp.o\x1b[0m\n'}
+[13.960667] (-) TimerEvent: {}
+[14.061011] (-) TimerEvent: {}
+[14.161362] (-) TimerEvent: {}
+[14.261712] (-) TimerEvent: {}
+[14.362067] (-) TimerEvent: {}
+[14.462421] (-) TimerEvent: {}
+[14.562786] (-) TimerEvent: {}
+[14.663140] (-) TimerEvent: {}
+[14.763482] (-) TimerEvent: {}
+[14.863837] (-) TimerEvent: {}
+[14.964163] (-) TimerEvent: {}
+[15.064498] (-) TimerEvent: {}
+[15.164847] (-) TimerEvent: {}
+[15.265206] (-) TimerEvent: {}
+[15.365550] (-) TimerEvent: {}
+[15.465895] (-) TimerEvent: {}
+[15.566240] (-) TimerEvent: {}
+[15.666579] (-) TimerEvent: {}
+[15.766921] (-) TimerEvent: {}
+[15.867274] (-) TimerEvent: {}
+[15.952381] (csm) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_corr_dumb.cpp.o\x1b[0m\n'}
+[15.967389] (-) TimerEvent: {}
+[16.067717] (-) TimerEvent: {}
+[16.068125] (csm) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_corr_tricks.cpp.o\x1b[0m\n'}
+[16.167836] (-) TimerEvent: {}
+[16.268265] (-) TimerEvent: {}
+[16.368713] (-) TimerEvent: {}
+[16.469146] (-) TimerEvent: {}
+[16.569588] (-) TimerEvent: {}
+[16.669970] (-) TimerEvent: {}
+[16.770303] (-) TimerEvent: {}
+[16.870643] (-) TimerEvent: {}
+[16.970992] (-) TimerEvent: {}
+[17.071335] (-) TimerEvent: {}
+[17.171676] (-) TimerEvent: {}
+[17.271999] (-) TimerEvent: {}
+[17.372460] (-) TimerEvent: {}
+[17.472902] (-) TimerEvent: {}
+[17.573349] (-) TimerEvent: {}
+[17.673775] (-) TimerEvent: {}
+[17.753587] (urg_node2) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[17.773885] (-) TimerEvent: {}
+[17.874231] (-) TimerEvent: {}
+[17.974683] (-) TimerEvent: {}
+[18.075207] (-) TimerEvent: {}
+[18.100607] (urg_node2) StdoutLine: {'line': b'[ 75%] Built target gtest\n'}
+[18.175321] (-) TimerEvent: {}
+[18.205029] (urg_node2) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/urg_node2_test.dir/src/urg_node2.cpp.o\x1b[0m\n'}
+[18.234323] (urg_node2) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object CMakeFiles/urg_node2_test.dir/test/urg_node2_test.cpp.o\x1b[0m\n'}
+[18.275434] (-) TimerEvent: {}
+[18.375898] (-) TimerEvent: {}
+[18.476309] (-) TimerEvent: {}
+[18.576746] (-) TimerEvent: {}
+[18.677088] (-) TimerEvent: {}
+[18.777431] (-) TimerEvent: {}
+[18.877774] (-) TimerEvent: {}
+[18.978144] (-) TimerEvent: {}
+[19.078476] (-) TimerEvent: {}
+[19.178885] (-) TimerEvent: {}
+[19.279214] (-) TimerEvent: {}
+[19.379139] (urg_node2) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking CXX executable urg_node2_node\x1b[0m\n'}
+[19.379351] (-) TimerEvent: {}
+[19.479638] (-) TimerEvent: {}
+[19.579988] (-) TimerEvent: {}
+[19.680362] (-) TimerEvent: {}
+[19.780724] (-) TimerEvent: {}
+[19.801587] (csm) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_covariance.cpp.o\x1b[0m\n'}
+[19.801941] (csm) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_debug.cpp.o\x1b[0m\n'}
+[19.880828] (-) TimerEvent: {}
+[19.903419] (csm) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_loop.cpp.o\x1b[0m\n'}
+[19.980931] (-) TimerEvent: {}
+[19.992544] (urg_node2) StdoutLine: {'line': b'[ 90%] Built target urg_node2_node\n'}
+[20.081045] (-) TimerEvent: {}
+[20.181393] (-) TimerEvent: {}
+[20.281740] (-) TimerEvent: {}
+[20.382085] (-) TimerEvent: {}
+[20.482433] (-) TimerEvent: {}
+[20.582773] (-) TimerEvent: {}
+[20.683122] (-) TimerEvent: {}
+[20.783478] (-) TimerEvent: {}
+[20.883820] (-) TimerEvent: {}
+[20.984165] (-) TimerEvent: {}
+[21.084507] (-) TimerEvent: {}
+[21.184850] (-) TimerEvent: {}
+[21.285193] (-) TimerEvent: {}
+[21.385527] (-) TimerEvent: {}
+[21.485873] (-) TimerEvent: {}
+[21.586215] (-) TimerEvent: {}
+[21.686561] (-) TimerEvent: {}
+[21.786907] (-) TimerEvent: {}
+[21.887252] (-) TimerEvent: {}
+[21.987604] (-) TimerEvent: {}
+[22.087955] (-) TimerEvent: {}
+[22.188295] (-) TimerEvent: {}
+[22.288649] (-) TimerEvent: {}
+[22.389003] (-) TimerEvent: {}
+[22.489350] (-) TimerEvent: {}
+[22.589692] (-) TimerEvent: {}
+[22.690033] (-) TimerEvent: {}
+[22.790383] (-) TimerEvent: {}
+[22.890718] (-) TimerEvent: {}
+[22.991057] (-) TimerEvent: {}
+[23.091401] (-) TimerEvent: {}
+[23.191745] (-) TimerEvent: {}
+[23.292085] (-) TimerEvent: {}
+[23.360434] (csm) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_outliers.cpp.o\x1b[0m\n'}
+[23.392198] (-) TimerEvent: {}
+[23.447161] (csm) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/options/options.cpp.o\x1b[0m\n'}
+[23.492307] (-) TimerEvent: {}
+[23.592651] (-) TimerEvent: {}
+[23.692982] (-) TimerEvent: {}
+[23.793347] (csm) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/options/options_interface.cpp.o\x1b[0m\n'}
+[23.793571] (-) TimerEvent: {}
+[23.893843] (-) TimerEvent: {}
+[23.994178] (-) TimerEvent: {}
+[24.094509] (-) TimerEvent: {}
+[24.194835] (-) TimerEvent: {}
+[24.295168] (-) TimerEvent: {}
+[24.395629] (-) TimerEvent: {}
+[24.496058] (-) TimerEvent: {}
+[24.596505] (-) TimerEvent: {}
+[24.696955] (-) TimerEvent: {}
+[24.813140] (-) TimerEvent: {}
+[24.913508] (-) TimerEvent: {}
+[25.013950] (-) TimerEvent: {}
+[25.114386] (-) TimerEvent: {}
+[25.214732] (-) TimerEvent: {}
+[25.315268] (-) TimerEvent: {}
+[25.415772] (-) TimerEvent: {}
+[25.516089] (-) TimerEvent: {}
+[25.616430] (-) TimerEvent: {}
+[25.716774] (-) TimerEvent: {}
+[25.817113] (-) TimerEvent: {}
+[25.921107] (-) TimerEvent: {}
+[26.021806] (-) TimerEvent: {}
+[26.122370] (-) TimerEvent: {}
+[26.222813] (-) TimerEvent: {}
+[26.323257] (-) TimerEvent: {}
+[26.423705] (-) TimerEvent: {}
+[26.524143] (-) TimerEvent: {}
+[26.624570] (-) TimerEvent: {}
+[26.724999] (-) TimerEvent: {}
+[26.825317] (-) TimerEvent: {}
+[26.925637] (-) TimerEvent: {}
+[27.025950] (-) TimerEvent: {}
+[27.126265] (-) TimerEvent: {}
+[27.226595] (-) TimerEvent: {}
+[27.326926] (-) TimerEvent: {}
+[27.427254] (-) TimerEvent: {}
+[27.527569] (-) TimerEvent: {}
+[27.627890] (-) TimerEvent: {}
+[27.728213] (-) TimerEvent: {}
+[27.828539] (-) TimerEvent: {}
+[27.928873] (-) TimerEvent: {}
+[28.029223] (-) TimerEvent: {}
+[28.129543] (-) TimerEvent: {}
+[28.229879] (-) TimerEvent: {}
+[28.330226] (-) TimerEvent: {}
+[28.430554] (-) TimerEvent: {}
+[28.530896] (-) TimerEvent: {}
+[28.631291] (-) TimerEvent: {}
+[28.731630] (-) TimerEvent: {}
+[28.832024] (-) TimerEvent: {}
+[28.903060] (urg_node2) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking CXX shared library liburg_node2.so\x1b[0m\n'}
+[28.932147] (-) TimerEvent: {}
+[29.032599] (-) TimerEvent: {}
+[29.133058] (-) TimerEvent: {}
+[29.233520] (-) TimerEvent: {}
+[29.333962] (-) TimerEvent: {}
+[29.434401] (-) TimerEvent: {}
+[29.470645] (urg_node2) StdoutLine: {'line': b'[ 95%] Built target urg_node2\n'}
+[29.534505] (-) TimerEvent: {}
+[29.634937] (-) TimerEvent: {}
+[29.735379] (-) TimerEvent: {}
+[29.835810] (-) TimerEvent: {}
+[29.936246] (-) TimerEvent: {}
+[30.036669] (-) TimerEvent: {}
+[30.137094] (-) TimerEvent: {}
+[30.237525] (-) TimerEvent: {}
+[30.337954] (-) TimerEvent: {}
+[30.438394] (-) TimerEvent: {}
+[30.538838] (-) TimerEvent: {}
+[30.639283] (-) TimerEvent: {}
+[30.739726] (-) TimerEvent: {}
+[30.840148] (-) TimerEvent: {}
+[30.940591] (-) TimerEvent: {}
+[31.041042] (-) TimerEvent: {}
+[31.141492] (-) TimerEvent: {}
+[31.241928] (-) TimerEvent: {}
+[31.342388] (-) TimerEvent: {}
+[31.442831] (-) TimerEvent: {}
+[31.543258] (-) TimerEvent: {}
+[31.643707] (-) TimerEvent: {}
+[31.744151] (-) TimerEvent: {}
+[31.844589] (-) TimerEvent: {}
+[31.945023] (-) TimerEvent: {}
+[32.045453] (-) TimerEvent: {}
+[32.145872] (-) TimerEvent: {}
+[32.246304] (-) TimerEvent: {}
+[32.346730] (-) TimerEvent: {}
+[32.447160] (-) TimerEvent: {}
+[32.547589] (-) TimerEvent: {}
+[32.648011] (-) TimerEvent: {}
+[32.748435] (-) TimerEvent: {}
+[32.848880] (-) TimerEvent: {}
+[32.949309] (-) TimerEvent: {}
+[33.049722] (-) TimerEvent: {}
+[33.150149] (-) TimerEvent: {}
+[33.250586] (-) TimerEvent: {}
+[33.351016] (-) TimerEvent: {}
+[33.451358] (-) TimerEvent: {}
+[33.551687] (-) TimerEvent: {}
+[33.651998] (-) TimerEvent: {}
+[33.752324] (-) TimerEvent: {}
+[33.852662] (-) TimerEvent: {}
+[33.952993] (-) TimerEvent: {}
+[34.053544] (-) TimerEvent: {}
+[34.153846] (-) TimerEvent: {}
+[34.254145] (-) TimerEvent: {}
+[34.354449] (-) TimerEvent: {}
+[34.454769] (-) TimerEvent: {}
+[34.555072] (-) TimerEvent: {}
+[34.655385] (-) TimerEvent: {}
+[34.755696] (-) TimerEvent: {}
+[34.856001] (-) TimerEvent: {}
+[34.956301] (-) TimerEvent: {}
+[35.056601] (-) TimerEvent: {}
+[35.156914] (-) TimerEvent: {}
+[35.257227] (-) TimerEvent: {}
+[35.357537] (-) TimerEvent: {}
+[35.457846] (-) TimerEvent: {}
+[35.558152] (-) TimerEvent: {}
+[35.658457] (-) TimerEvent: {}
+[35.758777] (-) TimerEvent: {}
+[35.859101] (-) TimerEvent: {}
+[35.959420] (-) TimerEvent: {}
+[36.059757] (-) TimerEvent: {}
+[36.160091] (-) TimerEvent: {}
+[36.260417] (-) TimerEvent: {}
+[36.360736] (-) TimerEvent: {}
+[36.461059] (-) TimerEvent: {}
+[36.561392] (-) TimerEvent: {}
+[36.661710] (-) TimerEvent: {}
+[36.762146] (-) TimerEvent: {}
+[36.862455] (-) TimerEvent: {}
+[36.962826] (-) TimerEvent: {}
+[36.972506] (urg_node2) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable urg_node2_test\x1b[0m\n'}
+[37.062936] (-) TimerEvent: {}
+[37.163257] (-) TimerEvent: {}
+[37.263580] (-) TimerEvent: {}
+[37.363922] (-) TimerEvent: {}
+[37.376421] (csm) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libcsm.so\x1b[0m\n'}
+[37.464026] (-) TimerEvent: {}
+[37.564375] (-) TimerEvent: {}
+[37.664669] (-) TimerEvent: {}
+[37.764968] (-) TimerEvent: {}
+[37.865300] (-) TimerEvent: {}
+[37.867358] (csm) StdoutLine: {'line': b'[100%] Built target csm\n'}
+[37.881163] (csm) CommandEnded: {'returncode': 0}
+[37.965468] (-) TimerEvent: {}
+[37.988491] (csm) JobProgress: {'identifier': 'csm', 'progress': 'install'}
+[37.989056] (csm) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/group_c/tas2-software/build/csm'], 'cwd': '/home/group_c/tas2-software/build/csm', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'group_c'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/group_c/tas2-software/install/urg_node2/lib:/home/group_c/tas2-software/install/csm/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/group_c'), ('OLDPWD', '/home/group_c'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('MANAGERPID', '1337'), ('SYSTEMD_EXEC_PID', '1551'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1002/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2875'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/group_c/tas2-software/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'group_c'), ('JOURNAL_STREAM', '8:26213'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'group_c'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/home/group_c/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/amurpc:@/tmp/.ICE-unix/1502,unix/amurpc:/tmp/.ICE-unix/1502'), ('INVOCATION_ID', '02fb89ba4aa242b0b3c285a7129244da'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1002'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1002/.mutter-Xwaylandauth.EGVIG2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1002/keyring/ssh'), ('ROS_DOMAIN_ID', '3'), ('AMENT_PREFIX_PATH', '/home/group_c/tas2-software/install/urg_node2:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/tas2:/home/group_c/tas2-software/install/ros2_laser_scan_matcher:/home/group_c/tas2-software/install/object_tracker:/home/group_c/tas2-software/install/csm:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:b872306a-2b46-403b-a696-1eb72dc1cc49'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/group_c/tas2-software/build/csm'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/group_c/tas2-software/install/tas_hardware/lib/python3.10/site-packages:/home/group_c/tas2-software/install/object_tracker/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/group_c/tas2-software/install/urg_node2:/home/group_c/tas2-software/install/tas2:/home/group_c/tas2-software/install/ros2_laser_scan_matcher:/home/group_c/tas2-software/install/csm:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble')]), 'shell': False}
+[38.000900] (csm) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[38.001118] (csm) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/csm/lib/libcsm.so\n'}
+[38.011408] (csm) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/csm/include/..//include\n'}
+[38.011637] (csm) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/csm/include/..//include/csm\n'}
+[38.011746] (csm) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/csm/include/..//include/csm/laser_data_inline.h\n'}
+[38.011889] (csm) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/csm/include/..//include/csm/restrict.h\n'}
+[38.012013] (csm) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/csm/include/..//include/csm/laser_data.h\n'}
+[38.012136] (csm) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/csm/include/..//include/csm/csm.h\n'}
+[38.012260] (csm) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/csm/include/..//include/csm/algos.h\n'}
+[38.012404] (csm) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/csm/include/..//include/gsl_eigen\n'}
+[38.012532] (csm) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/csm/include/..//include/gsl_eigen/gsl_eigen.h\n'}
+[38.012726] (csm) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/csm/share/csm/resource\n'}
+[38.012865] (csm) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/csm/share/csm/resource/csm\n'}
+[38.013040] (csm) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/csm/include/../gsl_eigen\n'}
+[38.013166] (csm) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/csm/include/../gsl_eigen/gsl_eigen.h\n'}
+[38.013471] (csm) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/csm/share/csm/environment/library_path.sh\n'}
+[38.013701] (csm) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/csm/share/csm/environment/library_path.dsv\n'}
+[38.013984] (csm) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/csm/share/ament_index/resource_index/package_run_dependencies/csm\n'}
+[38.014237] (csm) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/csm/share/ament_index/resource_index/parent_prefix_path/csm\n'}
+[38.014571] (csm) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/csm/share/csm/environment/ament_prefix_path.sh\n'}
+[38.014785] (csm) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/csm/share/csm/environment/ament_prefix_path.dsv\n'}
+[38.014984] (csm) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/csm/share/csm/environment/path.sh\n'}
+[38.015162] (csm) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/csm/share/csm/environment/path.dsv\n'}
+[38.015305] (csm) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/csm/share/csm/local_setup.bash\n'}
+[38.015533] (csm) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/csm/share/csm/local_setup.sh\n'}
+[38.015683] (csm) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/csm/share/csm/local_setup.zsh\n'}
+[38.015855] (csm) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/csm/share/csm/local_setup.dsv\n'}
+[38.016029] (csm) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/csm/share/csm/package.dsv\n'}
+[38.016261] (csm) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/csm/share/ament_index/resource_index/packages/csm\n'}
+[38.016476] (csm) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/csm/share/csm/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[38.016650] (csm) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/csm/share/csm/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[38.016839] (csm) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/csm/share/csm/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[38.017100] (csm) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/csm/share/csm/cmake/csmConfig.cmake\n'}
+[38.017300] (csm) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/csm/share/csm/cmake/csmConfig-version.cmake\n'}
+[38.017484] (csm) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/csm/share/csm/package.xml\n'}
+[38.019678] (csm) CommandEnded: {'returncode': 0}
+[38.028892] (urg_node2) StdoutLine: {'line': b'[100%] Built target urg_node2_test\n'}
+[38.065785] (-) TimerEvent: {}
+[38.097414] (urg_node2) CommandEnded: {'returncode': 0}
+[38.155644] (urg_node2) JobProgress: {'identifier': 'urg_node2', 'progress': 'install'}
+[38.156040] (urg_node2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/group_c/tas2-software/build/urg_node2'], 'cwd': '/home/group_c/tas2-software/build/urg_node2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'group_c'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/group_c/tas2-software/install/urg_node2/lib:/home/group_c/tas2-software/install/csm/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/group_c'), ('OLDPWD', '/home/group_c'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('MANAGERPID', '1337'), ('SYSTEMD_EXEC_PID', '1551'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1002/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2875'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/group_c/tas2-software/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'group_c'), ('JOURNAL_STREAM', '8:26213'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'group_c'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/home/group_c/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/amurpc:@/tmp/.ICE-unix/1502,unix/amurpc:/tmp/.ICE-unix/1502'), ('INVOCATION_ID', '02fb89ba4aa242b0b3c285a7129244da'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1002'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1002/.mutter-Xwaylandauth.EGVIG2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1002/keyring/ssh'), ('ROS_DOMAIN_ID', '3'), ('AMENT_PREFIX_PATH', '/home/group_c/tas2-software/install/urg_node2:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/tas2:/home/group_c/tas2-software/install/ros2_laser_scan_matcher:/home/group_c/tas2-software/install/object_tracker:/home/group_c/tas2-software/install/csm:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:b872306a-2b46-403b-a696-1eb72dc1cc49'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/group_c/tas2-software/build/urg_node2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/group_c/tas2-software/install/tas_hardware/lib/python3.10/site-packages:/home/group_c/tas2-software/install/object_tracker/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/group_c/tas2-software/install/urg_node2:/home/group_c/tas2-software/install/tas2:/home/group_c/tas2-software/install/ros2_laser_scan_matcher:/home/group_c/tas2-software/install/csm:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble')]), 'shell': False}
+[38.165884] (-) TimerEvent: {}
+[38.166147] (urg_node2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[38.166432] (urg_node2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/urg_node2/lib/urg_node2/urg_node2_node\n'}
+[38.167470] (urg_node2) StdoutLine: {'line': b'-- Set runtime path of "/home/group_c/tas2-software/install/urg_node2/lib/urg_node2/urg_node2_node" to ""\n'}
+[38.167787] (urg_node2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/urg_node2/lib/liburg_node2.so\n'}
+[38.171634] (urg_node2) StdoutLine: {'line': b'-- Set runtime path of "/home/group_c/tas2-software/install/urg_node2/lib/liburg_node2.so" to ""\n'}
+[38.171888] (urg_node2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/urg_node2/lib/liburg_c.so\n'}
+[38.172150] (urg_node2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/urg_node2/share/urg_node2/launch\n'}
+[38.172326] (urg_node2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/urg_node2/share/urg_node2/launch/urg_node2_component.launch.py\n'}
+[38.172507] (urg_node2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/urg_node2/share/urg_node2/launch/urg_node2_2lidar.launch.py\n'}
+[38.172912] (urg_node2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/urg_node2/share/urg_node2/launch/urg_node2.launch.py\n'}
+[38.173122] (urg_node2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/urg_node2/share/urg_node2/config\n'}
+[38.173281] (urg_node2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/urg_node2/share/urg_node2/config/params_serial.yaml\n'}
+[38.173417] (urg_node2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/urg_node2/share/urg_node2/config/params_ether.yaml\n'}
+[38.173549] (urg_node2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/urg_node2/share/urg_node2/config/params_ether_2nd.yaml\n'}
+[38.173667] (urg_node2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/urg_node2/share/ament_index/resource_index/package_run_dependencies/urg_node2\n'}
+[38.173999] (urg_node2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/urg_node2/share/ament_index/resource_index/parent_prefix_path/urg_node2\n'}
+[38.174232] (urg_node2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/urg_node2/share/urg_node2/environment/ament_prefix_path.sh\n'}
+[38.174373] (urg_node2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/urg_node2/share/urg_node2/environment/ament_prefix_path.dsv\n'}
+[38.174561] (urg_node2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/urg_node2/share/urg_node2/environment/path.sh\n'}
+[38.174714] (urg_node2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/urg_node2/share/urg_node2/environment/path.dsv\n'}
+[38.174853] (urg_node2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/urg_node2/share/urg_node2/local_setup.bash\n'}
+[38.174977] (urg_node2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/urg_node2/share/urg_node2/local_setup.sh\n'}
+[38.175345] (urg_node2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/urg_node2/share/urg_node2/local_setup.zsh\n'}
+[38.175520] (urg_node2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/urg_node2/share/urg_node2/local_setup.dsv\n'}
+[38.175711] (urg_node2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/urg_node2/share/urg_node2/package.dsv\n'}
+[38.175843] (urg_node2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/urg_node2/share/ament_index/resource_index/packages/urg_node2\n'}
+[38.175953] (urg_node2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/urg_node2/share/ament_index/resource_index/rclcpp_components/urg_node2\n'}
+[38.176078] (urg_node2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/urg_node2/share/urg_node2/cmake/urg_node2Config.cmake\n'}
+[38.176380] (urg_node2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/urg_node2/share/urg_node2/cmake/urg_node2Config-version.cmake\n'}
+[38.176560] (urg_node2) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/urg_node2/share/urg_node2/package.xml\n'}
+[38.178147] (urg_node2) CommandEnded: {'returncode': 0}
+[38.266229] (-) TimerEvent: {}
+[38.340936] (csm) JobEnded: {'identifier': 'csm', 'rc': 0}
+[38.341904] (ros2_laser_scan_matcher) JobStarted: {'identifier': 'ros2_laser_scan_matcher'}
+[38.366440] (-) TimerEvent: {}
+[38.466828] (-) TimerEvent: {}
+[38.505020] (urg_node2) JobEnded: {'identifier': 'urg_node2', 'rc': 0}
+[38.506260] (ros2_laser_scan_matcher) JobProgress: {'identifier': 'ros2_laser_scan_matcher', 'progress': 'cmake'}
+[38.506445] (ros2_laser_scan_matcher) Command: {'cmd': ['/usr/bin/cmake', '/home/group_c/tas2-software/src/ros2_laser_scan_matcher', '-DCMAKE_INSTALL_PREFIX=/home/group_c/tas2-software/install/ros2_laser_scan_matcher'], 'cwd': '/home/group_c/tas2-software/build/ros2_laser_scan_matcher', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'group_c'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/group_c/tas2-software/install/csm/lib:/home/group_c/tas2-software/install/urg_node2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins'), ('HOME', '/home/group_c'), ('OLDPWD', '/home/group_c'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('MANAGERPID', '1337'), ('SYSTEMD_EXEC_PID', '1551'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1002/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2875'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/group_c/tas2-software/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'group_c'), ('JOURNAL_STREAM', '8:26213'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'group_c'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/home/group_c/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/amurpc:@/tmp/.ICE-unix/1502,unix/amurpc:/tmp/.ICE-unix/1502'), ('INVOCATION_ID', '02fb89ba4aa242b0b3c285a7129244da'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1002'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1002/.mutter-Xwaylandauth.EGVIG2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1002/keyring/ssh'), ('ROS_DOMAIN_ID', '3'), ('AMENT_PREFIX_PATH', '/home/group_c/tas2-software/install/urg_node2:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/tas2:/home/group_c/tas2-software/install/ros2_laser_scan_matcher:/home/group_c/tas2-software/install/object_tracker:/home/group_c/tas2-software/install/csm:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:b872306a-2b46-403b-a696-1eb72dc1cc49'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/group_c/tas2-software/build/ros2_laser_scan_matcher'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/group_c/tas2-software/install/tas_hardware/lib/python3.10/site-packages:/home/group_c/tas2-software/install/object_tracker/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/group_c/tas2-software/install/csm:/home/group_c/tas2-software/install/urg_node2:/home/group_c/tas2-software/install/tas2:/home/group_c/tas2-software/install/ros2_laser_scan_matcher:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble')]), 'shell': False}
+[38.566933] (-) TimerEvent: {}
+[38.568484] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[38.623523] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[38.630270] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[38.667050] (-) TimerEvent: {}
+[38.696009] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[38.703102] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[38.703320] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[38.703702] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[38.706542] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[38.767155] (-) TimerEvent: {}
+[38.783616] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[38.790767] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[38.791111] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[38.791594] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[38.794304] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[38.867266] (-) TimerEvent: {}
+[38.967525] (-) TimerEvent: {}
+[39.067784] (-) TimerEvent: {}
+[39.168080] (-) TimerEvent: {}
+[39.183562] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[39.268189] (-) TimerEvent: {}
+[39.276957] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[39.315517] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[39.321661] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[39.330995] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[39.345243] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[39.365639] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[39.368284] (-) TimerEvent: {}
+[39.468527] (-) TimerEvent: {}
+[39.568794] (-) TimerEvent: {}
+[39.585546] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found rclcpp: 16.0.6 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[39.649090] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[39.652456] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[39.668910] (-) TimerEvent: {}
+[39.754258] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[39.769016] (-) TimerEvent: {}
+[39.779922] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[39.827244] (ros2_laser_scan_matcher) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[39.837936] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[39.869128] (-) TimerEvent: {}
+[39.907900] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[39.908140] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[39.969260] (-) TimerEvent: {}
+[39.980316] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[39.981470] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[40.069357] (-) TimerEvent: {}
+[40.117100] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.3 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[40.169469] (-) TimerEvent: {}
+[40.208762] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.4 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[40.269587] (-) TimerEvent: {}
+[40.369854] (-) TimerEvent: {}
+[40.470122] (-) TimerEvent: {}
+[40.570395] (-) TimerEvent: {}
+[40.592759] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.4 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[40.610453] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[40.612054] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[40.612244] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[40.625579] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[40.626573] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found csm: 0.0.0 (/home/group_c/tas2-software/install/csm/share/csm/cmake)\n'}
+[40.649944] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread \n'}
+[40.670491] (-) TimerEvent: {}
+[40.719737] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Configuring done\n'}
+[40.738760] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Generating done\n'}
+[40.741371] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Build files have been written to: /home/group_c/tas2-software/build/ros2_laser_scan_matcher\n'}
+[40.754407] (ros2_laser_scan_matcher) CommandEnded: {'returncode': 0}
+[40.754986] (ros2_laser_scan_matcher) JobProgress: {'identifier': 'ros2_laser_scan_matcher', 'progress': 'build'}
+[40.755496] (ros2_laser_scan_matcher) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/group_c/tas2-software/build/ros2_laser_scan_matcher', '--', '-j4', '-l4'], 'cwd': '/home/group_c/tas2-software/build/ros2_laser_scan_matcher', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'group_c'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/group_c/tas2-software/install/csm/lib:/home/group_c/tas2-software/install/urg_node2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins'), ('HOME', '/home/group_c'), ('OLDPWD', '/home/group_c'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('MANAGERPID', '1337'), ('SYSTEMD_EXEC_PID', '1551'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1002/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2875'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/group_c/tas2-software/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'group_c'), ('JOURNAL_STREAM', '8:26213'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'group_c'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/home/group_c/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/amurpc:@/tmp/.ICE-unix/1502,unix/amurpc:/tmp/.ICE-unix/1502'), ('INVOCATION_ID', '02fb89ba4aa242b0b3c285a7129244da'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1002'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1002/.mutter-Xwaylandauth.EGVIG2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1002/keyring/ssh'), ('ROS_DOMAIN_ID', '3'), ('AMENT_PREFIX_PATH', '/home/group_c/tas2-software/install/urg_node2:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/tas2:/home/group_c/tas2-software/install/ros2_laser_scan_matcher:/home/group_c/tas2-software/install/object_tracker:/home/group_c/tas2-software/install/csm:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:b872306a-2b46-403b-a696-1eb72dc1cc49'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/group_c/tas2-software/build/ros2_laser_scan_matcher'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/group_c/tas2-software/install/tas_hardware/lib/python3.10/site-packages:/home/group_c/tas2-software/install/object_tracker/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/group_c/tas2-software/install/csm:/home/group_c/tas2-software/install/urg_node2:/home/group_c/tas2-software/install/tas2:/home/group_c/tas2-software/install/ros2_laser_scan_matcher:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble')]), 'shell': False}
+[40.770614] (-) TimerEvent: {}
+[40.806958] (ros2_laser_scan_matcher) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/laser_scan_matcher.dir/src/laser_scan_matcher.cpp.o\x1b[0m\n'}
+[40.870737] (-) TimerEvent: {}
+[40.970992] (-) TimerEvent: {}
+[41.071303] (-) TimerEvent: {}
+[41.135471] (ros2_laser_scan_matcher) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/group_c/tas2-software/src/ros2_laser_scan_matcher/include/ros2_laser_scan_matcher/laser_scan_matcher.h:47\x1b[m\x1b[K,\n'}
+[41.135622] (ros2_laser_scan_matcher) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/group_c/tas2-software/src/ros2_laser_scan_matcher/src/laser_scan_matcher.cpp:38\x1b[m\x1b[K:\n'}
+[41.135685] (ros2_laser_scan_matcher) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp\x07-Wcpp\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[41.135748] (ros2_laser_scan_matcher) StderrLine: {'line': b'   35 | #\x1b[01;35m\x1b[Kwarning\x1b[m\x1b[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead\n'}
+[41.135801] (ros2_laser_scan_matcher) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[41.171421] (-) TimerEvent: {}
+[41.271692] (-) TimerEvent: {}
+[41.371937] (-) TimerEvent: {}
+[41.472215] (-) TimerEvent: {}
+[41.572491] (-) TimerEvent: {}
+[41.672774] (-) TimerEvent: {}
+[41.773062] (-) TimerEvent: {}
+[41.873366] (-) TimerEvent: {}
+[41.973681] (-) TimerEvent: {}
+[42.073965] (-) TimerEvent: {}
+[42.174246] (-) TimerEvent: {}
+[42.274549] (-) TimerEvent: {}
+[42.374854] (-) TimerEvent: {}
+[42.475163] (-) TimerEvent: {}
+[42.575466] (-) TimerEvent: {}
+[42.675768] (-) TimerEvent: {}
+[42.776065] (-) TimerEvent: {}
+[42.876364] (-) TimerEvent: {}
+[42.976661] (-) TimerEvent: {}
+[43.076961] (-) TimerEvent: {}
+[43.177232] (-) TimerEvent: {}
+[43.277522] (-) TimerEvent: {}
+[43.377842] (-) TimerEvent: {}
+[43.478112] (-) TimerEvent: {}
+[43.578388] (-) TimerEvent: {}
+[43.678662] (-) TimerEvent: {}
+[43.778933] (-) TimerEvent: {}
+[43.879204] (-) TimerEvent: {}
+[43.979465] (-) TimerEvent: {}
+[44.079764] (-) TimerEvent: {}
+[44.180036] (-) TimerEvent: {}
+[44.280326] (-) TimerEvent: {}
+[44.380616] (-) TimerEvent: {}
+[44.480894] (-) TimerEvent: {}
+[44.581183] (-) TimerEvent: {}
+[44.681454] (-) TimerEvent: {}
+[44.781727] (-) TimerEvent: {}
+[44.882007] (-) TimerEvent: {}
+[44.982280] (-) TimerEvent: {}
+[45.082555] (-) TimerEvent: {}
+[45.182825] (-) TimerEvent: {}
+[45.283093] (-) TimerEvent: {}
+[45.383361] (-) TimerEvent: {}
+[45.483629] (-) TimerEvent: {}
+[45.583897] (-) TimerEvent: {}
+[45.684167] (-) TimerEvent: {}
+[45.784439] (-) TimerEvent: {}
+[45.884710] (-) TimerEvent: {}
+[45.984983] (-) TimerEvent: {}
+[46.085249] (-) TimerEvent: {}
+[46.185515] (-) TimerEvent: {}
+[46.285788] (-) TimerEvent: {}
+[46.386056] (-) TimerEvent: {}
+[46.486326] (-) TimerEvent: {}
+[46.586594] (-) TimerEvent: {}
+[46.686869] (-) TimerEvent: {}
+[46.787140] (-) TimerEvent: {}
+[46.887410] (-) TimerEvent: {}
+[46.987683] (-) TimerEvent: {}
+[47.087957] (-) TimerEvent: {}
+[47.188232] (-) TimerEvent: {}
+[47.288506] (-) TimerEvent: {}
+[47.388782] (-) TimerEvent: {}
+[47.489052] (-) TimerEvent: {}
+[47.589310] (-) TimerEvent: {}
+[47.689578] (-) TimerEvent: {}
+[47.789847] (-) TimerEvent: {}
+[47.890119] (-) TimerEvent: {}
+[47.990390] (-) TimerEvent: {}
+[48.090661] (-) TimerEvent: {}
+[48.190930] (-) TimerEvent: {}
+[48.291198] (-) TimerEvent: {}
+[48.391469] (-) TimerEvent: {}
+[48.491738] (-) TimerEvent: {}
+[48.592012] (-) TimerEvent: {}
+[48.692295] (-) TimerEvent: {}
+[48.792573] (-) TimerEvent: {}
+[48.892846] (-) TimerEvent: {}
+[48.993122] (-) TimerEvent: {}
+[49.093368] (-) TimerEvent: {}
+[49.193640] (-) TimerEvent: {}
+[49.293908] (-) TimerEvent: {}
+[49.394170] (-) TimerEvent: {}
+[49.494433] (-) TimerEvent: {}
+[49.594705] (-) TimerEvent: {}
+[49.694978] (-) TimerEvent: {}
+[49.795250] (-) TimerEvent: {}
+[49.895519] (-) TimerEvent: {}
+[49.995788] (-) TimerEvent: {}
+[50.096059] (-) TimerEvent: {}
+[50.196331] (-) TimerEvent: {}
+[50.296603] (-) TimerEvent: {}
+[50.396870] (-) TimerEvent: {}
+[50.497140] (-) TimerEvent: {}
+[50.597386] (-) TimerEvent: {}
+[50.697651] (-) TimerEvent: {}
+[50.797917] (-) TimerEvent: {}
+[50.898161] (-) TimerEvent: {}
+[50.998451] (-) TimerEvent: {}
+[51.098722] (-) TimerEvent: {}
+[51.198995] (-) TimerEvent: {}
+[51.299239] (-) TimerEvent: {}
+[51.399499] (-) TimerEvent: {}
+[51.499779] (-) TimerEvent: {}
+[51.600054] (-) TimerEvent: {}
+[51.700324] (-) TimerEvent: {}
+[51.800647] (-) TimerEvent: {}
+[51.900997] (-) TimerEvent: {}
+[52.001235] (-) TimerEvent: {}
+[52.101514] (-) TimerEvent: {}
+[52.201795] (-) TimerEvent: {}
+[52.302079] (-) TimerEvent: {}
+[52.402391] (-) TimerEvent: {}
+[52.433084] (ros2_laser_scan_matcher) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable laser_scan_matcher\x1b[0m\n'}
+[52.502505] (-) TimerEvent: {}
+[52.602823] (-) TimerEvent: {}
+[52.703166] (-) TimerEvent: {}
+[52.803541] (-) TimerEvent: {}
+[52.903827] (-) TimerEvent: {}
+[53.004122] (-) TimerEvent: {}
+[53.104400] (-) TimerEvent: {}
+[53.188906] (ros2_laser_scan_matcher) StdoutLine: {'line': b'[100%] Built target laser_scan_matcher\n'}
+[53.200843] (ros2_laser_scan_matcher) CommandEnded: {'returncode': 0}
+[53.204504] (-) TimerEvent: {}
+[53.227360] (ros2_laser_scan_matcher) JobProgress: {'identifier': 'ros2_laser_scan_matcher', 'progress': 'install'}
+[53.227734] (ros2_laser_scan_matcher) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/group_c/tas2-software/build/ros2_laser_scan_matcher'], 'cwd': '/home/group_c/tas2-software/build/ros2_laser_scan_matcher', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'group_c'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/group_c/tas2-software/install/csm/lib:/home/group_c/tas2-software/install/urg_node2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins'), ('HOME', '/home/group_c'), ('OLDPWD', '/home/group_c'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('MANAGERPID', '1337'), ('SYSTEMD_EXEC_PID', '1551'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1002/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2875'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/group_c/tas2-software/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'group_c'), ('JOURNAL_STREAM', '8:26213'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'group_c'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/home/group_c/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/amurpc:@/tmp/.ICE-unix/1502,unix/amurpc:/tmp/.ICE-unix/1502'), ('INVOCATION_ID', '02fb89ba4aa242b0b3c285a7129244da'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1002'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1002/.mutter-Xwaylandauth.EGVIG2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1002/keyring/ssh'), ('ROS_DOMAIN_ID', '3'), ('AMENT_PREFIX_PATH', '/home/group_c/tas2-software/install/urg_node2:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/tas2:/home/group_c/tas2-software/install/ros2_laser_scan_matcher:/home/group_c/tas2-software/install/object_tracker:/home/group_c/tas2-software/install/csm:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:b872306a-2b46-403b-a696-1eb72dc1cc49'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/group_c/tas2-software/build/ros2_laser_scan_matcher'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/group_c/tas2-software/install/tas_hardware/lib/python3.10/site-packages:/home/group_c/tas2-software/install/object_tracker/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/group_c/tas2-software/install/csm:/home/group_c/tas2-software/install/urg_node2:/home/group_c/tas2-software/install/tas2:/home/group_c/tas2-software/install/ros2_laser_scan_matcher:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble')]), 'shell': False}
+[53.236319] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[53.236586] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/ros2_laser_scan_matcher/lib/ros2_laser_scan_matcher/laser_scan_matcher\n'}
+[53.240816] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Set runtime path of "/home/group_c/tas2-software/install/ros2_laser_scan_matcher/lib/ros2_laser_scan_matcher/laser_scan_matcher" to ""\n'}
+[53.241066] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/ros2_laser_scan_matcher/share/ament_index/resource_index/package_run_dependencies/ros2_laser_scan_matcher\n'}
+[53.241256] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/ros2_laser_scan_matcher/share/ament_index/resource_index/parent_prefix_path/ros2_laser_scan_matcher\n'}
+[53.241599] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/environment/ament_prefix_path.sh\n'}
+[53.241833] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/environment/ament_prefix_path.dsv\n'}
+[53.242003] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/environment/path.sh\n'}
+[53.242117] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/environment/path.dsv\n'}
+[53.242226] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/local_setup.bash\n'}
+[53.242385] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/local_setup.sh\n'}
+[53.242546] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/local_setup.zsh\n'}
+[53.242695] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/local_setup.dsv\n'}
+[53.242839] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.dsv\n'}
+[53.243060] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/ros2_laser_scan_matcher/share/ament_index/resource_index/packages/ros2_laser_scan_matcher\n'}
+[53.243223] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/cmake/ros2_laser_scan_matcherConfig.cmake\n'}
+[53.243350] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/cmake/ros2_laser_scan_matcherConfig-version.cmake\n'}
+[53.243467] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/group_c/tas2-software/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.xml\n'}
+[53.245291] (ros2_laser_scan_matcher) CommandEnded: {'returncode': 0}
+[53.304617] (-) TimerEvent: {}
+[53.393127] (ros2_laser_scan_matcher) JobEnded: {'identifier': 'ros2_laser_scan_matcher', 'rc': 0}
+[53.393857] (-) EventReactorShutdown: {}

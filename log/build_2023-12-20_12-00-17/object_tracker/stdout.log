@@ -1,0 +1,38 @@
+running egg_info
+creating ../../build/object_tracker/object_tracker.egg-info
+writing ../../build/object_tracker/object_tracker.egg-info/PKG-INFO
+writing dependency_links to ../../build/object_tracker/object_tracker.egg-info/dependency_links.txt
+writing entry points to ../../build/object_tracker/object_tracker.egg-info/entry_points.txt
+writing requirements to ../../build/object_tracker/object_tracker.egg-info/requires.txt
+writing top-level names to ../../build/object_tracker/object_tracker.egg-info/top_level.txt
+writing manifest file '../../build/object_tracker/object_tracker.egg-info/SOURCES.txt'
+reading manifest file '../../build/object_tracker/object_tracker.egg-info/SOURCES.txt'
+writing manifest file '../../build/object_tracker/object_tracker.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/group_c/tas2-software/build/object_tracker/build
+creating /home/group_c/tas2-software/build/object_tracker/build/lib
+creating /home/group_c/tas2-software/build/object_tracker/build/lib/object_tracker
+copying object_tracker/object_tracker_ekf.py -> /home/group_c/tas2-software/build/object_tracker/build/lib/object_tracker
+copying object_tracker/__init__.py -> /home/group_c/tas2-software/build/object_tracker/build/lib/object_tracker
+copying object_tracker/object_tracker.py -> /home/group_c/tas2-software/build/object_tracker/build/lib/object_tracker
+running install
+running install_lib
+creating /home/group_c/tas2-software/install/object_tracker/lib/python3.10/site-packages/object_tracker
+copying /home/group_c/tas2-software/build/object_tracker/build/lib/object_tracker/object_tracker_ekf.py -> /home/group_c/tas2-software/install/object_tracker/lib/python3.10/site-packages/object_tracker
+copying /home/group_c/tas2-software/build/object_tracker/build/lib/object_tracker/__init__.py -> /home/group_c/tas2-software/install/object_tracker/lib/python3.10/site-packages/object_tracker
+copying /home/group_c/tas2-software/build/object_tracker/build/lib/object_tracker/object_tracker.py -> /home/group_c/tas2-software/install/object_tracker/lib/python3.10/site-packages/object_tracker
+byte-compiling /home/group_c/tas2-software/install/object_tracker/lib/python3.10/site-packages/object_tracker/object_tracker_ekf.py to object_tracker_ekf.cpython-310.pyc
+byte-compiling /home/group_c/tas2-software/install/object_tracker/lib/python3.10/site-packages/object_tracker/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/group_c/tas2-software/install/object_tracker/lib/python3.10/site-packages/object_tracker/object_tracker.py to object_tracker.cpython-310.pyc
+running install_data
+creating /home/group_c/tas2-software/install/object_tracker/share/ament_index
+creating /home/group_c/tas2-software/install/object_tracker/share/ament_index/resource_index
+creating /home/group_c/tas2-software/install/object_tracker/share/ament_index/resource_index/packages
+copying resource/object_tracker -> /home/group_c/tas2-software/install/object_tracker/share/ament_index/resource_index/packages
+copying package.xml -> /home/group_c/tas2-software/install/object_tracker/share/object_tracker
+running install_egg_info
+Copying ../../build/object_tracker/object_tracker.egg-info to /home/group_c/tas2-software/install/object_tracker/lib/python3.10/site-packages/object_tracker-0.0.0-py3.10.egg-info
+running install_scripts
+Installing object_tracker script to /home/group_c/tas2-software/install/object_tracker/lib/object_tracker
+writing list of installed files to '/home/group_c/tas2-software/build/object_tracker/install.log'

@@ -1,0 +1,40 @@
+[0.365s] Invoking command in '/home/group_c/tas2-software/build/csm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble /usr/bin/cmake --build /home/group_c/tas2-software/build/csm -- -j4 -l4
+[0.647s] [100%] Built target csm
+[0.648s] Invoked command in '/home/group_c/tas2-software/build/csm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble /usr/bin/cmake --build /home/group_c/tas2-software/build/csm -- -j4 -l4
+[0.966s] Invoking command in '/home/group_c/tas2-software/build/csm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble /usr/bin/cmake --install /home/group_c/tas2-software/build/csm
+[0.981s] -- Install configuration: ""
+[0.982s] -- Up-to-date: /home/group_c/tas2-software/install/csm/lib/libcsm.so
+[0.982s] -- Up-to-date: /home/group_c/tas2-software/install/csm/include/..//include
+[0.983s] -- Up-to-date: /home/group_c/tas2-software/install/csm/include/..//include/csm
+[0.983s] -- Up-to-date: /home/group_c/tas2-software/install/csm/include/..//include/csm/laser_data_inline.h
+[0.984s] -- Up-to-date: /home/group_c/tas2-software/install/csm/include/..//include/csm/restrict.h
+[0.985s] -- Up-to-date: /home/group_c/tas2-software/install/csm/include/..//include/csm/laser_data.h
+[0.985s] -- Up-to-date: /home/group_c/tas2-software/install/csm/include/..//include/csm/csm.h
+[0.986s] -- Up-to-date: /home/group_c/tas2-software/install/csm/include/..//include/csm/algos.h
+[0.986s] -- Up-to-date: /home/group_c/tas2-software/install/csm/include/..//include/gsl_eigen
+[0.987s] -- Up-to-date: /home/group_c/tas2-software/install/csm/include/..//include/gsl_eigen/gsl_eigen.h
+[0.987s] -- Up-to-date: /home/group_c/tas2-software/install/csm/share/csm/resource
+[0.988s] -- Up-to-date: /home/group_c/tas2-software/install/csm/share/csm/resource/csm
+[0.989s] -- Up-to-date: /home/group_c/tas2-software/install/csm/include/../gsl_eigen
+[0.990s] -- Up-to-date: /home/group_c/tas2-software/install/csm/include/../gsl_eigen/gsl_eigen.h
+[0.990s] -- Up-to-date: /home/group_c/tas2-software/install/csm/share/csm/environment/library_path.sh
+[0.990s] -- Up-to-date: /home/group_c/tas2-software/install/csm/share/csm/environment/library_path.dsv
+[0.991s] -- Up-to-date: /home/group_c/tas2-software/install/csm/share/ament_index/resource_index/package_run_dependencies/csm
+[0.992s] -- Up-to-date: /home/group_c/tas2-software/install/csm/share/ament_index/resource_index/parent_prefix_path/csm
+[0.993s] -- Up-to-date: /home/group_c/tas2-software/install/csm/share/csm/environment/ament_prefix_path.sh
+[0.993s] -- Up-to-date: /home/group_c/tas2-software/install/csm/share/csm/environment/ament_prefix_path.dsv
+[0.994s] -- Up-to-date: /home/group_c/tas2-software/install/csm/share/csm/environment/path.sh
+[0.994s] -- Up-to-date: /home/group_c/tas2-software/install/csm/share/csm/environment/path.dsv
+[0.995s] -- Up-to-date: /home/group_c/tas2-software/install/csm/share/csm/local_setup.bash
+[0.996s] -- Up-to-date: /home/group_c/tas2-software/install/csm/share/csm/local_setup.sh
+[0.996s] -- Up-to-date: /home/group_c/tas2-software/install/csm/share/csm/local_setup.zsh
+[0.996s] -- Up-to-date: /home/group_c/tas2-software/install/csm/share/csm/local_setup.dsv
+[0.997s] -- Installing: /home/group_c/tas2-software/install/csm/share/csm/package.dsv
+[0.997s] -- Up-to-date: /home/group_c/tas2-software/install/csm/share/ament_index/resource_index/packages/csm
+[0.997s] -- Up-to-date: /home/group_c/tas2-software/install/csm/share/csm/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.997s] -- Up-to-date: /home/group_c/tas2-software/install/csm/share/csm/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.997s] -- Up-to-date: /home/group_c/tas2-software/install/csm/share/csm/cmake/ament_cmake_export_libraries-extras.cmake
+[0.997s] -- Up-to-date: /home/group_c/tas2-software/install/csm/share/csm/cmake/csmConfig.cmake
+[0.997s] -- Up-to-date: /home/group_c/tas2-software/install/csm/share/csm/cmake/csmConfig-version.cmake
+[0.998s] -- Up-to-date: /home/group_c/tas2-software/install/csm/share/csm/package.xml
+[1.011s] Invoked command in '/home/group_c/tas2-software/build/csm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/group_c/tas2-software/install/tas_hardware:/home/group_c/tas2-software/install/object_tracker:/opt/ros/humble /usr/bin/cmake --install /home/group_c/tas2-software/build/csm
