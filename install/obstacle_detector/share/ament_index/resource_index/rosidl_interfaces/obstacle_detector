@@ -1,0 +1,6 @@
+msg/CircleObstacle.idl
+msg/CircleObstacle.msg
+msg/Obstacles.idl
+msg/Obstacles.msg
+msg/SegmentObstacle.idl
+msg/SegmentObstacle.msg

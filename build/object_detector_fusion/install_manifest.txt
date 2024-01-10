@@ -1,0 +1,15 @@
+/home/ywen/tas2-software/install/object_detector_fusion/share/ament_index/resource_index/package_run_dependencies/object_detector_fusion
+/home/ywen/tas2-software/install/object_detector_fusion/share/ament_index/resource_index/parent_prefix_path/object_detector_fusion
+/home/ywen/tas2-software/install/object_detector_fusion/share/object_detector_fusion/environment/ament_prefix_path.sh
+/home/ywen/tas2-software/install/object_detector_fusion/share/object_detector_fusion/environment/ament_prefix_path.dsv
+/home/ywen/tas2-software/install/object_detector_fusion/share/object_detector_fusion/environment/path.sh
+/home/ywen/tas2-software/install/object_detector_fusion/share/object_detector_fusion/environment/path.dsv
+/home/ywen/tas2-software/install/object_detector_fusion/share/object_detector_fusion/local_setup.bash
+/home/ywen/tas2-software/install/object_detector_fusion/share/object_detector_fusion/local_setup.sh
+/home/ywen/tas2-software/install/object_detector_fusion/share/object_detector_fusion/local_setup.zsh
+/home/ywen/tas2-software/install/object_detector_fusion/share/object_detector_fusion/local_setup.dsv
+/home/ywen/tas2-software/install/object_detector_fusion/share/object_detector_fusion/package.dsv
+/home/ywen/tas2-software/install/object_detector_fusion/share/ament_index/resource_index/packages/object_detector_fusion
+/home/ywen/tas2-software/install/object_detector_fusion/share/object_detector_fusion/cmake/object_detector_fusionConfig.cmake
+/home/ywen/tas2-software/install/object_detector_fusion/share/object_detector_fusion/cmake/object_detector_fusionConfig-version.cmake
+/home/ywen/tas2-software/install/object_detector_fusion/share/object_detector_fusion/package.xml

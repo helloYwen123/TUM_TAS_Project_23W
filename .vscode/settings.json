@@ -1,0 +1,5 @@
+{
+    "python.REPL.enableREPLSmartSend": false,
+    "cmake.sourceDirectory": "/home/ywen/tas2-software/src/csm",
+    "cmake.configureOnOpen": true
+}

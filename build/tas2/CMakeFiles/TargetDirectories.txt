@@ -1,0 +1,9 @@
+/home/ywen/tas2-software/build/tas2/CMakeFiles/uninstall.dir
+/home/ywen/tas2-software/build/tas2/CMakeFiles/tas2_uninstall.dir
+/home/ywen/tas2-software/build/tas2/CMakeFiles/test.dir
+/home/ywen/tas2-software/build/tas2/CMakeFiles/edit_cache.dir
+/home/ywen/tas2-software/build/tas2/CMakeFiles/rebuild_cache.dir
+/home/ywen/tas2-software/build/tas2/CMakeFiles/list_install_components.dir
+/home/ywen/tas2-software/build/tas2/CMakeFiles/install.dir
+/home/ywen/tas2-software/build/tas2/CMakeFiles/install/local.dir
+/home/ywen/tas2-software/build/tas2/CMakeFiles/install/strip.dir

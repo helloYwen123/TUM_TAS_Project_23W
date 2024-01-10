@@ -1,0 +1,8 @@
+{
+  "package_name": "obstacle_detector",
+  "non_idl_tuples": [
+    "/home/ywen/tas2-software/src/obstacle_detector_2:msg/CircleObstacle.msg",
+    "/home/ywen/tas2-software/src/obstacle_detector_2:msg/Obstacles.msg",
+    "/home/ywen/tas2-software/src/obstacle_detector_2:msg/SegmentObstacle.msg"
+  ]
+}

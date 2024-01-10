@@ -1,0 +1,10 @@
+setup.py
+obstacle_detector/__init__.py
+obstacle_detector.egg-info/PKG-INFO
+obstacle_detector.egg-info/SOURCES.txt
+obstacle_detector.egg-info/dependency_links.txt
+obstacle_detector.egg-info/top_level.txt
+obstacle_detector/msg/__init__.py
+obstacle_detector/msg/_circle_obstacle.py
+obstacle_detector/msg/_obstacles.py
+obstacle_detector/msg/_segment_obstacle.py

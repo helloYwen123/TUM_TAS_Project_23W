@@ -1,0 +1,44 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from obstacle_detector/msg/SegmentObstacle.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Point.idl"
+#include "geometry_msgs/msg/Vector3.idl"
+
+module obstacle_detector {
+  module msg {
+    struct SegmentObstacle {
+      @verbatim (language="comment", text=
+        "Unique identifier")
+      uint64 uid;
+
+      @verbatim (language="comment", text=
+        "First point of the segment")
+      @unit (value="m")
+      geometry_msgs::msg::Point first_point;
+
+      @verbatim (language="comment", text=
+        "Last point of the segment")
+      @unit (value="m")
+      geometry_msgs::msg::Point last_point;
+
+      @verbatim (language="comment", text=
+        "Linear velocity")
+      @unit (value="m/s")
+      geometry_msgs::msg::Vector3 first_velocity;
+
+      @verbatim (language="comment", text=
+        "Linear velocity")
+      @unit (value="m/s")
+      geometry_msgs::msg::Vector3 last_velocity;
+
+      @verbatim (language="comment", text=
+        "Semantic class")
+      string semclass;
+
+      @verbatim (language="comment", text=
+        "Confidence in semantic class")
+      double confidence;
+    };
+  };
+};
